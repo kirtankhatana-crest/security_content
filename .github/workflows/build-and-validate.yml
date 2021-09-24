@@ -287,13 +287,31 @@ jobs:
       - name: store_artifacts_two
         uses: actions/upload-artifact@v2
         with:
-          name: content-latest
+          name: Latest-Content-Pack
           path: |
             build/DA-ESS-ContentUpdate-latest.tar.gz
             build/DA-ESS_AmazonWebServices_Content-latest.tar.gz
             build/dev_sec_ops_analytics-latest.tar.gz
             build/checksum.txt
       
+        #Store all of these artifacts separately for easy download and
+        #import into Splunk for testing
+      - name: Store ESCU App
+        uses: actions/upload-artifact@v2
+        with:
+          name: DA-ESS-ContentUpdate-latest
+          path: build/DA-ESS-ContentUpdate
+      - name: Store Amazon Web Services
+        uses: actions/upload-artifact@v2
+        with:
+          name: DA-ESS_AmazonWebServices_Content-latest
+          path: build/DA-ESS_AmazonWebServices_Content 
+      
+      - name: Store Dev Sec Ops Analytics
+        uses: actions/upload-artifact@v2
+        with:
+          name: dev-sec-ops-analytics-latest
+          path: build/dev_sec_ops_analytics
 
   #Everything below this line should ONLY run on a tag and nothing else
   #We still want all of the above checks to run and pass before running these
