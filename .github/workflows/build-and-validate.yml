@@ -510,9 +510,9 @@ jobs:
     if: startsWith(github.ref, 'refs/tags/')
     steps:
       - name: Add TA-list to detection files
-          run: |
-            source venv/bin/activate
-            python3 security_content_automation/enrich_detections.py
+        run: |
+          source venv/bin/activate
+          python3 security_content_automation/enrich_detections.py
 
   publish-github-release:
     #Github-maintained release action is in archived state: https://github.com/actions/create-release
