@@ -5,14 +5,11 @@
 # 5. Add the list of TA's in detection file
 # 6. Create a new branch and raise an MR for it
 
-# dependencies
-# GitPython==3.1.24
-# PyYAML==6.0
-
 import os
 import git
 import yaml
 import json
+import time
 import argparse
 import logging
 
@@ -32,20 +29,14 @@ def load_file(file_path):
         try:
             file = list(yaml.safe_load_all(stream))[0]
         except yaml.YAMLError as exc:
-            print(exc)
             sys.exit("ERROR: reading {0}".format(file_path))
     return file
 
 
 def map_required_fields(cim_summary, required_fields):
     for dataset in cim_summary.values():
-        print("#" * 10)
-        print(list(dataset.keys()))
         for eventtype in dataset.values():
-            # print("@" * 10)
-            # print(eventtype)
             for item in eventtype:
-                print(item['fields'])
                 cim_fields = item.get('fields', [])
                 if set(required_fields).issubset(set(cim_fields)):
                     return True
@@ -65,7 +56,7 @@ def enrich_detection_file(file, ta_list, security_content_repo_obj):
 def main():
 
     parser = argparse.ArgumentParser(description="Enrich detections with relevant TA names")
-    parser.add_argument("-scr", "--security_content_repo", required=False, default="splunk/security_content",
+    parser.add_argument("-scr", "--security_content_repo", required=False, default="kirtankhatana-crest/security_content",
                         help="specify the url of the security content repository")
     parser.add_argument("-scb", "--security_content_branch", required=False, default="develop",
                         help="specify the security content branch")
@@ -86,9 +77,9 @@ def main():
     for subdir, dirs, files in os.walk('security_content/detections/cloud'):
         for file in files:
             filepath = subdir + os.sep + file
+            ta_list = []
 
             if filepath.endswith("abnormally_high_number_of_cloud_infrastructure_api_calls.yml"):
-                ta_list = []
 
                 detection_obj = load_file(filepath)
                 required_fields = detection_obj.get('tags', {}).get('required_fields')
@@ -100,7 +91,8 @@ def main():
                     if result:
                         ta_list.append(ta_cim_map.get('ta_name').get('name'))
 
-            enrich_detection_file(filepath, ta_list, security_content_repo_obj)
+            if ta_list:
+                enrich_detection_file(filepath, ta_list, security_content_repo_obj)
 
             security_content_repo_obj.index.add([changed_file_path])
 
@@ -109,9 +101,12 @@ def main():
     # security_content_repo_obj.config_writer().set_value("user", "name", "Detection Testing Service").release()
     # security_content_repo_obj.config_writer().set_value("user", "email", "research@splunk.com").release()
 
-    security_content_repo_obj.git.push('--set-upstream', 'origin', branch_name)
+    epoch_time = str(int(time.time()))
+    branch_name = "security_content_automation_" + epoch_time
+    repo.git.checkout("-b", branch_name)
 
-    pr = repo.create_pull(title="Enrich Detection PR " + branch_name, body=body, head=branch_name, base="develop")
+    security_content_repo_obj.git.push('--set-upstream', 'origin', branch_name)
+    pr = repo.create_pull(title="Enrich Detection PR " + branch_name, body='This is a dummy PR', head=branch_name, base="develop")
 
 
 if __name__ == "__main__":
