@@ -1,0 +1,1410 @@
+{
+    "ta_name": {
+        "name": "Splunk_TA_cisco-esa",
+        "version": "1.4.0"
+    },
+    "sourcetypes": [
+        "cisco:esa:delivery",
+        "cisco:esa:amp",
+        "cisco:esa:http",
+        "cisco:esa:authentication",
+        "cisco:esa:textmail",
+        "cisco:esa:cef"
+    ],
+    "cimsummary": {
+        "Authentication:Authentication": {
+            "cisco_esa_authentication": [
+                {
+                    "fields": [
+                        "action",
+                        "app",
+                        "dest",
+                        "tag",
+                        "user"
+                    ]
+                }
+            ]
+        },
+        "Authentication:Failed_Authentication": {
+            "cisco_esa_authentication": [
+                {
+                    "fields": [
+                        "action",
+                        "app",
+                        "dest",
+                        "tag",
+                        "user"
+                    ]
+                }
+            ]
+        },
+        "Authentication:Successful_Authentication": {
+            "cisco_esa_authentication": [
+                {
+                    "fields": [
+                        "action",
+                        "app",
+                        "dest",
+                        "tag",
+                        "user"
+                    ]
+                }
+            ]
+        },
+        "Authentication:Default_Authentication": {
+            "cisco_esa_authentication": [
+                {
+                    "fields": [
+                        "action",
+                        "app",
+                        "dest",
+                        "tag",
+                        "user"
+                    ]
+                }
+            ]
+        },
+        "Authentication:Failed_Default_Authentication": {
+            "cisco_esa_authentication": [
+                {
+                    "fields": [
+                        "action",
+                        "app",
+                        "dest",
+                        "tag",
+                        "user"
+                    ]
+                }
+            ]
+        },
+        "Authentication:Successful_Default_Authentication": {
+            "cisco_esa_authentication": [
+                {
+                    "fields": [
+                        "action",
+                        "app",
+                        "dest",
+                        "tag",
+                        "user"
+                    ]
+                }
+            ]
+        },
+        "Authentication:Insecure_Authentication": {
+            "cisco_esa_authentication": [
+                {
+                    "fields": [
+                        "action",
+                        "app",
+                        "dest",
+                        "tag",
+                        "user"
+                    ]
+                }
+            ]
+        },
+        "Authentication:Privileged_Authentication": {
+            "cisco_esa_authentication": [
+                {
+                    "fields": [
+                        "action",
+                        "app",
+                        "dest",
+                        "tag",
+                        "user"
+                    ]
+                }
+            ]
+        },
+        "Authentication:Failed_Privileged_Authentication": {
+            "cisco_esa_authentication": [
+                {
+                    "fields": [
+                        "action",
+                        "app",
+                        "dest",
+                        "tag",
+                        "user"
+                    ]
+                }
+            ]
+        },
+        "Authentication:Successful_Privileged_Authentication": {
+            "cisco_esa_authentication": [
+                {
+                    "fields": [
+                        "action",
+                        "app",
+                        "dest",
+                        "tag",
+                        "user"
+                    ]
+                }
+            ]
+        },
+        "Email:All_Email": {
+            "cisco_esa_delivery": [
+                {
+                    "fields": [
+                        "action",
+                        "dest",
+                        "message_id",
+                        "protocol",
+                        "recipient",
+                        "recipient_count",
+                        "return_addr",
+                        "size",
+                        "src",
+                        "src_user",
+                        "status_code",
+                        "tag"
+                    ]
+                }
+            ]
+        },
+        "Email:Delivery": {
+            "cisco_esa_delivery": [
+                {
+                    "fields": [
+                        "action",
+                        "dest",
+                        "message_id",
+                        "protocol",
+                        "recipient",
+                        "recipient_count",
+                        "return_addr",
+                        "size",
+                        "src",
+                        "src_user",
+                        "status_code",
+                        "tag"
+                    ]
+                }
+            ]
+        },
+        "Email:Content": {
+            "cisco_esa_delivery": [
+                {
+                    "fields": [
+                        "action",
+                        "dest",
+                        "message_id",
+                        "protocol",
+                        "recipient",
+                        "recipient_count",
+                        "return_addr",
+                        "size",
+                        "src",
+                        "src_user",
+                        "status_code",
+                        "tag"
+                    ]
+                }
+            ]
+        },
+        "Email:Filtering": {
+            "cisco_esa_delivery": [
+                {
+                    "fields": [
+                        "action",
+                        "dest",
+                        "message_id",
+                        "protocol",
+                        "recipient",
+                        "recipient_count",
+                        "return_addr",
+                        "size",
+                        "src",
+                        "src_user",
+                        "status_code",
+                        "tag"
+                    ]
+                }
+            ]
+        }
+    },
+    "fieldsummary": {
+        "cisco_esa_delivery": [
+            [
+                {
+                    "field": "action",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "blocked",
+                            "count": 1
+                        },
+                        {
+                            "value": "delivered",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "app",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Cisco Email Security Appliance",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "attempts",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "2",
+                    "mean": "1.5",
+                    "min": "1",
+                    "numeric_count": "2",
+                    "stdev": "0.7071067811865476",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 1
+                        },
+                        {
+                            "value": "2",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "bytes",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "6174",
+                    "mean": "3156.5",
+                    "min": "139",
+                    "numeric_count": "2",
+                    "stdev": "4267.389424460815",
+                    "values": [
+                        {
+                            "value": "139",
+                            "count": 1
+                        },
+                        {
+                            "value": "6174",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "code",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "550",
+                    "mean": "400",
+                    "min": "250",
+                    "numeric_count": "2",
+                    "stdev": "212.13203435596427",
+                    "values": [
+                        {
+                            "value": "250",
+                            "count": 1
+                        },
+                        {
+                            "value": "550",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "del_time",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Sun Jan 05 08:28:33.073 2003",
+                            "count": 1
+                        },
+                        {
+                            "value": "Tue Jan 28 15:56:13.123 2003",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "delivery_type",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "bounce",
+                            "count": 1
+                        },
+                        {
+                            "value": "success",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dest",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "129.42.23.27",
+                            "count": 1
+                        },
+                        {
+                            "value": "161.78.94.130",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dest_ip",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "129.42.23.27",
+                            "count": 1
+                        },
+                        {
+                            "value": "161.78.94.130",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "error",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Requested action not taken: mailbox unavailable",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "eventtype",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "cisco_esa_delivery",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "from",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "campaign1@yourdomain.com",
+                            "count": 1
+                        },
+                        {
+                            "value": "sender@email.com",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "host",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "spgdi_cisco_esa_delivery_v_12.5_v13.0.samples_1",
+                            "count": 1
+                        },
+                        {
+                            "value": "spgdi_cisco_esa_delivery_v_12.5_v13.0.samples_2",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "index",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "main",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "inj_time",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Mon Jan 05 08:28:32.929 2003",
+                            "count": 1
+                        },
+                        {
+                            "value": "Tue Jan 28 15:55:17.696 2003",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ip",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "129.42.23.27",
+                            "count": 1
+                        },
+                        {
+                            "value": "161.78.94.130",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "linecount",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "8",
+                    "mean": "7",
+                    "min": "6",
+                    "numeric_count": "2",
+                    "stdev": "1.4142135623730951",
+                    "values": [
+                        {
+                            "value": "6",
+                            "count": 1
+                        },
+                        {
+                            "value": "8",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "message_id",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "916293",
+                    "mean": "904374.5",
+                    "min": "892456",
+                    "numeric_count": "2",
+                    "stdev": "16855.304343143733",
+                    "values": [
+                        {
+                            "value": "892456",
+                            "count": 1
+                        },
+                        {
+                            "value": "916293",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "mid",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "916293",
+                    "mean": "904374.5",
+                    "min": "892456",
+                    "numeric_count": "2",
+                    "stdev": "16855.304343143733",
+                    "values": [
+                        {
+                            "value": "892456",
+                            "count": 1
+                        },
+                        {
+                            "value": "916293",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "name",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "xname",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "product",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "ESA",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "protocol",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "SMTP",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "punct",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "<_=\"___::._\"_=\"___::._\"=\"\"_=\"\"_=\"...\"_=\"@.\"=\"...\"_",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "reason",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "5.1.0 - Unknown address error",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "recipient",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "receiver.dummy@email.com",
+                            "count": 1
+                        },
+                        {
+                            "value": "receiver@email.com",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "recipient_count",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1",
+                    "mean": "1",
+                    "min": "1",
+                    "numeric_count": "2",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "reply",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "dummy reply",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "return_addr",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "campaign1@yourdomain.com",
+                            "count": 1
+                        },
+                        {
+                            "value": "sender@email.com",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "rid",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "917596",
+                    "mean": "611421.5",
+                    "min": "305247",
+                    "numeric_count": "2",
+                    "stdev": "432996.1303528012",
+                    "values": [
+                        {
+                            "value": "305247",
+                            "count": 1
+                        },
+                        {
+                            "value": "917596",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "size",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "6174",
+                    "mean": "3156.5",
+                    "min": "139",
+                    "numeric_count": "2",
+                    "stdev": "4267.389424460815",
+                    "values": [
+                        {
+                            "value": "139",
+                            "count": 1
+                        },
+                        {
+                            "value": "6174",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "source",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "pytest-splunk-addon:file_monitor",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "source_ip",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "104.193.9.230",
+                            "count": 1
+                        },
+                        {
+                            "value": "192.168.102.1",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sourcetype",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "cisco:esa:delivery",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "spl-5dc84889d5-bdqjc",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server_group",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "src",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "104.193.9.230",
+                            "count": 1
+                        },
+                        {
+                            "value": "192.168.102.1",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "src_ip",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "104.193.9.230",
+                            "count": 1
+                        },
+                        {
+                            "value": "192.168.102.1",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "src_user",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "campaign1@yourdomain.com",
+                            "count": 1
+                        },
+                        {
+                            "value": "sender@email.com",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "status_code",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "550",
+                    "mean": "400",
+                    "min": "250",
+                    "numeric_count": "2",
+                    "stdev": "212.13203435596427",
+                    "values": [
+                        {
+                            "value": "250",
+                            "count": 1
+                        },
+                        {
+                            "value": "550",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "tag",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "email",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "tag::eventtype",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "email",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "timestamp",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "none",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "to",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "receiver.dummy@email.com",
+                            "count": 1
+                        },
+                        {
+                            "value": "receiver@email.com",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "value",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "sh",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Cisco",
+                            "count": 2
+                        }
+                    ]
+                }
+            ]
+        ],
+        "cisco_esa_email": [
+            [
+                {
+                    "field": "action",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "app",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Ironport",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_hour",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "20",
+                    "mean": "20",
+                    "min": "20",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "20",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_mday",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "3",
+                    "mean": "3",
+                    "min": "3",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "3",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_minute",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "26",
+                    "mean": "26",
+                    "min": "26",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "26",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_month",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "november",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_second",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "4",
+                    "mean": "4",
+                    "min": "4",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "4",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_wday",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "wednesday",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_year",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "2021",
+                    "mean": "2021",
+                    "min": "2021",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "2021",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_zone",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "local",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dest",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "eventtype",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "cisco_esa_email",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "host",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "spgdi_cisco_esa_textmail_v10_v10.0.1_v11_v11.1_v11.5_v12_v12.1_v12.5_v13_v13.5.samples",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "index",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "main",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "internal_message_id",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "263640",
+                    "mean": "263640",
+                    "min": "263640",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "263640",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "linecount",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1",
+                    "mean": "1",
+                    "min": "1",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "log_level",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Info",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "log_type",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "MAIL_SecurityAudit",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "product",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "ESA",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "punct",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "__::_..._:_:___:___+--=___(=)",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sender",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "size",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "source",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "pytest-splunk-addon:file_monitor",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "source_domain",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "142.136.61.63",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sourcetype",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "cisco:esa:textmail",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "spf_version",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "spf1",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "spl-5dc84889d5-bdqjc",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server_group",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "src",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "subject",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "tag",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "tag::eventtype",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "timeendpos",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "16",
+                    "mean": "16",
+                    "min": "16",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "16",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "timestartpos",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Cisco",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_action",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                }
+            ]
+        ]
+    }
+}

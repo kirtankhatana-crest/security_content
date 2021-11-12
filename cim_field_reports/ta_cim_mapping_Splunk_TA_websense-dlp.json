@@ -1,0 +1,554 @@
+{
+    "ta_name": {
+        "name": "Splunk_TA_websense-dlp",
+        "version": "1.0.0"
+    },
+    "sourcetypes": [
+        "websense:dlp:system:cef"
+    ],
+    "cimsummary": {
+        "Alerts:Alerts": {
+            "websense_dlp_alert": [
+                {
+                    "fields": [
+                        "app",
+                        "body",
+                        "id",
+                        "severity",
+                        "severity_id",
+                        "subject",
+                        "tag",
+                        "type"
+                    ]
+                }
+            ]
+        }
+    },
+    "fieldsummary": {
+        "websense_dlp_alert": [
+            [
+                {
+                    "field": "act",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Blocked",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "action",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "blocked",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "app",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Websense DLP",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "body",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "act=Blocked duser=user44 fname=image002.jpg - 103.18 KB; image003.jpg - 97.18 KB; image004.png - 138.77 KB msg=Fw: Candidate for Req 556677 suser=user45 cat=Visual Basic Source Code sourceServiceName=Endpoint Web",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cat",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Visual Basic Source Code",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cef_dvc_product",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Data Security",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cef_dvc_vendor",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Websense",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cef_dvc_version",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "7.8",
+                    "mean": "7.8",
+                    "min": "7.8",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "7.8",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cef_event_severity_id",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cef_event_signature_id",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "22440691",
+                    "mean": "22440691",
+                    "min": "22440691",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "22440691",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cef_extension",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "act=Blocked duser=user44 fname=image002.jpg - 103.18 KB; image003.jpg - 97.18 KB; image004.png - 138.77 KB msg=Fw: Candidate for Req 556677 suser=user45 cat=Visual Basic Source Code sourceServiceName=Endpoint Web",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cef_product_log_category",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "DLP Syslog",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cef_version",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "duser",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "user44",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "eventtype",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "websense_dlp_alert",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "fname",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "image002.jpg - 103.18 KB; image003.jpg - 97.18 KB; image004.png - 138.77 KB",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "host",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "websense_dlp_event_sample",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "id",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "22440691",
+                    "mean": "22440691",
+                    "min": "22440691",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "22440691",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "index",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "main",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "linecount",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1",
+                    "mean": "1",
+                    "min": "1",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "msg",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Fw: Candidate for Req 556677",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "punct",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "___::_..._:||_|.||_||_=_=_=._-_._;_._-_._;_._-_.__",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "severity",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "informational",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "severity_id",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "source",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "pytest-splunk-addon-file_monitor",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sourceServiceName",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Endpoint Web",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sourcetype",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "websense:dlp:system:cef",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "spl-fbf445f4f-rn9vx",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server_group",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "subject",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Websense DLP alert. Policy:Visual Basic Source Code SourceServiceName:Endpoint Web",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "suser",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "user45",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "syslog_header",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Oct  2 16:47:42 126.193.175.188",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "tag",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "alert",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "tag::eventtype",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "alert",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "timestamp",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "none",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "type",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "alert",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_action",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Blocked",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_severity",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        ]
+    }
+}

@@ -1,0 +1,4081 @@
+{
+    "ta_name": {
+        "name": "Splunk_TA_bluecoat-proxysg",
+        "version": "3.7.0"
+    },
+    "sourcetypes": [
+        "bluecoat:proxysg:access:file",
+        "bluecoat:proxysg:access:kv",
+        "bluecoat:proxysg:access:syslog"
+    ],
+    "cimsummary": {
+        "Web:Web": {
+            "bluecoat_proxy_access_kv": [
+                {
+                    "fields": [
+                        "action",
+                        "app",
+                        "bytes",
+                        "bytes_in",
+                        "bytes_out",
+                        "category",
+                        "dest",
+                        "dest_port",
+                        "duration",
+                        "http_content_type",
+                        "http_method",
+                        "http_user_agent",
+                        "http_user_agent_length",
+                        "src",
+                        "status",
+                        "tag",
+                        "uri_path",
+                        "uri_query",
+                        "url",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Web:Proxy": {
+            "bluecoat_proxy_access_kv": [
+                {
+                    "fields": [
+                        "action",
+                        "app",
+                        "bytes",
+                        "bytes_in",
+                        "bytes_out",
+                        "category",
+                        "dest",
+                        "dest_port",
+                        "duration",
+                        "http_content_type",
+                        "http_method",
+                        "http_user_agent",
+                        "http_user_agent_length",
+                        "src",
+                        "status",
+                        "tag",
+                        "uri_path",
+                        "uri_query",
+                        "url",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Web:Storage": {
+            "bluecoat_proxy_access_kv": [
+                {
+                    "fields": [
+                        "action",
+                        "app",
+                        "bytes",
+                        "bytes_in",
+                        "bytes_out",
+                        "category",
+                        "dest",
+                        "dest_port",
+                        "duration",
+                        "http_content_type",
+                        "http_method",
+                        "http_user_agent",
+                        "http_user_agent_length",
+                        "src",
+                        "status",
+                        "tag",
+                        "uri_path",
+                        "uri_query",
+                        "url",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        }
+    },
+    "fieldsummary": {
+        "bluecoat_proxy": [
+            [
+                {
+                    "field": "Content_Type",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "text/plain",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "action",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "allowed",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "app",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Blue Coat ProxySG",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "bluecoat_header",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "bytes",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "10406",
+                    "mean": "10406",
+                    "min": "10406",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "10406",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "bytes_in",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "538",
+                    "mean": "538",
+                    "min": "538",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "538",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "bytes_out",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "9868",
+                    "mean": "9868",
+                    "min": "9868",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "9868",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "c_ip",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "10.1.25.137",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "c_url",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "http://random/url/abc",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "category",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "unavailable",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "clientduration",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cs_Referer",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "http://samppleserver:8000/en-US/account/login?return_to=%2Fen-US%2Fsample_app%2Fexamples",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cs_User_Agent",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "ocspd/1.0.3",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cs_bytes",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "9868",
+                    "mean": "9868",
+                    "min": "9868",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "9868",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cs_categories",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "unavailable",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cs_host",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "dest_sample_host.sample_domain7472.com",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cs_ip",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "10.1.26.25",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cs_method",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "POST",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cs_uri_path",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "/bag",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cs_uri_port",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "8000",
+                    "mean": "8000",
+                    "min": "8000",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "8000",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cs_uri_query",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "unavailable",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cs_uri_scheme",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "http",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cs_username",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "user1064",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dest",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "dest_sample_host.sample_domain7472.com",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dest_host",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "dest_sample_host.sample_domain7472.com",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dest_ip",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "172.16.34.110",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dest_port",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "8000",
+                    "mean": "8000",
+                    "min": "8000",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "8000",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "duration",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "20",
+                    "mean": "20",
+                    "min": "20",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "20",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dvc",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "172.16.7.135",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "eventtype",
+                    "count": "1",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "bluecoat_proxy",
+                            "count": 1
+                        },
+                        {
+                            "value": "bluecoat_proxy_access_kv",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "host",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "syslogkv-bluecoatkv-5325",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http_content_type",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "text/plain",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http_method",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "POST",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http_referrer",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "http://samppleserver:8000/en-US/account/login?return_to=%2Fen-US%2Fsample_app%2Fexamples",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http_user_agent",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "ocspd/1.0.3",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http_user_agent_length",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "11",
+                    "mean": "11",
+                    "min": "11",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "11",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "index",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "netproxy",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "linecount",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1",
+                    "mean": "1",
+                    "min": "1",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "product",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "ProxySG",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "punct",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "[]:._-=..._-=\"/\"_-=_-=\"\"_-=.._-=..._-=_--=/_--=\"\"_",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "return_to",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "%2Fen-US%2Fsample_app%2Fexamples",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "rs_Content_Type",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "text/plain",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "rs_status",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "s_action",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "TCP_NC_MISS",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "s_ip",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "172.16.7.135",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "s_supplier_ip",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "172.16.34.110",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "s_supplier_name",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "host_sample_host.sample_domain7616.com",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sc4s_container",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "sc4s-577cbc7444-xlg7h",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sc4s_destport",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "514",
+                    "mean": "514",
+                    "min": "514",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "514",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sc4s_fromhostip",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "100.64.159.47",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sc4s_proto",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "TCP",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sc4s_syslog_facility",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "local0",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sc4s_syslog_format",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "rfc3164",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sc4s_vendor_product",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "bluecoat_proxy",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sc_bytes",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "538",
+                    "mean": "538",
+                    "min": "538",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "538",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sc_filter_result",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "OBSERVED",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sc_status",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "201",
+                    "mean": "201",
+                    "min": "201",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "201",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "serveripservice_name",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Explicit HTTP",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "service_group",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Standard",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "source",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "sc4s",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sourcetype",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "bluecoat:proxysg:access:kv",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "spl-748f444b74-5d8fp",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server_group",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "src",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "10.1.25.137",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "status",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "201",
+                    "mean": "201",
+                    "min": "201",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "201",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "tag",
+                    "count": "1",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "proxy",
+                            "count": 1
+                        },
+                        {
+                            "value": "web",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "tag::eventtype",
+                    "count": "1",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "proxy",
+                            "count": 1
+                        },
+                        {
+                            "value": "web",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "time_taken",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "20",
+                    "mean": "20",
+                    "min": "20",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "20",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "transport",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "tcp",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "uri_path",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "/bag",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "uri_query",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "unavailable",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "url",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "http://dest_sample_host.sample_domain7472.com/bagunavailable",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "user",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "user1064",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Blue Coat",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_action",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "TCP_NC_MISS",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_categories",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "unavailable",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_product",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Blue Coat ProxySG",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "x_bluecoat_appliance_name",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "172.16.35.111-syslogkv-bluecoatkv-5325",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "x_bluecoat_appliance_primary_address",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "172.16.36.112",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "x_bluecoat_application_name",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "'Bluecoat New App'",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "x_bluecoat_application_operation",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "unavailable",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "x_bluecoat_proxy_primary_address",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "172.16.37.113",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "x_bluecoat_transaction_uuid",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "35d24c931c0erecta-0003000012161a77e70-00042100041002145cc859ed",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "x_exception_id",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "unavailable",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        ],
+        "bluecoat_proxy_access_kv": [
+            [
+                {
+                    "field": "Content_Type",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "text/plain",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "action",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "allowed",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "app",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Blue Coat ProxySG",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "bytes",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "10406",
+                    "mean": "10406",
+                    "min": "10406",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "10406",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "bytes_in",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "538",
+                    "mean": "538",
+                    "min": "538",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "538",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "bytes_out",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "9868",
+                    "mean": "9868",
+                    "min": "9868",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "9868",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "c_ip",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "10.1.25.137",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "c_url",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "http://random/url/abc",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "category",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "unavailable",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "clientduration",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cs_Referer",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "http://samppleserver:8000/en-US/account/login?return_to=%2Fen-US%2Fsample_app%2Fexamples",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cs_User_Agent",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "ocspd/1.0.3",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cs_bytes",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "9868",
+                    "mean": "9868",
+                    "min": "9868",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "9868",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cs_categories",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "unavailable",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cs_host",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "dest_sample_host.sample_domain7472.com",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cs_ip",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "10.1.26.25",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cs_method",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "POST",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cs_uri_path",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "/bag",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cs_uri_port",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "8000",
+                    "mean": "8000",
+                    "min": "8000",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "8000",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cs_uri_query",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "unavailable",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cs_uri_scheme",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "http",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cs_username",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "user1064",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dest",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "dest_sample_host.sample_domain7472.com",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dest_host",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "dest_sample_host.sample_domain7472.com",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dest_ip",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "172.16.34.110",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dest_port",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "8000",
+                    "mean": "8000",
+                    "min": "8000",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "8000",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "duration",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "20",
+                    "mean": "20",
+                    "min": "20",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "20",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dvc",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "172.16.7.135",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "eventtype",
+                    "count": "1",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "bluecoat_proxy",
+                            "count": 1
+                        },
+                        {
+                            "value": "bluecoat_proxy_access_kv",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "host",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "syslogkv-bluecoatkv-5325",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http_content_type",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "text/plain",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http_method",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "POST",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http_referrer",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "http://samppleserver:8000/en-US/account/login?return_to=%2Fen-US%2Fsample_app%2Fexamples",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http_user_agent",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "ocspd/1.0.3",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http_user_agent_length",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "11",
+                    "mean": "11",
+                    "min": "11",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "11",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "index",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "netproxy",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "linecount",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1",
+                    "mean": "1",
+                    "min": "1",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "product",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "ProxySG",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "punct",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "[]:._-=..._-=\"/\"_-=_-=\"\"_-=.._-=..._-=_--=/_--=\"\"_",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "return_to",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "%2Fen-US%2Fsample_app%2Fexamples",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "rs_Content_Type",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "text/plain",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "rs_status",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "s_action",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "TCP_NC_MISS",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "s_ip",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "172.16.7.135",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "s_supplier_ip",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "172.16.34.110",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "s_supplier_name",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "host_sample_host.sample_domain7616.com",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sc4s_container",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "sc4s-577cbc7444-xlg7h",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sc4s_destport",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "514",
+                    "mean": "514",
+                    "min": "514",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "514",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sc4s_fromhostip",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "100.64.159.47",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sc4s_proto",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "TCP",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sc4s_syslog_facility",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "local0",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sc4s_syslog_format",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "rfc3164",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sc4s_vendor_product",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "bluecoat_proxy",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sc_bytes",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "538",
+                    "mean": "538",
+                    "min": "538",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "538",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sc_filter_result",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "OBSERVED",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sc_status",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "201",
+                    "mean": "201",
+                    "min": "201",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "201",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "serveripservice_name",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Explicit HTTP",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "service_group",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Standard",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "source",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "sc4s",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sourcetype",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "bluecoat:proxysg:access:kv",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "spl-748f444b74-5d8fp",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server_group",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "src",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "10.1.25.137",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "status",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "201",
+                    "mean": "201",
+                    "min": "201",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "201",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "tag",
+                    "count": "1",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "proxy",
+                            "count": 1
+                        },
+                        {
+                            "value": "web",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "tag::eventtype",
+                    "count": "1",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "proxy",
+                            "count": 1
+                        },
+                        {
+                            "value": "web",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "time_taken",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "20",
+                    "mean": "20",
+                    "min": "20",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "20",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "transport",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "tcp",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "uri_path",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "/bag",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "uri_query",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "unavailable",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "url",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "http://dest_sample_host.sample_domain7472.com/bagunavailable",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "user",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "user1064",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Blue Coat",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_action",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "TCP_NC_MISS",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_categories",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "unavailable",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_product",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Blue Coat ProxySG",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "x_bluecoat_appliance_name",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "172.16.35.111-syslogkv-bluecoatkv-5325",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "x_bluecoat_appliance_primary_address",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "172.16.36.112",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "x_bluecoat_application_name",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "'Bluecoat New App'",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "x_bluecoat_application_operation",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "unavailable",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "x_bluecoat_proxy_primary_address",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "172.16.37.113",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "x_bluecoat_transaction_uuid",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "35d24c931c0erecta-0003000012161a77e70-00042100041002145cc859ed",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "x_exception_id",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "unavailable",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        ],
+        "bluecoat_proxy_access_syslog": [
+            [
+                {
+                    "field": "action",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "allowed",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "app",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Blue Coat ProxySG",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "bluecoat_header",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "bytes",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "4170",
+                    "mean": "4170",
+                    "min": "4170",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "4170",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "bytes_in",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "3173",
+                    "mean": "3173",
+                    "min": "3173",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "3173",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "bytes_out",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "997",
+                    "mean": "997",
+                    "min": "997",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "997",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "c_ip",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "10.1.24.238",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "category",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "unavailable",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cs_Referer",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "http://random/url/abc",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cs_User_Agent",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Mac OS X/10.10.2 (14C109)",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cs_auth_group",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "SERVICE\\App-CDCR-DRP-RoofingTraining-Proxy",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cs_bytes",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "997",
+                    "mean": "997",
+                    "min": "997",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "997",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cs_categories",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "unavailable",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cs_host",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "dest_sample_host.sample_domain7317.com",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cs_method",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "POST",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cs_uri_extension",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "unavailable",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cs_uri_path",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "/en-US/app/simple_xml_examples/custom_viz_forcedirected",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cs_uri_port",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "80",
+                    "mean": "80",
+                    "min": "80",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "80",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cs_uri_query",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "?earliest=0&latest=",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cs_uri_scheme",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "http",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cs_username",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "user909",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "2021-11-08",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_hour",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "11",
+                    "mean": "11",
+                    "min": "11",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "11",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_mday",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "8",
+                    "mean": "8",
+                    "min": "8",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "8",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_minute",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "56",
+                    "mean": "56",
+                    "min": "56",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "56",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_month",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "november",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_second",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "52",
+                    "mean": "52",
+                    "min": "52",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "52",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_wday",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "monday",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_year",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "2021",
+                    "mean": "2021",
+                    "min": "2021",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "2021",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_zone",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "local",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dest",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "dest_sample_host.sample_domain7317.com",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dest_host",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "dest_sample_host.sample_domain7317.com",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dest_port",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "80",
+                    "mean": "80",
+                    "min": "80",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "80",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "duration",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "59863",
+                    "mean": "59863",
+                    "min": "59863",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "59863",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dvc",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "172.16.5.236",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "eventtype",
+                    "count": "1",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "bluecoat_proxy",
+                            "count": 1
+                        },
+                        {
+                            "value": "bluecoat_proxy_access_syslog",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "host",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "syslog-6-5-bluecoat-5224",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http_content_type",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "application/x-mno-list",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http_method",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "POST",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http_referrer",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "http://random/url/abc",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http_user_agent",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Mac OS X/10.10.2 (14C109)",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http_user_agent_length",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "25",
+                    "mean": "25",
+                    "min": "25",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "25",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "index",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "main",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "linecount",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1",
+                    "mean": "1",
+                    "min": "1",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "product",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "ProxySG",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "punct",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "<>__::_:_:_--_::__...___\\----___\"\"_:////____/--__.",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "rs_Content_Type",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "application/x-mno-list",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "s_action",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "TCP_TUNNELED",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "s_ip",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "172.16.5.236",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sc_bytes",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "3173",
+                    "mean": "3173",
+                    "min": "3173",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "3173",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sc_filter_result",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "OBSERVED",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sc_status",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "200",
+                    "mean": "200",
+                    "min": "200",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "200",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "source",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "pytest-splunk-addon:hec_raw",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sourcetype",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "bluecoat:proxysg:access:syslog",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "spl-748f444b74-5d8fp",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server_group",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "src",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "10.1.24.238",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "status",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "200",
+                    "mean": "200",
+                    "min": "200",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "200",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "tag",
+                    "count": "1",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "proxy",
+                            "count": 1
+                        },
+                        {
+                            "value": "web",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "tag::eventtype",
+                    "count": "1",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "proxy",
+                            "count": 1
+                        },
+                        {
+                            "value": "web",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "time",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "11:57:49",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "time_taken",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "59863",
+                    "mean": "59863",
+                    "min": "59863",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "59863",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "timeendpos",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "51",
+                    "mean": "51",
+                    "min": "51",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "51",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "timestartpos",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "13",
+                    "mean": "13",
+                    "min": "13",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "13",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "transport",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "tcp",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "uri_path",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "/en-US/app/simple_xml_examples/custom_viz_forcedirected",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "uri_query",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "?earliest=0&latest=",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "url",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "http://dest_sample_host.sample_domain7317.com/en-US/app/simple_xml_examples/custom_viz_forcedirected?earliest=0&latest=",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "user",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "user909",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Blue Coat",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_action",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "TCP_TUNNELED",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_categories",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "unavailable",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_product",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Blue Coat ProxySG",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "x_bluecoat_application_name",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Blue_Office_App",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "x_bluecoat_application_operation",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "dummy_x_bluecoat_application_operation1",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "x_exception_id",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "unavailable",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "x_virus_id",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "dummy_x_virus_id1",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        ],
+        "bluecoat_proxy_access_file": [
+            [
+                {
+                    "field": "action",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "app",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Blue Coat ProxySG",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "bluecoat_header",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "bytes",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "bytes_in",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "bytes_out",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "category",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "cs_categories",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "date_hour",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "11",
+                    "mean": "11",
+                    "min": "11",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "11",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_mday",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "8",
+                    "mean": "8",
+                    "min": "8",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "8",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_minute",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "58",
+                    "mean": "58",
+                    "min": "58",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "58",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_month",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "november",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_second",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "9",
+                    "mean": "9",
+                    "min": "9",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "9",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_wday",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "monday",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_year",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "2021",
+                    "mean": "2021",
+                    "min": "2021",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "2021",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_zone",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "local",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dest",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "dest_host",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "dest_ip",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "dest_port",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "duration",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "dvc",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "eventtype",
+                    "count": "1",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "bluecoat_proxy",
+                            "count": 1
+                        },
+                        {
+                            "value": "bluecoat_proxy_access_file",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "host",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "http_log.5.3.bluecoat",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http_content_type",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "http_method",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "http_referrer",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "http_user_agent",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "http_user_agent_length",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "index",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "main",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "linecount",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1",
+                    "mean": "1",
+                    "min": "1",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "product",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "ProxySG",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "punct",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "--_::_...________-____.._/.__/-////_://:/-///_/-_\"",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "source",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "pytest-splunk-addon:hec_raw",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sourcetype",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "bluecoat:proxysg:access:file",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "spl-748f444b74-5d8fp",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server_group",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "src",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "status",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "tag",
+                    "count": "1",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "proxy",
+                            "count": 1
+                        },
+                        {
+                            "value": "web",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "tag::eventtype",
+                    "count": "1",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "proxy",
+                            "count": 1
+                        },
+                        {
+                            "value": "web",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "timeendpos",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "20",
+                    "mean": "20",
+                    "min": "20",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "20",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "timestartpos",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "transport",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "uri_path",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "uri_query",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "url",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "user",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "vendor",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Blue Coat",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_action",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "vendor_product",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Blue Coat ProxySG",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        ]
+    }
+}

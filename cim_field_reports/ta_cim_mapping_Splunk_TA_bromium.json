@@ -1,0 +1,1662 @@
+{
+    "ta_name": {
+        "name": "Splunk_TA_bromium",
+        "version": "1.0.0"
+    },
+    "sourcetypes": [
+        "bromium:bem"
+    ],
+    "cimsummary": {
+        "Malware:Malware_Attacks": {
+            "bromium_bem": [
+                {
+                    "fields": [
+                        "action",
+                        "category",
+                        "dest",
+                        "file_hash",
+                        "file_name",
+                        "file_path",
+                        "severity",
+                        "signature",
+                        "signature_id",
+                        "src",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Malware:Allowed_Malware": {
+            "bromium_bem": [
+                {
+                    "fields": [
+                        "action",
+                        "category",
+                        "dest",
+                        "file_hash",
+                        "file_name",
+                        "file_path",
+                        "severity",
+                        "signature",
+                        "signature_id",
+                        "src",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Malware:Blocked_Malware": {
+            "bromium_bem": [
+                {
+                    "fields": [
+                        "action",
+                        "category",
+                        "dest",
+                        "file_hash",
+                        "file_name",
+                        "file_path",
+                        "severity",
+                        "signature",
+                        "signature_id",
+                        "src",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Malware:Deferred_Malware": {
+            "bromium_bem": [
+                {
+                    "fields": [
+                        "action",
+                        "category",
+                        "dest",
+                        "file_hash",
+                        "file_name",
+                        "file_path",
+                        "severity",
+                        "signature",
+                        "signature_id",
+                        "src",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Malware:Malware_Operations": {
+            "bromium_bem": [
+                {
+                    "fields": [
+                        "action",
+                        "category",
+                        "dest",
+                        "file_hash",
+                        "file_name",
+                        "file_path",
+                        "severity",
+                        "signature",
+                        "signature_id",
+                        "src",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Intrusion_Detection:IDS_Attacks": {
+            "bromium_bem": [
+                {
+                    "fields": [
+                        "action",
+                        "category",
+                        "dest",
+                        "dvc",
+                        "file_hash",
+                        "file_name",
+                        "file_path",
+                        "ids_type",
+                        "severity",
+                        "signature",
+                        "signature_id",
+                        "src",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Intrusion_Detection:Application_IDS_Attacks": {
+            "bromium_bem": [
+                {
+                    "fields": [
+                        "action",
+                        "category",
+                        "dest",
+                        "dvc",
+                        "file_hash",
+                        "file_name",
+                        "file_path",
+                        "ids_type",
+                        "severity",
+                        "signature",
+                        "signature_id",
+                        "src",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Intrusion_Detection:Host_IDS_Attacks": {
+            "bromium_bem": [
+                {
+                    "fields": [
+                        "action",
+                        "category",
+                        "dest",
+                        "dvc",
+                        "file_hash",
+                        "file_name",
+                        "file_path",
+                        "ids_type",
+                        "severity",
+                        "signature",
+                        "signature_id",
+                        "src",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Intrusion_Detection:Network_IDS_Attacks": {
+            "bromium_bem": [
+                {
+                    "fields": [
+                        "action",
+                        "category",
+                        "dest",
+                        "dvc",
+                        "file_hash",
+                        "file_name",
+                        "file_path",
+                        "ids_type",
+                        "severity",
+                        "signature",
+                        "signature_id",
+                        "src",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        }
+    },
+    "fieldsummary": {
+        "bromium_bem": [
+            [
+                {
+                    "field": "action",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "blocked",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "category",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Malicious Executable File",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "dest",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "dest-sample_host1",
+                            "count": 1
+                        },
+                        {
+                            "value": "dest-sample_host2",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dvc",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "dest-sample_host1",
+                            "count": 1
+                        },
+                        {
+                            "value": "dest-sample_host2",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "eventtype",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "bromium_bem",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "file_hash",
+                    "count": "2",
+                    "distinct_count": "3",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "XXXXX0AA190C826CE9BFE0A15BBXXXXX",
+                            "count": 2
+                        },
+                        {
+                            "value": "XXXXX1E56152E212367E9C5B016XXXXX",
+                            "count": 2
+                        },
+                        {
+                            "value": "XXXXX54DDE37D80777D8A42F755XXXXX",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "file_name",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "ddd.exe",
+                            "count": 1
+                        },
+                        {
+                            "value": "fff.exe",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "file_path",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "C:\\Program Files\\BBB BBBBB\\bbb.exe",
+                            "count": 1
+                        },
+                        {
+                            "value": "C:\\Program Files\\FFF FFFFF\\fff.exe",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "host",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "bem_alert_xevts_sample",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "ids_type",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "host",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "index",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "main",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "linecount",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "62",
+                    "mean": "62",
+                    "min": "62",
+                    "numeric_count": "2",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "62",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "product",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Endpoint Protection",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "punct",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "<_=\".\"_=\".\">__<>____<_=\"\"_=\"----\"_/>____<_=\"\"_=\".\"",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "severity",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "high",
+                            "count": 1
+                        },
+                        {
+                            "value": "medium",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "signature",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "BEM has identified malicious activity by 'ddd.exe.'",
+                            "count": 1
+                        },
+                        {
+                            "value": "BEM has identified malicious activity by 'wwwww.exe.'",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "signature_id",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "XXXXX54DDE37D80777D8A42F755XXXXX",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "source",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "eventgen",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "sourcetype",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "bromium:bem",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "spl-56dd89b9b9-fwdvz",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server_group",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "src",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "C:\\Program Files\\BBB BBBBB\\bbb.exe",
+                            "count": 1
+                        },
+                        {
+                            "value": "C:\\Program Files\\FFF FFFFF\\fff.exe",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "tag",
+                    "count": "2",
+                    "distinct_count": "3",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "attack",
+                            "count": 2
+                        },
+                        {
+                            "value": "ids",
+                            "count": 2
+                        },
+                        {
+                            "value": "malware",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "tag::eventtype",
+                    "count": "2",
+                    "distinct_count": "3",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "attack",
+                            "count": 2
+                        },
+                        {
+                            "value": "ids",
+                            "count": 2
+                        },
+                        {
+                            "value": "malware",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "timestamp",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "none",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.CloudInfo.CloudStatus{@Hash}",
+                    "count": "2",
+                    "distinct_count": "4",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "XXXXX039F29D37BCFED222CA753XXXXX",
+                            "count": 2
+                        },
+                        {
+                            "value": "XXXXX0AA190C826CE9BFE0A15BBXXXXX",
+                            "count": 2
+                        },
+                        {
+                            "value": "XXXXX1E56152E212367E9C5B016XXXXX",
+                            "count": 2
+                        },
+                        {
+                            "value": "XXXXXA3A10BCA19D1B7503A732FXXXXX",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.CloudInfo.CloudStatus{@Id}",
+                    "count": "2",
+                    "distinct_count": "4",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 2
+                        },
+                        {
+                            "value": "12",
+                            "count": 2
+                        },
+                        {
+                            "value": "35",
+                            "count": 2
+                        },
+                        {
+                            "value": "68",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.CloudInfo.CloudStatus{@Result}",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Clean",
+                            "count": 8
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.ucVMEventsGraph.graph.edge{@from}",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 28
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.ucVMEventsGraph.graph.edge{@isdirected}",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "true",
+                            "count": 28
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.ucVMEventsGraph.graph.edge{@to}",
+                    "count": "2",
+                    "distinct_count": "14",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 2
+                        },
+                        {
+                            "value": "10",
+                            "count": 2
+                        },
+                        {
+                            "value": "11",
+                            "count": 2
+                        },
+                        {
+                            "value": "12",
+                            "count": 2
+                        },
+                        {
+                            "value": "13",
+                            "count": 2
+                        },
+                        {
+                            "value": "14",
+                            "count": 2
+                        },
+                        {
+                            "value": "15",
+                            "count": 2
+                        },
+                        {
+                            "value": "16",
+                            "count": 2
+                        },
+                        {
+                            "value": "17",
+                            "count": 2
+                        },
+                        {
+                            "value": "18",
+                            "count": 2
+                        },
+                        {
+                            "value": "19",
+                            "count": 2
+                        },
+                        {
+                            "value": "20",
+                            "count": 2
+                        },
+                        {
+                            "value": "8",
+                            "count": 2
+                        },
+                        {
+                            "value": "9",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.ucVMEventsGraph.graph.node.Properties{@MD5Hash}",
+                    "count": "2",
+                    "distinct_count": "3",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "XXXXX0AA190C826CE9BFE0A15BBXXXXX",
+                            "count": 2
+                        },
+                        {
+                            "value": "XXXXX1E56152E212367E9C5B016XXXXX",
+                            "count": 2
+                        },
+                        {
+                            "value": "XXXXX54DDE37D80777D8A42F755XXXXX",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.ucVMEventsGraph.graph.node.Properties{@SHA1Hash}",
+                    "count": "2",
+                    "distinct_count": "3",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "XXXXX23AD8D397DE1FF1D33F4BF85A69380XXXXX",
+                            "count": 2
+                        },
+                        {
+                            "value": "XXXXX26CDE23422589CABA32D5E826B286DXXXXX",
+                            "count": 2
+                        },
+                        {
+                            "value": "XXXXXCE2AE09C37CA173BBD3DCB57258B72XXXXX",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.ucVMEventsGraph.graph.node.Properties{@fileSize}",
+                    "count": "2",
+                    "distinct_count": "6",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "274769",
+                            "count": 1
+                        },
+                        {
+                            "value": "287971",
+                            "count": 1
+                        },
+                        {
+                            "value": "722648",
+                            "count": 1
+                        },
+                        {
+                            "value": "827042",
+                            "count": 1
+                        },
+                        {
+                            "value": "827776",
+                            "count": 1
+                        },
+                        {
+                            "value": "994340",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.ucVMEventsGraph.graph.node{@BhID}",
+                    "count": "2",
+                    "distinct_count": "5",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "507",
+                            "count": 10
+                        },
+                        {
+                            "value": "310",
+                            "count": 4
+                        },
+                        {
+                            "value": "202",
+                            "count": 2
+                        },
+                        {
+                            "value": "203",
+                            "count": 2
+                        },
+                        {
+                            "value": "301",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.ucVMEventsGraph.graph.node{@EventID}",
+                    "count": "2",
+                    "distinct_count": "8",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "28",
+                            "count": 4
+                        },
+                        {
+                            "value": "50",
+                            "count": 4
+                        },
+                        {
+                            "value": "1",
+                            "count": 2
+                        },
+                        {
+                            "value": "3",
+                            "count": 2
+                        },
+                        {
+                            "value": "31",
+                            "count": 2
+                        },
+                        {
+                            "value": "36",
+                            "count": 2
+                        },
+                        {
+                            "value": "51",
+                            "count": 2
+                        },
+                        {
+                            "value": "6",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.ucVMEventsGraph.graph.node{@Icon}",
+                    "count": "2",
+                    "distinct_count": "3",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "netacl",
+                            "count": 10
+                        },
+                        {
+                            "value": "proc",
+                            "count": 6
+                        },
+                        {
+                            "value": "reg",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.ucVMEventsGraph.graph.node{@NodeText}",
+                    "count": "2",
+                    "distinct_count": "14",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Dropped and Executed",
+                            "count": 4
+                        },
+                        {
+                            "value": "",
+                            "count": 2
+                        },
+                        {
+                            "value": "Reg Value Deleted",
+                            "count": 2
+                        },
+                        {
+                            "value": "Reg Value Manipulated",
+                            "count": 2
+                        },
+                        {
+                            "value": "Destination IP: 126.122.19.58 Source Port: 63908  Destination Port: 443  Protocol: TCP Bytes Sent:  1475 ",
+                            "count": 1
+                        },
+                        {
+                            "value": "Destination IP: 132.108.63.190 Source Port: 63907  Destination Port: 443  Protocol: TCP Bytes Received:  1452 ",
+                            "count": 1
+                        },
+                        {
+                            "value": "Destination IP: 153.206.8.89 Source Port: 63908  Destination Port: 443  Protocol: TCP Bytes Sent:  1475 ",
+                            "count": 1
+                        },
+                        {
+                            "value": "Destination IP: 164.126.198.7 Source Port: 63908  Destination Port: 443  Protocol: TCP Bytes Received:  5034 ",
+                            "count": 1
+                        },
+                        {
+                            "value": "Destination IP: 185.190.191.8 Source Port: 63907  Destination Port: 443  Protocol: TCP Bytes Sent:  231 ",
+                            "count": 1
+                        },
+                        {
+                            "value": "Destination IP: 187.184.169.17 Source Port: 63905  Destination Port: 443  Protocol: TCP Bytes Received:  6266 ",
+                            "count": 1
+                        },
+                        {
+                            "value": "Destination IP: 215.216.169.210 Source Port: 63907  Destination Port: 443  Protocol: TCP Bytes Received:  1452 ",
+                            "count": 1
+                        },
+                        {
+                            "value": "Destination IP: 25.128.47.173 Source Port: 63907  Destination Port: 443  Protocol: TCP Bytes Sent:  231 ",
+                            "count": 1
+                        },
+                        {
+                            "value": "Destination IP: 65.32.6.34 Source Port: 63905  Destination Port: 443  Protocol: TCP Bytes Received:  6266 ",
+                            "count": 1
+                        },
+                        {
+                            "value": "Destination IP: 78.118.140.101 Source Port: 63908  Destination Port: 443  Protocol: TCP Bytes Received:  5034 ",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.ucVMEventsGraph.graph.node{@PathStr}",
+                    "count": "2",
+                    "distinct_count": "6",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "HKEY_USERS\\S-0-1-23-000000000-1111111111-2222222222-3333\\Software\\MMMMMM\\WWWWW\\CurrentVersion\\EEEEEE\\UserAssist\\{CCCCCCC-AAAA-4444-9999-9926XXXXXXXX}\\Count\\HHHHHHHHHH",
+                            "count": 6
+                        },
+                        {
+                            "value": "HKEY_USERS\\S-0-1-23-000000000-1111111111-2222222222-3333\\Software\\MMMMMM\\WWWWW\\CurrentVersion\\EEEEEE\\UserAssist\\{CCCCCCC-AAAA-4444-9999-9926XXXXXXXX}\\Count\\P:\\HHHHH\\ooooo\\QQQQQQ\\ccccc.rkr",
+                            "count": 4
+                        },
+                        {
+                            "value": "",
+                            "count": 3
+                        },
+                        {
+                            "value": "C:\\Users\\bbbbb\\Downloads\\ppppp.exe    \"\"C:\\Users\\bbbbb\\Downloads\\pppp.exe\" \"",
+                            "count": 3
+                        },
+                        {
+                            "value": "HKEY_USERS\\S-0-1-23-000000000-1111111111-2222222222-3333\\Software\\MMMMMM\\IIIII\\PPPPPP\\CCCCCC",
+                            "count": 3
+                        },
+                        {
+                            "value": "C:\\Users\\xxxxx\\Downloads\\aaaaa.exe    \"\"C:\\Users\\xxxxx\\Downloads\\aaaaa.exe\" \"",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.ucVMEventsGraph.graph.node{@id}",
+                    "count": "2",
+                    "distinct_count": "10",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 2
+                        },
+                        {
+                            "value": "1",
+                            "count": 2
+                        },
+                        {
+                            "value": "10",
+                            "count": 2
+                        },
+                        {
+                            "value": "12",
+                            "count": 2
+                        },
+                        {
+                            "value": "14",
+                            "count": 2
+                        },
+                        {
+                            "value": "19",
+                            "count": 2
+                        },
+                        {
+                            "value": "20",
+                            "count": 2
+                        },
+                        {
+                            "value": "22",
+                            "count": 2
+                        },
+                        {
+                            "value": "4",
+                            "count": 2
+                        },
+                        {
+                            "value": "9",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.ucVMEventsGraph.graph.node{@tstamp}",
+                    "count": "2",
+                    "distinct_count": "19",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "163526980000000000",
+                            "count": 2
+                        },
+                        {
+                            "value": "163526977300000000",
+                            "count": 1
+                        },
+                        {
+                            "value": "163526977700000000",
+                            "count": 1
+                        },
+                        {
+                            "value": "163526978200000000",
+                            "count": 1
+                        },
+                        {
+                            "value": "163526978400000000",
+                            "count": 1
+                        },
+                        {
+                            "value": "163526978800000000",
+                            "count": 1
+                        },
+                        {
+                            "value": "163526979100000000",
+                            "count": 1
+                        },
+                        {
+                            "value": "163526979900000000",
+                            "count": 1
+                        },
+                        {
+                            "value": "163526981200000000",
+                            "count": 1
+                        },
+                        {
+                            "value": "163526982300000000",
+                            "count": 1
+                        },
+                        {
+                            "value": "163526983300000000",
+                            "count": 1
+                        },
+                        {
+                            "value": "163526983600000000",
+                            "count": 1
+                        },
+                        {
+                            "value": "163526983900000000",
+                            "count": 1
+                        },
+                        {
+                            "value": "163526984200000000",
+                            "count": 1
+                        },
+                        {
+                            "value": "163526984400000000",
+                            "count": 1
+                        },
+                        {
+                            "value": "163526984500000000",
+                            "count": 1
+                        },
+                        {
+                            "value": "163526985900000000",
+                            "count": 1
+                        },
+                        {
+                            "value": "163526986300000000",
+                            "count": 1
+                        },
+                        {
+                            "value": "163526986900000000",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.ucVMEventsGraph.graph{@edgeids}",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "false",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.ucVMEventsGraph.graph{@edgemode}",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "directed",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.ucVMEventsGraph.graph{@id}",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "AnalysisGraph",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.ucVMInfo.BEMVersion{@str}",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "49.107.149.58",
+                            "count": 1
+                        },
+                        {
+                            "value": "57.150.77.136",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.ucVMInfo.CustomRuleVersion{@value}",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "139",
+                    "mean": "139",
+                    "min": "139",
+                    "numeric_count": "2",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "139",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.ucVMInfo.FormatVersion{@value}",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1",
+                    "mean": "1",
+                    "min": "1",
+                    "numeric_count": "2",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.ucVMInfo.MaxClientVersion{@value}",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "2",
+                    "mean": "2",
+                    "min": "2",
+                    "numeric_count": "2",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "2",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.ucVMInfo.MinClientVersion{@value}",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1.2",
+                    "mean": "1.2",
+                    "min": "1.2",
+                    "numeric_count": "2",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1.2",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.ucVMInfo.OSInfo{@Build}",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "7601",
+                    "mean": "7601",
+                    "min": "7601",
+                    "numeric_count": "2",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "7601",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.ucVMInfo.OSInfo{@SP}",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1.0",
+                    "mean": "1",
+                    "min": "1.0",
+                    "numeric_count": "2",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1.0",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.ucVMInfo.OSInfo{@Server}",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "2",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.ucVMInfo.OSInfo{@Version}",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "6.1",
+                    "mean": "6.1",
+                    "min": "6.1",
+                    "numeric_count": "2",
+                    "stdev": "0.00000011920928955078125",
+                    "values": [
+                        {
+                            "value": "6.1",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.ucVMInfo.TriggerEvent{@value}",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "3",
+                    "mean": "3",
+                    "min": "3",
+                    "numeric_count": "2",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "3",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.ucVMInfo.ucVMActionSet{@str}",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Continued",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.ucVMInfo.ucVMAlert{@str}",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Malicious Executable File",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.ucVMInfo.ucVMAppType{@str}",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "ddd.exe",
+                            "count": 1
+                        },
+                        {
+                            "value": "fff.exe",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.ucVMInfo.ucVMDocFilePath{@str}",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "C:\\Program Files\\BBB BBBBB\\bbb.exe",
+                            "count": 1
+                        },
+                        {
+                            "value": "C:\\Program Files\\FFF FFFFF\\fff.exe",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.ucVMInfo.ucVMHostName{@str}",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "dest-sample_host1",
+                            "count": 1
+                        },
+                        {
+                            "value": "dest-sample_host2",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.ucVMInfo.ucVMID{@id}",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "2",
+                    "mean": "1.5",
+                    "min": "1",
+                    "numeric_count": "2",
+                    "stdev": "0.7071067811865476",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 1
+                        },
+                        {
+                            "value": "2",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.ucVMInfo.ucVMID{@uuid}",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "aaaa00006-xxx-xxxx-xxxx-1234567890ab",
+                            "count": 1
+                        },
+                        {
+                            "value": "aaaa00007-xxx-xxxx-xxxx-1234567890ab",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.ucVMInfo.ucVMPolicy{@str}",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Continue execution silently",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.ucVMInfo.ucVMResponse{@str}",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Isolated",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.ucVMInfo.ucVMSeverity{@str}",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "High",
+                            "count": 1
+                        },
+                        {
+                            "value": "Medium",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.ucVMInfo.ucVMTimeStamp{@value}",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "163526986000000000",
+                    "mean": "163526980750000000",
+                    "min": "163526975500000000",
+                    "numeric_count": "2",
+                    "stdev": "6790939565.647296",
+                    "values": [
+                        {
+                            "value": "163526975500000000",
+                            "count": 1
+                        },
+                        {
+                            "value": "163526986000000000",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.ucVMInfo.ucVMUserName{@str}",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "sample_domain.com\\user1",
+                            "count": 1
+                        },
+                        {
+                            "value": "sample_domain.com\\user2",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM.ucVMInfo.ucvmAlertDesc",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "BEM has identified malicious activity by 'ddd.exe.'",
+                            "count": 1
+                        },
+                        {
+                            "value": "BEM has identified malicious activity by 'wwwww.exe.'",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM{@MalManifestVersion}",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "2.0",
+                    "mean": "2",
+                    "min": "2.0",
+                    "numeric_count": "2",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "2.0",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "ucVM{@XevtsVersion}",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "2.0",
+                    "mean": "2",
+                    "min": "2.0",
+                    "numeric_count": "2",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "2.0",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "user",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "sample_domain.com\\user1",
+                            "count": 1
+                        },
+                        {
+                            "value": "sample_domain.com\\user2",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Bromium",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_product",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Bromium Endpoint Protection",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_signature",
+                    "count": "2",
+                    "distinct_count": "3",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "XXXXX0AA190C826CE9BFE0A15BBXXXXX",
+                            "count": 2
+                        },
+                        {
+                            "value": "XXXXX1E56152E212367E9C5B016XXXXX",
+                            "count": 2
+                        },
+                        {
+                            "value": "XXXXX54DDE37D80777D8A42F755XXXXX",
+                            "count": 2
+                        }
+                    ]
+                }
+            ]
+        ]
+    }
+}

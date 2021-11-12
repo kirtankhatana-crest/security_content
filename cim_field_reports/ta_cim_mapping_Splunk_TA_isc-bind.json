@@ -1,0 +1,2412 @@
+{
+    "ta_name": {
+        "name": "Splunk_TA_isc-bind",
+        "version": "2.0.0"
+    },
+    "sourcetypes": [
+        "isc:bind:query",
+        "isc:bind:transfer",
+        "isc:bind:lameserver",
+        "isc:bind:queryerror"
+    ],
+    "cimsummary": {
+        "Network_Traffic:All_Traffic": {
+            "isc_bind_queryerror": [
+                {
+                    "fields": [
+                        "dest",
+                        "src",
+                        "src_ip",
+                        "src_port",
+                        "tag",
+                        "transport",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Network_Traffic:Traffic_By_Action": {
+            "isc_bind_queryerror": [
+                {
+                    "fields": [
+                        "dest",
+                        "src",
+                        "src_ip",
+                        "src_port",
+                        "tag",
+                        "transport",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Network_Traffic:Allowed_Traffic": {
+            "isc_bind_queryerror": [
+                {
+                    "fields": [
+                        "dest",
+                        "src",
+                        "src_ip",
+                        "src_port",
+                        "tag",
+                        "transport",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Network_Traffic:Blocked_Traffic": {
+            "isc_bind_queryerror": [
+                {
+                    "fields": [
+                        "dest",
+                        "src",
+                        "src_ip",
+                        "src_port",
+                        "tag",
+                        "transport",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Network_Resolution:DNS": {
+            "isc_bind_queryerror": [
+                {
+                    "fields": [
+                        "dest",
+                        "message_type",
+                        "query",
+                        "query_count",
+                        "query_type",
+                        "record_type",
+                        "reply_code",
+                        "reply_code_id",
+                        "src",
+                        "src_ip",
+                        "src_port",
+                        "tag",
+                        "transport",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Performance:Network": {
+            "isc_bind_queryerror": [
+                {
+                    "fields": [
+                        "dest",
+                        "message_type",
+                        "query",
+                        "query_count",
+                        "query_type",
+                        "record_type",
+                        "reply_code",
+                        "reply_code_id",
+                        "src",
+                        "src_ip",
+                        "src_port",
+                        "tag",
+                        "transport",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Network_Sessions:All_Sessions": {
+            "isc_bind_queryerror": [
+                {
+                    "fields": [
+                        "dest",
+                        "message_type",
+                        "query",
+                        "query_count",
+                        "query_type",
+                        "record_type",
+                        "reply_code",
+                        "reply_code_id",
+                        "src",
+                        "src_ip",
+                        "src_port",
+                        "tag",
+                        "transport",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Network_Sessions:Session_Start": {
+            "isc_bind_queryerror": [
+                {
+                    "fields": [
+                        "dest",
+                        "message_type",
+                        "query",
+                        "query_count",
+                        "query_type",
+                        "record_type",
+                        "reply_code",
+                        "reply_code_id",
+                        "src",
+                        "src_ip",
+                        "src_port",
+                        "tag",
+                        "transport",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Network_Sessions:Session_End": {
+            "isc_bind_queryerror": [
+                {
+                    "fields": [
+                        "dest",
+                        "message_type",
+                        "query",
+                        "query_count",
+                        "query_type",
+                        "record_type",
+                        "reply_code",
+                        "reply_code_id",
+                        "src",
+                        "src_ip",
+                        "src_port",
+                        "tag",
+                        "transport",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Network_Sessions:DHCP": {
+            "isc_bind_queryerror": [
+                {
+                    "fields": [
+                        "dest",
+                        "message_type",
+                        "query",
+                        "query_count",
+                        "query_type",
+                        "record_type",
+                        "reply_code",
+                        "reply_code_id",
+                        "src",
+                        "src_ip",
+                        "src_port",
+                        "tag",
+                        "transport",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Network_Sessions:VPN": {
+            "isc_bind_queryerror": [
+                {
+                    "fields": [
+                        "dest",
+                        "message_type",
+                        "query",
+                        "query_count",
+                        "query_type",
+                        "record_type",
+                        "reply_code",
+                        "reply_code_id",
+                        "src",
+                        "src_ip",
+                        "src_port",
+                        "tag",
+                        "transport",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change_Analysis:Network_Changes": {
+            "isc_bind_queryerror": [
+                {
+                    "fields": [
+                        "dest",
+                        "message_type",
+                        "query",
+                        "query_count",
+                        "query_type",
+                        "record_type",
+                        "reply_code",
+                        "reply_code_id",
+                        "src",
+                        "src_ip",
+                        "src_port",
+                        "tag",
+                        "transport",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change_Analysis:Device_Restarts": {
+            "isc_bind_queryerror": [
+                {
+                    "fields": [
+                        "dest",
+                        "message_type",
+                        "query",
+                        "query_count",
+                        "query_type",
+                        "record_type",
+                        "reply_code",
+                        "reply_code_id",
+                        "src",
+                        "src_ip",
+                        "src_port",
+                        "tag",
+                        "transport",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Compute_Inventory:Network": {
+            "isc_bind_queryerror": [
+                {
+                    "fields": [
+                        "dest",
+                        "message_type",
+                        "query",
+                        "query_count",
+                        "query_type",
+                        "record_type",
+                        "reply_code",
+                        "reply_code_id",
+                        "src",
+                        "src_ip",
+                        "src_port",
+                        "tag",
+                        "transport",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change:Network_Changes": {
+            "isc_bind_queryerror": [
+                {
+                    "fields": [
+                        "dest",
+                        "message_type",
+                        "query",
+                        "query_count",
+                        "query_type",
+                        "record_type",
+                        "reply_code",
+                        "reply_code_id",
+                        "src",
+                        "src_ip",
+                        "src_port",
+                        "tag",
+                        "transport",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change:Device_Restarts": {
+            "isc_bind_queryerror": [
+                {
+                    "fields": [
+                        "dest",
+                        "message_type",
+                        "query",
+                        "query_count",
+                        "query_type",
+                        "record_type",
+                        "reply_code",
+                        "reply_code_id",
+                        "src",
+                        "src_ip",
+                        "src_port",
+                        "tag",
+                        "transport",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        }
+    },
+    "fieldsummary": {
+        "isc_bind_query": [
+            [
+                {
+                    "field": "date_hour",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "19",
+                    "mean": "19",
+                    "min": "19",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "19",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_mday",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "3",
+                    "mean": "3",
+                    "min": "3",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "3",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_minute",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "21",
+                    "mean": "21",
+                    "min": "21",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "21",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_month",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "november",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_second",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "23",
+                    "mean": "23",
+                    "min": "23",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "23",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_wday",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "wednesday",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_year",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "2021",
+                    "mean": "2021",
+                    "min": "2021",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "2021",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_zone",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "local",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dest",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "10.100.0.15",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dest_ip",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "10.100.0.15",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "eventtype",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "isc_bind_query",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "flag",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "host",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "itgdi_isc_bind_query_v9.11_v9.16.sample",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "index",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "main",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "linecount",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1",
+                    "mean": "1",
+                    "min": "1",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "message_type",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Query",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "punct",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "--_::._:_:__@_...#_(.):_:_..___+_(...)",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "query",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "add1.example.com",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "query_count",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1",
+                    "mean": "1",
+                    "min": "1",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "query_type",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "AAAA",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "record_class",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "IN",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "record_type",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "AAAA",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "severity",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "informational",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "source",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "itgdi_isc_bind_query_v9.11_v9.16.sample",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sourcetype",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "isc:bind:query",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "spl-74dc4cdc68-8ssfg",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server_group",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "src",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "10.1.0.6",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "src_ip",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "10.1.0.6",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "src_port",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "4542",
+                    "mean": "4542",
+                    "min": "4542",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "4542",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "tag",
+                    "count": "1",
+                    "distinct_count": "3",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "dns",
+                            "count": 1
+                        },
+                        {
+                            "value": "network",
+                            "count": 1
+                        },
+                        {
+                            "value": "resolution",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "tag::eventtype",
+                    "count": "1",
+                    "distinct_count": "3",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "dns",
+                            "count": 1
+                        },
+                        {
+                            "value": "network",
+                            "count": 1
+                        },
+                        {
+                            "value": "resolution",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "timeendpos",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "25",
+                    "mean": "25",
+                    "min": "25",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "25",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "timestartpos",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "transport",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "udp",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_category",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "queries",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_product",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "ISC:Bind",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_severity",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "info",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        ],
+        "isc_bind_queryerror": [
+            [
+                {
+                    "field": "date_hour",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "19",
+                    "mean": "19",
+                    "min": "19",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "19",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_mday",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "3",
+                    "mean": "3",
+                    "min": "3",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "3",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_minute",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "20",
+                    "mean": "20",
+                    "min": "20",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "20",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_month",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "november",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_second",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "10",
+                    "mean": "10",
+                    "min": "10",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "10",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_wday",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "wednesday",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_year",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "2021",
+                    "mean": "2021",
+                    "min": "2021",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "2021",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_zone",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "local",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dest",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "itgdi_isc_bind_queryerror_unknown.sample",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "eventtype",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "isc_bind_queryerror",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "file_location",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "5430",
+                    "mean": "5430",
+                    "min": "5430",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "5430",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "file_name",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "query.c",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "host",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "itgdi_isc_bind_queryerror_unknown.sample",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "index",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "main",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "linecount",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1",
+                    "mean": "1",
+                    "min": "1",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "message_type",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Query",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "punct",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "--_::._-:__:__...#:___()__..//__.:",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "query",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "add1.example.com",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "query_count",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1",
+                    "mean": "1",
+                    "min": "1",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "query_type",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "A",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "record_class",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "IN",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "record_type",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "A",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "reply_code",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Refused",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "reply_code_id",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "5",
+                    "mean": "5",
+                    "min": "5",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "5",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "response_code",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "REFUSED",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "severity",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "informational",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "source",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "itgdi_isc_bind_queryerror_unknown.sample",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sourcetype",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "isc:bind:queryerror",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "spl-74dc4cdc68-8ssfg",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server_group",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "src",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "10.1.0.10",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "src_ip",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "10.1.0.10",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "src_port",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "4493",
+                    "mean": "4493",
+                    "min": "4493",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "4493",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "tag",
+                    "count": "1",
+                    "distinct_count": "3",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "dns",
+                            "count": 1
+                        },
+                        {
+                            "value": "network",
+                            "count": 1
+                        },
+                        {
+                            "value": "resolution",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "tag::eventtype",
+                    "count": "1",
+                    "distinct_count": "3",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "dns",
+                            "count": 1
+                        },
+                        {
+                            "value": "network",
+                            "count": 1
+                        },
+                        {
+                            "value": "resolution",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "timeendpos",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "25",
+                    "mean": "25",
+                    "min": "25",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "25",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "timestartpos",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "transport",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "udp",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_category",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "query-errors",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_product",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "ISC:Bind",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_severity",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "debug 3",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        ],
+        "isc_bind_lameserver": [
+            [
+                {
+                    "field": "app",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "ISC:Bind",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "body",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "error (network unreachable) resolving 'demo1.com/A/IN': 10.100.0.1#25",
+                            "count": 1
+                        },
+                        {
+                            "value": "error (network unreachable) resolving 'demo1.com/AAAA/IN': 10.100.0.3#21",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_hour",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "19",
+                    "mean": "19",
+                    "min": "19",
+                    "numeric_count": "2",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "19",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "date_mday",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "3",
+                    "mean": "3",
+                    "min": "3",
+                    "numeric_count": "2",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "3",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "date_minute",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "47",
+                    "mean": "45",
+                    "min": "43",
+                    "numeric_count": "2",
+                    "stdev": "2.8284271247461903",
+                    "values": [
+                        {
+                            "value": "43",
+                            "count": 1
+                        },
+                        {
+                            "value": "47",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_month",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "november",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "date_second",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "47",
+                    "mean": "30.5",
+                    "min": "14",
+                    "numeric_count": "2",
+                    "stdev": "23.33452377915607",
+                    "values": [
+                        {
+                            "value": "14",
+                            "count": 1
+                        },
+                        {
+                            "value": "47",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_wday",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "wednesday",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "date_year",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "2021",
+                    "mean": "2021",
+                    "min": "2021",
+                    "numeric_count": "2",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "2021",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "date_zone",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "local",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "dest",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "10.100.0.1",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.100.0.3",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dest_port",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "25",
+                    "mean": "23",
+                    "min": "21",
+                    "numeric_count": "2",
+                    "stdev": "2.8284271247461903",
+                    "values": [
+                        {
+                            "value": "21",
+                            "count": 1
+                        },
+                        {
+                            "value": "25",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "error_type",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "network unreachable",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "eventtype",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "isc_bind_lameserver",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "host",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "itgdi_isc_bind_lameserver_unknown.sample",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "index",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "main",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "linecount",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1",
+                    "mean": "1",
+                    "min": "1",
+                    "numeric_count": "2",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "punct",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "--_::._-:_:__(_)__'.//':_...#",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "query",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "demo1.com",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "record_class",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "IN",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "record_type",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "A",
+                            "count": 1
+                        },
+                        {
+                            "value": "AAAA",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "severity",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "informational",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "source",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "itgdi_isc_bind_lameserver_unknown.sample",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "sourcetype",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "isc:bind:lameserver",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "spl-74dc4cdc68-8ssfg",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server_group",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "tag",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "tag::eventtype",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "timeendpos",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "25",
+                    "mean": "25",
+                    "min": "25",
+                    "numeric_count": "2",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "25",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "timestartpos",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "2",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "type",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "alert",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_category",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "lame-servers",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_product",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "ISC:Bind",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_severity",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "info",
+                            "count": 2
+                        }
+                    ]
+                }
+            ]
+        ],
+        "isc_bind_transfer": [
+            [
+                {
+                    "field": "action",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "send-notify",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_hour",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "19",
+                    "mean": "19",
+                    "min": "19",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "19",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_mday",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "3",
+                    "mean": "3",
+                    "min": "3",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "3",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_minute",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "21",
+                    "mean": "21",
+                    "min": "21",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "21",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_month",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "november",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_second",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "11",
+                    "mean": "11",
+                    "min": "11",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "11",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_wday",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "wednesday",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_year",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "2021",
+                    "mean": "2021",
+                    "min": "2021",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "2021",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_zone",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "local",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dest_zone",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "demo1.com",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "eventtype",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "isc_bind_transfer",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "host",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "itgdi_isc_bind_transfer_v9.11_v9.16.sample",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "index",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "main",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "linecount",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1",
+                    "mean": "1",
+                    "min": "1",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "message_type",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Query",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "punct",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "--_::._:_:__./:___(_)",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "query_type",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Notify",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "record_class",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "IN",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "serial_number",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1646",
+                    "mean": "1646",
+                    "min": "1646",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1646",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "severity",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "informational",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "source",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "itgdi_isc_bind_transfer_v9.11_v9.16.sample",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sourcetype",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "isc:bind:transfer",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "spl-74dc4cdc68-8ssfg",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server_group",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "tag",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "tag::eventtype",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "timeendpos",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "25",
+                    "mean": "25",
+                    "min": "25",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "25",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "timestartpos",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_action",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "sending notifies",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_category",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "notify",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_product",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "ISC:Bind",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_severity",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "info",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        ]
+    }
+}

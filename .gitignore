@@ -115,3 +115,7 @@ package/bin/sftp-config.json
 package/default/sftp-config.json
 *.code-snippets
 notes
+
+# security content automation
+Splunk_SA_CIM/
+ta-cim-field-reports

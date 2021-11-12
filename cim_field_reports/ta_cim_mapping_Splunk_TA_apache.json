@@ -1,0 +1,1325 @@
+{
+    "ta_name": {
+        "name": "Splunk_TA_apache",
+        "version": "2.0.0"
+    },
+    "sourcetypes": [
+        "apache:access:json",
+        "apache:access",
+        "apache:error",
+        "apache:access:kv"
+    ],
+    "cimsummary": {
+        "Web:Web": {
+            "access_log_event": [
+                {
+                    "fields": [
+                        "action",
+                        "bytes",
+                        "bytes_in",
+                        "bytes_out",
+                        "cookie",
+                        "dest",
+                        "dest_port",
+                        "http_method",
+                        "http_referrer",
+                        "http_user_agent",
+                        "http_user_agent_length",
+                        "response_time",
+                        "src",
+                        "status",
+                        "tag",
+                        "uri_path",
+                        "uri_query",
+                        "url",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Web:Proxy": {
+            "access_log_event": [
+                {
+                    "fields": [
+                        "action",
+                        "bytes",
+                        "bytes_in",
+                        "bytes_out",
+                        "cookie",
+                        "dest",
+                        "dest_port",
+                        "http_method",
+                        "http_referrer",
+                        "http_user_agent",
+                        "http_user_agent_length",
+                        "response_time",
+                        "src",
+                        "status",
+                        "tag",
+                        "uri_path",
+                        "uri_query",
+                        "url",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Web:Storage": {
+            "access_log_event": [
+                {
+                    "fields": [
+                        "action",
+                        "bytes",
+                        "bytes_in",
+                        "bytes_out",
+                        "cookie",
+                        "dest",
+                        "dest_port",
+                        "http_method",
+                        "http_referrer",
+                        "http_user_agent",
+                        "http_user_agent_length",
+                        "response_time",
+                        "src",
+                        "status",
+                        "tag",
+                        "uri_path",
+                        "uri_query",
+                        "url",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Updates:Update_Errors": {
+            "error_log_event": [
+                {
+                    "fields": [
+                        "host",
+                        "source"
+                    ]
+                }
+            ]
+        }
+    },
+    "fieldsummary": {
+        "access_log_event": [
+            [
+                {
+                    "field": "action",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Not Found",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "bytes",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1208",
+                    "mean": "1208",
+                    "min": "1208",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1208",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "bytes_in",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "784",
+                    "mean": "784",
+                    "min": "784",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "784",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "bytes_out",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "424",
+                    "mean": "424",
+                    "min": "424",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "424",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_hour",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "19",
+                    "mean": "19",
+                    "min": "19",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "19",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_mday",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "3",
+                    "mean": "3",
+                    "min": "3",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "3",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_minute",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "20",
+                    "mean": "20",
+                    "min": "20",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "20",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_month",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "november",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_second",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "57",
+                    "mean": "57",
+                    "min": "57",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "57",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_wday",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "wednesday",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_year",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "2021",
+                    "mean": "2021",
+                    "min": "2021",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "2021",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_zone",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dest",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "172.16.51.6",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dest_ip",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "apache_access_log.sample",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dest_port",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "80",
+                    "mean": "80",
+                    "min": "80",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "80",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "eventtype",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "access_log_event",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "host",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "apache_access_log.sample",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http_method",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "GET",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http_referer",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "http://localhost/",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http_referrer",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "http://localhost/",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http_user_agent",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.66 Safari/537.36",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http_user_agent_length",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "108",
+                    "mean": "108",
+                    "min": "108",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "108",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http_version",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "HTTP/1.1",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ident",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "index",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "main",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "linecount",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1",
+                    "mean": "1",
+                    "min": "1",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "product",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Web Server",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "punct",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "..._..._-___[//:::_+]_\"_/._/.\"_\"\"___\":///\"_\"/._(__",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "request",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "GET /favicon.ico HTTP/1.1",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "request_bytes",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "784",
+                    "mean": "784",
+                    "min": "784",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "784",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "response_bytes",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "424",
+                    "mean": "424",
+                    "min": "424",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "424",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "response_time",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "5.37",
+                    "mean": "5.37",
+                    "min": "5.37",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "5.37",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "response_time_microseconds",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "5374",
+                    "mean": "5374",
+                    "min": "5374",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "5374",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "site",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "172.16.51.6",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "source",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "pytest-splunk-addon:file_monitor",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sourcetype",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "apache:access",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "spl-5864df7564-696xg",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server_group",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "src",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "10.1.0.7",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "src_ip",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "10.1.0.7",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "status",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "404",
+                    "mean": "404",
+                    "min": "404",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "404",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "status_description",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Not Found",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "status_type",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Client Error",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "tag",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "web",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "tag::eventtype",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "web",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "timeendpos",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "59",
+                    "mean": "59",
+                    "min": "59",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "59",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "timestamp",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "03/Nov/2021:19:20:57 +0000",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "timestartpos",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "33",
+                    "mean": "33",
+                    "min": "33",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "33",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "uri_path",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "/favicon.ico",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "uri_query",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "url",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "http://172.16.51.6/favicon.ico",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "user",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "user7",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Apache",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_product",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Apache Web Server",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "web_server",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "apache_access_log.sample:172.16.51.6",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        ],
+        "error_log_event": [
+            [
+                {
+                    "field": "date_hour",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "19",
+                    "mean": "19",
+                    "min": "19",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "19",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_mday",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "3",
+                    "mean": "3",
+                    "min": "3",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "3",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_minute",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "19",
+                    "mean": "19",
+                    "min": "19",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "19",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_month",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "november",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_second",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "28",
+                    "mean": "28",
+                    "min": "28",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "28",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_wday",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "wednesday",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_year",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "2021",
+                    "mean": "2021",
+                    "min": "2021",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "2021",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_zone",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "local",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "error_message",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "File does not exist: /var/www/html/favicon.ico",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "error_port",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "4896",
+                    "mean": "4896",
+                    "min": "4896",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "4896",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "eventtype",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "error_log_event",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "file_path",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "var/www/html/favicon.ico",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "host",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "apache_error_log.sample",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "index",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "main",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "linecount",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1",
+                    "mean": "1",
+                    "min": "1",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "product",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Web Server",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "punct",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "[____::_]_[]_[_...:]____:_////.",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "req_time",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Wed Nov  3 19:19:28 2021",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "severity",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "error",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "source",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "pytest-splunk-addon:file_monitor",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sourcetype",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "apache:error",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "spl-5864df7564-696xg",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server_group",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "src",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "10.1.0.22",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "tag",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "error",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "tag::eventtype",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "error",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "timeendpos",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "25",
+                    "mean": "25",
+                    "min": "25",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "25",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "timestamp",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Wed Nov  3 19:19:28 2021",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "timestartpos",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "5",
+                    "mean": "5",
+                    "min": "5",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "5",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Apache",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_product",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Apache Web Server",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        ]
+    }
+}

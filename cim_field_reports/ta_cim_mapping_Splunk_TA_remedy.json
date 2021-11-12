@@ -1,0 +1,1500 @@
+{
+    "ta_name": {
+        "name": "Splunk_TA_remedy",
+        "version": "5.1.2"
+    },
+    "sourcetypes": [
+        "remedy:incident"
+    ],
+    "cimsummary": {
+        "Ticket_Management:All_Ticket_Management": {
+            "remedy_incident": [
+                {
+                    "fields": [
+                        "description",
+                        "dest",
+                        "priority",
+                        "severity",
+                        "severity_id",
+                        "src_user",
+                        "status",
+                        "tag",
+                        "ticket_id",
+                        "time_submitted",
+                        "user"
+                    ]
+                }
+            ]
+        },
+        "Ticket_Management:Change": {
+            "remedy_incident": [
+                {
+                    "fields": [
+                        "description",
+                        "dest",
+                        "priority",
+                        "severity",
+                        "severity_id",
+                        "src_user",
+                        "status",
+                        "tag",
+                        "ticket_id",
+                        "time_submitted",
+                        "user"
+                    ]
+                }
+            ]
+        },
+        "Ticket_Management:Incident": {
+            "remedy_incident": [
+                {
+                    "fields": [
+                        "description",
+                        "dest",
+                        "priority",
+                        "severity",
+                        "severity_id",
+                        "src_user",
+                        "status",
+                        "tag",
+                        "ticket_id",
+                        "time_submitted",
+                        "user"
+                    ]
+                }
+            ]
+        },
+        "Ticket_Management:Problem": {
+            "remedy_incident": [
+                {
+                    "fields": [
+                        "description",
+                        "dest",
+                        "priority",
+                        "severity",
+                        "severity_id",
+                        "src_user",
+                        "status",
+                        "tag",
+                        "ticket_id",
+                        "time_submitted",
+                        "user"
+                    ]
+                }
+            ]
+        },
+        "DLP:DLP_Incidents": {
+            "remedy_incident": [
+                {
+                    "fields": [
+                        "description",
+                        "dest",
+                        "priority",
+                        "severity",
+                        "severity_id",
+                        "src_user",
+                        "status",
+                        "tag",
+                        "ticket_id",
+                        "time_submitted",
+                        "user"
+                    ]
+                }
+            ]
+        }
+    },
+    "fieldsummary": {
+        "remedy_incident": [
+            [
+                {
+                    "field": "AccessMode",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "AppInstanceServer",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "AppInterfaceForm",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "AppLogin",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "AppPassword",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Assigned Group",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Backoffice Support",
+                            "count": 1
+                        },
+                        {
+                            "value": "Change Management",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Assigned Group ID",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "SGP000000000011",
+                            "count": 1
+                        },
+                        {
+                            "value": "SGP000000000018",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Assigned Group Shift ID",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Assigned Group Shift Name",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Assigned Support Company",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Company 3",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Assigned Support Organization",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "IT Support",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Assignee",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Assignee 1",
+                            "count": 1
+                        },
+                        {
+                            "value": "Assignee 4",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Assignee Groups",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "1000000023;1000000005;",
+                            "count": 1
+                        },
+                        {
+                            "value": "1000000023;1000000026;",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Assignee Groups_parent",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Assignee Login ID",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "user2",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "AttachmentSourceFormName",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "AttachmentSourceGUID",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Auto Open Session",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Broker Vendor Name",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Categorization Tier 1",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Categorization Tier 2",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Categorization Tier 3",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Chat Session ID",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "City",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "ClientLocale",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "en_US",
+                            "count": 1
+                        },
+                        {
+                            "value": "null",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Closed Date",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "2021-04-01T11:22:01.000+0000",
+                            "count": 1
+                        },
+                        {
+                            "value": "null",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Closure Manufacturer",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Closure Product Category Tier1",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Closure Product Category Tier2",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Closure Product Category Tier3",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Closure Product Model/Version",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Closure Product Name",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Company",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Company 2",
+                            "count": 1
+                        },
+                        {
+                            "value": "Company 4",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Component_ID",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Contact Client Type",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Customer",
+                            "count": 1
+                        },
+                        {
+                            "value": "null",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Contact Company",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Company 2",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Contact Sensitivity",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Standard",
+                            "count": 1
+                        },
+                        {
+                            "value": "null",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Country",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Created_By",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Customer Login ID",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Department",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Description",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "CPU is running high on database server.",
+                            "count": 1
+                        },
+                        {
+                            "value": "Not able to login to VPN.",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Desk Location",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Detailed Decription",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Direct Contact Area Code",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Direct Contact City",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Direct Contact Company",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Direct Contact Corporate ID",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Direct Contact Country",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Direct Contact Country Code",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Direct Contact Department",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Direct Contact Desk Location",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Direct Contact Extension",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Direct Contact First Name",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Direct Contact Internet E-mail",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Direct Contact Last Name",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Direct Contact Local Number",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Direct Contact Location Details",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Direct Contact Login ID",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Direct Contact Mail Station",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Direct Contact Middle Initial",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Direct Contact Organization",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Direct Contact Person ID",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Direct Contact Phone Number",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Direct Contact Region",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Direct Contact Site",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Direct Contact Site Group",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Direct Contact Site ID",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Direct Contact State/Province",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Direct Contact Street",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Direct Contact Time Zone",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Direct Contact Zip/Postal Code",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Entry ID",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "INC000000004094",
+                            "count": 1
+                        },
+                        {
+                            "value": "INC000000014073",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Estimated Resolution Date",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "First Name",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "First Name 1",
+                            "count": 1
+                        },
+                        {
+                            "value": "null",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "FirstWIPDate",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "2021-04-01T11:16:45.000+0000",
+                            "count": 1
+                        },
+                        {
+                            "value": "null",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "HPD_CI",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "HPD_CI_FormName",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "HPD_CI_ReconID",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Impact",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "3-Moderate/Limited",
+                            "count": 1
+                        },
+                        {
+                            "value": "4-Minor/Localized",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Impact_OR_Root",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Incident Number",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "INC000000017822",
+                            "count": 1
+                        },
+                        {
+                            "value": "INC000000017827",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "InfrastructureEventType",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Infrastructure",
+                            "count": 1
+                        },
+                        {
+                            "value": "None",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "InstanceId",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "AGGAA5V0BUBEYAQKQCTAQ9RON0UMR6",
+                            "count": 1
+                        },
+                        {
+                            "value": "AGGAA5V0BUBEYAQQVT46QPXHDWJSKY",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Internet E-mail",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "KMSGUID",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Last Acknowledged Date",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Last Modified By",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "admin2",
+                            "count": 1
+                        },
+                        {
+                            "value": "user",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Last Modified Date",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "2021-11-02T13:39:42.000+0000",
+                            "count": 1
+                        },
+                        {
+                            "value": "2021-11-02T13:40:02.000+0000",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Last Name",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Last Name 1",
+                            "count": 1
+                        },
+                        {
+                            "value": "null",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Last Resolved Date",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "2021-04-01T11:18:26.000+0000",
+                            "count": 1
+                        },
+                        {
+                            "value": "null",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Last _Assigned_Date",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "LastWIPDate",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "2021-04-01T11:16:45.000+0000",
+                            "count": 1
+                        },
+                        {
+                            "value": "null",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Mail Station",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Manufacturer",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "MaxRetries",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Middle Initial",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Modified Chat Session ID",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Number of Attachments",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Organization",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "null",
+                            "count": 2
+                        }
+                    ]
+                }
+            ]
+        ]
+    }
+}

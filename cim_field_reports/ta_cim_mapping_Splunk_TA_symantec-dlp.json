@@ -1,0 +1,851 @@
+{
+    "ta_name": {
+        "name": "Splunk_TA_symantec-dlp",
+        "version": "1.0.6"
+    },
+    "sourcetypes": [
+        "symantec:dlp:syslog"
+    ],
+    "cimsummary": {
+        "Alerts:Alerts": {
+            "symantec_dlp_alert": [
+                {
+                    "fields": [
+                        "app",
+                        "dest",
+                        "id",
+                        "severity",
+                        "severity_id",
+                        "src",
+                        "src_bunit",
+                        "tag",
+                        "type"
+                    ]
+                }
+            ]
+        }
+    },
+    "fieldsummary": {
+        "symantec_dlp_alert": [
+            [
+                {
+                    "field": "action",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "allowed",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "app",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Symantec DLP",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "blocked",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Passed",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dataowner_email",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "dataowner_name",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "date_hour",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "19",
+                    "mean": "19",
+                    "min": "19",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "19",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_mday",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "29",
+                    "mean": "29",
+                    "min": "29",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "29",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_minute",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "2",
+                    "mean": "2",
+                    "min": "2",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "2",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_month",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "october",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_second",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "8",
+                    "mean": "8",
+                    "min": "8",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "8",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_wday",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "friday",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_year",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "2021",
+                    "mean": "2021",
+                    "min": "2021",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "2021",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_zone",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "local",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dest",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "symantec_dlp_syslog.sample",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "device_instance_id",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "dvc",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "dvc_sample_host.sample_domain1.com",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "endpoint_machine",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "endpoint_user_department",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "1003 - Administration",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "endpoint_user_email",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "i@jkl.cn",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "endpoint_user_id",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "ywlbJ/",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "endpoint_user_mgr_email",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "c@jkl_mln.edu",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "endpoint_user_mgr_name",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "N, Nick",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "endpoint_user_mgr_phone",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "4510522291",
+                    "mean": "4510522291",
+                    "min": "4510522291",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "4510522291",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "endpoint_user_mgr_title",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Sr. Manager",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "endpoint_user_name",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "M, Mike",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "endpoint_user_phone",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "4266418241",
+                    "mean": "4266418241",
+                    "min": "4266418241",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "4266418241",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "endpoint_user_title",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Sr. Sales",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "eventtype",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "symantec_dlp_alert",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "file_name",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "host",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "symantec_dlp_syslog.sample",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "id",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "30716129",
+                    "mean": "30716129",
+                    "min": "30716129",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "30716129",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "incident_id",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "30716129",
+                    "mean": "30716129",
+                    "min": "30716129",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "30716129",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "incident_snapshot",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "index",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "main",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "linecount",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1",
+                    "mean": "1",
+                    "min": "1",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "match_count",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "346",
+                    "mean": "346",
+                    "min": "346",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "346",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "parent_path",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "path",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "policy",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Social Security Number",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "protocol",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "SMTP",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "punct",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "__::_...___::__.._=\"\",_=\"__\",_=\"\",_=\"\",_=\"@-.\",_=\"",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "quarantine_parent_path",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "recipient_count",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1",
+                    "mean": "1",
+                    "min": "1",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "recipients",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "b@def-ghi.org",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "rules",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "scan",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "scan_date",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "sender",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "e@uvw.me",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "severity",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "medium",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "severity_id",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "2",
+                    "mean": "2",
+                    "min": "2",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "2",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "source",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "pytest-splunk-addon-file_monitor",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sourcetype",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "symantec:dlp:syslog",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "spl-588ff5d8dc-x9llc",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server_group",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "src",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "src_bunit",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "1003 - Administration",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "subject",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "*Confidential: Re: Confidential***URGENT - Payroll Check Request (MA)",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "tag",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "alert",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "tag::eventtype",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "alert",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "target",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "timeendpos",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "16",
+                    "mean": "16",
+                    "min": "16",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "16",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "timestartpos",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "type",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "alert",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_severity",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Medium",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        ]
+    }
+}

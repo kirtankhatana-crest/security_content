@@ -1,0 +1,2013 @@
+{
+    "ta_name": {
+        "name": "Splunk_TA_websense-cg",
+        "version": "1.1.0"
+    },
+    "sourcetypes": [
+        "websense:cg:kv"
+    ],
+    "cimsummary": {
+        "Web:Web": {
+            "websense_cg_web": [
+                {
+                    "fields": [
+                        "action",
+                        "app",
+                        "bytes",
+                        "bytes_in",
+                        "bytes_out",
+                        "category",
+                        "dest",
+                        "duration",
+                        "http_content_type",
+                        "http_user_agent",
+                        "http_user_agent_length",
+                        "src",
+                        "status",
+                        "tag",
+                        "url",
+                        "url_length",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Web:Proxy": {
+            "websense_cg_web": [
+                {
+                    "fields": [
+                        "action",
+                        "app",
+                        "bytes",
+                        "bytes_in",
+                        "bytes_out",
+                        "category",
+                        "dest",
+                        "duration",
+                        "http_content_type",
+                        "http_user_agent",
+                        "http_user_agent_length",
+                        "src",
+                        "status",
+                        "tag",
+                        "url",
+                        "url_length",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Web:Storage": {
+            "websense_cg_web": [
+                {
+                    "fields": [
+                        "action",
+                        "app",
+                        "bytes",
+                        "bytes_in",
+                        "bytes_out",
+                        "category",
+                        "dest",
+                        "duration",
+                        "http_content_type",
+                        "http_user_agent",
+                        "http_user_agent_length",
+                        "src",
+                        "status",
+                        "tag",
+                        "url",
+                        "url_length",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        }
+    },
+    "fieldsummary": {
+        "websense_cg_web": [
+            [
+                {
+                    "field": "DC",
+                    "count": "12",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "com/TEST\\, TEST_NAME",
+                            "count": 12
+                        }
+                    ]
+                },
+                {
+                    "field": "OU",
+                    "count": "12",
+                    "distinct_count": "3",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Users",
+                            "count": 12
+                        },
+                        {
+                            "value": "SanDiego",
+                            "count": 7
+                        },
+                        {
+                            "value": "Beijing",
+                            "count": 5
+                        }
+                    ]
+                },
+                {
+                    "field": "action",
+                    "count": "12",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "blocked",
+                            "count": 8
+                        },
+                        {
+                            "value": "allowed",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "app",
+                    "count": "12",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Websense Proxy",
+                            "count": 12
+                        }
+                    ]
+                },
+                {
+                    "field": "bytes",
+                    "count": "12",
+                    "distinct_count": "12",
+                    "is_exact": "1",
+                    "max": "164878",
+                    "mean": "112492.08333333333",
+                    "min": "30118",
+                    "numeric_count": "12",
+                    "stdev": "41834.465591854554",
+                    "values": [
+                        {
+                            "value": "110742",
+                            "count": 1
+                        },
+                        {
+                            "value": "117044",
+                            "count": 1
+                        },
+                        {
+                            "value": "129150",
+                            "count": 1
+                        },
+                        {
+                            "value": "130887",
+                            "count": 1
+                        },
+                        {
+                            "value": "139576",
+                            "count": 1
+                        },
+                        {
+                            "value": "144499",
+                            "count": 1
+                        },
+                        {
+                            "value": "159515",
+                            "count": 1
+                        },
+                        {
+                            "value": "164878",
+                            "count": 1
+                        },
+                        {
+                            "value": "30118",
+                            "count": 1
+                        },
+                        {
+                            "value": "51835",
+                            "count": 1
+                        },
+                        {
+                            "value": "83398",
+                            "count": 1
+                        },
+                        {
+                            "value": "88263",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "bytes_in",
+                    "count": "12",
+                    "distinct_count": "12",
+                    "is_exact": "1",
+                    "max": "88148",
+                    "mean": "56226.75",
+                    "min": "13743",
+                    "numeric_count": "12",
+                    "stdev": "27752.67586484393",
+                    "values": [
+                        {
+                            "value": "13743",
+                            "count": 1
+                        },
+                        {
+                            "value": "21905",
+                            "count": 1
+                        },
+                        {
+                            "value": "25158",
+                            "count": 1
+                        },
+                        {
+                            "value": "35021",
+                            "count": 1
+                        },
+                        {
+                            "value": "38885",
+                            "count": 1
+                        },
+                        {
+                            "value": "62135",
+                            "count": 1
+                        },
+                        {
+                            "value": "67225",
+                            "count": 1
+                        },
+                        {
+                            "value": "68149",
+                            "count": 1
+                        },
+                        {
+                            "value": "82711",
+                            "count": 1
+                        },
+                        {
+                            "value": "84440",
+                            "count": 1
+                        },
+                        {
+                            "value": "87201",
+                            "count": 1
+                        },
+                        {
+                            "value": "88148",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "bytes_out",
+                    "count": "12",
+                    "distinct_count": "12",
+                    "is_exact": "1",
+                    "max": "95866",
+                    "mean": "56265.333333333336",
+                    "min": "5552",
+                    "numeric_count": "12",
+                    "stdev": "31095.875372008984",
+                    "values": [
+                        {
+                            "value": "16375",
+                            "count": 1
+                        },
+                        {
+                            "value": "26677",
+                            "count": 1
+                        },
+                        {
+                            "value": "32604",
+                            "count": 1
+                        },
+                        {
+                            "value": "44513",
+                            "count": 1
+                        },
+                        {
+                            "value": "51428",
+                            "count": 1
+                        },
+                        {
+                            "value": "5552",
+                            "count": 1
+                        },
+                        {
+                            "value": "67015",
+                            "count": 1
+                        },
+                        {
+                            "value": "77274",
+                            "count": 1
+                        },
+                        {
+                            "value": "77677",
+                            "count": 1
+                        },
+                        {
+                            "value": "88837",
+                            "count": 1
+                        },
+                        {
+                            "value": "91366",
+                            "count": 1
+                        },
+                        {
+                            "value": "95866",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "category",
+                    "count": "12",
+                    "distinct_count": "3",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "unknown",
+                            "count": 10
+                        },
+                        {
+                            "value": "Adult Content",
+                            "count": 1
+                        },
+                        {
+                            "value": "Unauthorized Mobile Marketplaces",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "category_id",
+                    "count": "12",
+                    "distinct_count": "12",
+                    "is_exact": "1",
+                    "max": "943",
+                    "mean": "446.8333333333333",
+                    "min": "30",
+                    "numeric_count": "12",
+                    "stdev": "310.65263656705156",
+                    "values": [
+                        {
+                            "value": "158",
+                            "count": 1
+                        },
+                        {
+                            "value": "215",
+                            "count": 1
+                        },
+                        {
+                            "value": "30",
+                            "count": 1
+                        },
+                        {
+                            "value": "301",
+                            "count": 1
+                        },
+                        {
+                            "value": "371",
+                            "count": 1
+                        },
+                        {
+                            "value": "485",
+                            "count": 1
+                        },
+                        {
+                            "value": "575",
+                            "count": 1
+                        },
+                        {
+                            "value": "627",
+                            "count": 1
+                        },
+                        {
+                            "value": "656",
+                            "count": 1
+                        },
+                        {
+                            "value": "66",
+                            "count": 1
+                        },
+                        {
+                            "value": "935",
+                            "count": 1
+                        },
+                        {
+                            "value": "943",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "charset",
+                    "count": "12",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "UTF-8",
+                            "count": 12
+                        }
+                    ]
+                },
+                {
+                    "field": "dest",
+                    "count": "12",
+                    "distinct_count": "6",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "websense-cg-kv-samples-4",
+                            "count": 2
+                        },
+                        {
+                            "value": "websense-cg-kv-samples-5",
+                            "count": 2
+                        },
+                        {
+                            "value": "websense-cg-kv-samples-6",
+                            "count": 2
+                        },
+                        {
+                            "value": "websense-cg-kv-samples-7",
+                            "count": 2
+                        },
+                        {
+                            "value": "websense-cg-kv-samples-8",
+                            "count": 2
+                        },
+                        {
+                            "value": "websense-cg-kv-samples-9",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "dest_host",
+                    "count": "12",
+                    "distinct_count": "6",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "websense-cg-kv-samples-4",
+                            "count": 2
+                        },
+                        {
+                            "value": "websense-cg-kv-samples-5",
+                            "count": 2
+                        },
+                        {
+                            "value": "websense-cg-kv-samples-6",
+                            "count": 2
+                        },
+                        {
+                            "value": "websense-cg-kv-samples-7",
+                            "count": 2
+                        },
+                        {
+                            "value": "websense-cg-kv-samples-8",
+                            "count": 2
+                        },
+                        {
+                            "value": "websense-cg-kv-samples-9",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "dest_ip",
+                    "count": "12",
+                    "distinct_count": "12",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "121.219.113.179",
+                            "count": 1
+                        },
+                        {
+                            "value": "122.10.44.169",
+                            "count": 1
+                        },
+                        {
+                            "value": "126.91.157.182",
+                            "count": 1
+                        },
+                        {
+                            "value": "130.82.163.203",
+                            "count": 1
+                        },
+                        {
+                            "value": "132.58.23.242",
+                            "count": 1
+                        },
+                        {
+                            "value": "141.187.143.39",
+                            "count": 1
+                        },
+                        {
+                            "value": "152.120.69.75",
+                            "count": 1
+                        },
+                        {
+                            "value": "163.55.136.169",
+                            "count": 1
+                        },
+                        {
+                            "value": "192.122.76.231",
+                            "count": 1
+                        },
+                        {
+                            "value": "23.68.161.198",
+                            "count": 1
+                        },
+                        {
+                            "value": "32.241.46.37",
+                            "count": 1
+                        },
+                        {
+                            "value": "83.158.39.58",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dest_nt_host",
+                    "count": "12",
+                    "distinct_count": "6",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "websense-cg-kv-samples-4",
+                            "count": 2
+                        },
+                        {
+                            "value": "websense-cg-kv-samples-5",
+                            "count": 2
+                        },
+                        {
+                            "value": "websense-cg-kv-samples-6",
+                            "count": 2
+                        },
+                        {
+                            "value": "websense-cg-kv-samples-7",
+                            "count": 2
+                        },
+                        {
+                            "value": "websense-cg-kv-samples-8",
+                            "count": 2
+                        },
+                        {
+                            "value": "websense-cg-kv-samples-9",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "disposition",
+                    "count": "12",
+                    "distinct_count": "12",
+                    "is_exact": "1",
+                    "max": "9922",
+                    "mean": "5726.166666666667",
+                    "min": "1445",
+                    "numeric_count": "12",
+                    "stdev": "3232.2462730579437",
+                    "values": [
+                        {
+                            "value": "1445",
+                            "count": 1
+                        },
+                        {
+                            "value": "1525",
+                            "count": 1
+                        },
+                        {
+                            "value": "2307",
+                            "count": 1
+                        },
+                        {
+                            "value": "3025",
+                            "count": 1
+                        },
+                        {
+                            "value": "4237",
+                            "count": 1
+                        },
+                        {
+                            "value": "5676",
+                            "count": 1
+                        },
+                        {
+                            "value": "5760",
+                            "count": 1
+                        },
+                        {
+                            "value": "7115",
+                            "count": 1
+                        },
+                        {
+                            "value": "8325",
+                            "count": 1
+                        },
+                        {
+                            "value": "9535",
+                            "count": 1
+                        },
+                        {
+                            "value": "9842",
+                            "count": 1
+                        },
+                        {
+                            "value": "9922",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "disposition_id",
+                    "count": "12",
+                    "distinct_count": "12",
+                    "is_exact": "1",
+                    "max": "9922",
+                    "mean": "5726.166666666667",
+                    "min": "1445",
+                    "numeric_count": "12",
+                    "stdev": "3232.2462730579437",
+                    "values": [
+                        {
+                            "value": "1445",
+                            "count": 1
+                        },
+                        {
+                            "value": "1525",
+                            "count": 1
+                        },
+                        {
+                            "value": "2307",
+                            "count": 1
+                        },
+                        {
+                            "value": "3025",
+                            "count": 1
+                        },
+                        {
+                            "value": "4237",
+                            "count": 1
+                        },
+                        {
+                            "value": "5676",
+                            "count": 1
+                        },
+                        {
+                            "value": "5760",
+                            "count": 1
+                        },
+                        {
+                            "value": "7115",
+                            "count": 1
+                        },
+                        {
+                            "value": "8325",
+                            "count": 1
+                        },
+                        {
+                            "value": "9535",
+                            "count": 1
+                        },
+                        {
+                            "value": "9842",
+                            "count": 1
+                        },
+                        {
+                            "value": "9922",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dst_host",
+                    "count": "12",
+                    "distinct_count": "6",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "websense-cg-kv-samples-4",
+                            "count": 2
+                        },
+                        {
+                            "value": "websense-cg-kv-samples-5",
+                            "count": 2
+                        },
+                        {
+                            "value": "websense-cg-kv-samples-6",
+                            "count": 2
+                        },
+                        {
+                            "value": "websense-cg-kv-samples-7",
+                            "count": 2
+                        },
+                        {
+                            "value": "websense-cg-kv-samples-8",
+                            "count": 2
+                        },
+                        {
+                            "value": "websense-cg-kv-samples-9",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "dst_ip",
+                    "count": "12",
+                    "distinct_count": "12",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "121.219.113.179",
+                            "count": 1
+                        },
+                        {
+                            "value": "122.10.44.169",
+                            "count": 1
+                        },
+                        {
+                            "value": "126.91.157.182",
+                            "count": 1
+                        },
+                        {
+                            "value": "130.82.163.203",
+                            "count": 1
+                        },
+                        {
+                            "value": "132.58.23.242",
+                            "count": 1
+                        },
+                        {
+                            "value": "141.187.143.39",
+                            "count": 1
+                        },
+                        {
+                            "value": "152.120.69.75",
+                            "count": 1
+                        },
+                        {
+                            "value": "163.55.136.169",
+                            "count": 1
+                        },
+                        {
+                            "value": "192.122.76.231",
+                            "count": 1
+                        },
+                        {
+                            "value": "23.68.161.198",
+                            "count": 1
+                        },
+                        {
+                            "value": "32.241.46.37",
+                            "count": 1
+                        },
+                        {
+                            "value": "83.158.39.58",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dst_port",
+                    "count": "12",
+                    "distinct_count": "12",
+                    "is_exact": "1",
+                    "max": "62825",
+                    "mean": "32007.25",
+                    "min": "14692",
+                    "numeric_count": "12",
+                    "stdev": "15497.571998248923",
+                    "values": [
+                        {
+                            "value": "14692",
+                            "count": 1
+                        },
+                        {
+                            "value": "14763",
+                            "count": 1
+                        },
+                        {
+                            "value": "20237",
+                            "count": 1
+                        },
+                        {
+                            "value": "21018",
+                            "count": 1
+                        },
+                        {
+                            "value": "21191",
+                            "count": 1
+                        },
+                        {
+                            "value": "22884",
+                            "count": 1
+                        },
+                        {
+                            "value": "31169",
+                            "count": 1
+                        },
+                        {
+                            "value": "37445",
+                            "count": 1
+                        },
+                        {
+                            "value": "42291",
+                            "count": 1
+                        },
+                        {
+                            "value": "46916",
+                            "count": 1
+                        },
+                        {
+                            "value": "48656",
+                            "count": 1
+                        },
+                        {
+                            "value": "62825",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "duration",
+                    "count": "12",
+                    "distinct_count": "12",
+                    "is_exact": "1",
+                    "max": "95",
+                    "mean": "59.75",
+                    "min": "13",
+                    "numeric_count": "12",
+                    "stdev": "24.99136214411255",
+                    "values": [
+                        {
+                            "value": "13",
+                            "count": 1
+                        },
+                        {
+                            "value": "22",
+                            "count": 1
+                        },
+                        {
+                            "value": "48",
+                            "count": 1
+                        },
+                        {
+                            "value": "52",
+                            "count": 1
+                        },
+                        {
+                            "value": "53",
+                            "count": 1
+                        },
+                        {
+                            "value": "56",
+                            "count": 1
+                        },
+                        {
+                            "value": "58",
+                            "count": 1
+                        },
+                        {
+                            "value": "73",
+                            "count": 1
+                        },
+                        {
+                            "value": "77",
+                            "count": 1
+                        },
+                        {
+                            "value": "83",
+                            "count": 1
+                        },
+                        {
+                            "value": "87",
+                            "count": 1
+                        },
+                        {
+                            "value": "95",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "eventtype",
+                    "count": "12",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "websense_cg_web",
+                            "count": 12
+                        }
+                    ]
+                },
+                {
+                    "field": "host",
+                    "count": "12",
+                    "distinct_count": "6",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "websense-cg-kv-samples-4",
+                            "count": 2
+                        },
+                        {
+                            "value": "websense-cg-kv-samples-5",
+                            "count": 2
+                        },
+                        {
+                            "value": "websense-cg-kv-samples-6",
+                            "count": 2
+                        },
+                        {
+                            "value": "websense-cg-kv-samples-7",
+                            "count": 2
+                        },
+                        {
+                            "value": "websense-cg-kv-samples-8",
+                            "count": 2
+                        },
+                        {
+                            "value": "websense-cg-kv-samples-9",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "http_content_type",
+                    "count": "9",
+                    "distinct_count": "6",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "application/x-javascript;charset=UTF-8",
+                            "count": 2
+                        },
+                        {
+                            "value": "image/gif;charset=UTF-8",
+                            "count": 2
+                        },
+                        {
+                            "value": "text/html;charset=UTF-8",
+                            "count": 2
+                        },
+                        {
+                            "value": "application/json;charset=UTF-8",
+                            "count": 1
+                        },
+                        {
+                            "value": "text/javascript;charset=UTF-8",
+                            "count": 1
+                        },
+                        {
+                            "value": "text/xml;charset=UTF-8",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http_method",
+                    "count": "8",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "GET",
+                            "count": 4
+                        },
+                        {
+                            "value": "POST",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http_proxy_status_code",
+                    "count": "12",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "200",
+                    "mean": "100",
+                    "min": "0",
+                    "numeric_count": "12",
+                    "stdev": "104.44659357341871",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 6
+                        },
+                        {
+                            "value": "200",
+                            "count": 6
+                        }
+                    ]
+                },
+                {
+                    "field": "http_response",
+                    "count": "12",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "200",
+                    "mean": "100",
+                    "min": "0",
+                    "numeric_count": "12",
+                    "stdev": "104.44659357341871",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 6
+                        },
+                        {
+                            "value": "200",
+                            "count": 6
+                        }
+                    ]
+                },
+                {
+                    "field": "http_user_agent",
+                    "count": "12",
+                    "distinct_count": "8",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Gecko/20090825 Firefox/3.6.9 (.NET CLR 3.5.30825)",
+                            "count": 2
+                        },
+                        {
+                            "value": "Gecko/20090825 Firefox/5.7.11 (.NET CLR 7.5.54651)",
+                            "count": 2
+                        },
+                        {
+                            "value": "Mozilla/3.0",
+                            "count": 2
+                        },
+                        {
+                            "value": "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:10.0.2) Gecko/20100101 Firefox/10.0.2",
+                            "count": 2
+                        },
+                        {
+                            "value": "Gecko/20090715 Firefox/3.5.1 (.NET CLR 9.5.30729)",
+                            "count": 1
+                        },
+                        {
+                            "value": "Mozilla/2.0 (Windows; U; Windows NT 5.1; es-mno; rv:1.7.1.1)",
+                            "count": 1
+                        },
+                        {
+                            "value": "Mozilla/7.0 (X11; Ubuntu; Linux i686; rv:10.0.1) Gecko/20100101 Firefox/13.0.2",
+                            "count": 1
+                        },
+                        {
+                            "value": "Mozilla/9.0 (Windows; U; Windows NT 5.1; es-ghi; rv:1.8.1.1)",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http_user_agent_length",
+                    "count": "12",
+                    "distinct_count": "5",
+                    "is_exact": "1",
+                    "max": "78",
+                    "mean": "51.916666666666664",
+                    "min": "11",
+                    "numeric_count": "12",
+                    "stdev": "22.467990699228228",
+                    "values": [
+                        {
+                            "value": "49",
+                            "count": 3
+                        },
+                        {
+                            "value": "78",
+                            "count": 3
+                        },
+                        {
+                            "value": "11",
+                            "count": 2
+                        },
+                        {
+                            "value": "50",
+                            "count": 2
+                        },
+                        {
+                            "value": "60",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "index",
+                    "count": "12",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "netproxy",
+                            "count": 12
+                        }
+                    ]
+                },
+                {
+                    "field": "linecount",
+                    "count": "12",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1",
+                    "mean": "1",
+                    "min": "1",
+                    "numeric_count": "12",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 12
+                        }
+                    ]
+                },
+                {
+                    "field": "policy",
+                    "count": "12",
+                    "distinct_count": "7",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "role-8**-_Block_only_Malware_and_Porn",
+                            "count": 4
+                        },
+                        {
+                            "value": "role-8**-_Allow_Personal_storage",
+                            "count": 2
+                        },
+                        {
+                            "value": "role-8**-_Allow_Software_download",
+                            "count": 2
+                        },
+                        {
+                            "value": "Unfiltered_URLs_-_migrated_during_upgrade",
+                            "count": 1
+                        },
+                        {
+                            "value": "role-2**-_Allow_Personal_storage",
+                            "count": 1
+                        },
+                        {
+                            "value": "role-3**-_Senior_Management",
+                            "count": 1
+                        },
+                        {
+                            "value": "role-8**Default",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "product",
+                    "count": "12",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Security",
+                            "count": 12
+                        }
+                    ]
+                },
+                {
+                    "field": "product_version",
+                    "count": "12",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "7.7.0",
+                            "count": 12
+                        }
+                    ]
+                },
+                {
+                    "field": "punct",
+                    "count": "12",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "=__=_=.._=_=_=_=://_=,=,=/\\,__=..._=_=----_=..._=_",
+                            "count": 12
+                        }
+                    ]
+                },
+                {
+                    "field": "reason",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "role",
+                    "count": "12",
+                    "distinct_count": "6",
+                    "is_exact": "1",
+                    "max": "9",
+                    "mean": "3.9166666666666665",
+                    "min": "2",
+                    "numeric_count": "12",
+                    "stdev": "2.429303429280738",
+                    "values": [
+                        {
+                            "value": "2",
+                            "count": 5
+                        },
+                        {
+                            "value": "3",
+                            "count": 2
+                        },
+                        {
+                            "value": "5",
+                            "count": 2
+                        },
+                        {
+                            "value": "4",
+                            "count": 1
+                        },
+                        {
+                            "value": "8",
+                            "count": 1
+                        },
+                        {
+                            "value": "9",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sc4s_container",
+                    "count": "12",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "sc4s-d45c78fdb-pj7ks",
+                            "count": 12
+                        }
+                    ]
+                },
+                {
+                    "field": "sc4s_destport",
+                    "count": "12",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "514",
+                    "mean": "514",
+                    "min": "514",
+                    "numeric_count": "12",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "514",
+                            "count": 12
+                        }
+                    ]
+                },
+                {
+                    "field": "sc4s_fromhostip",
+                    "count": "12",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "100.64.159.226",
+                            "count": 12
+                        }
+                    ]
+                },
+                {
+                    "field": "sc4s_proto",
+                    "count": "12",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "TCP",
+                            "count": 12
+                        }
+                    ]
+                },
+                {
+                    "field": "sc4s_syslog_facility",
+                    "count": "12",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "local0",
+                            "count": 12
+                        }
+                    ]
+                },
+                {
+                    "field": "sc4s_syslog_format",
+                    "count": "12",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "rfc3164",
+                            "count": 12
+                        }
+                    ]
+                },
+                {
+                    "field": "sc4s_vendor_product",
+                    "count": "12",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "forcepoint_webprotect",
+                            "count": 12
+                        }
+                    ]
+                },
+                {
+                    "field": "severity",
+                    "count": "12",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "high",
+                            "count": 9
+                        },
+                        {
+                            "value": "informational",
+                            "count": 3
+                        }
+                    ]
+                },
+                {
+                    "field": "severity_id",
+                    "count": "12",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "7",
+                    "mean": "5.5",
+                    "min": "1",
+                    "numeric_count": "12",
+                    "stdev": "2.7136021011998723",
+                    "values": [
+                        {
+                            "value": "7",
+                            "count": 9
+                        },
+                        {
+                            "value": "1",
+                            "count": 3
+                        }
+                    ]
+                },
+                {
+                    "field": "source",
+                    "count": "12",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "sc4s",
+                            "count": 12
+                        }
+                    ]
+                },
+                {
+                    "field": "sourcetype",
+                    "count": "12",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "websense:cg:kv",
+                            "count": 12
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server",
+                    "count": "12",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "spl-96ff57576-4qw7k",
+                            "count": 12
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server_group",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "src",
+                    "count": "12",
+                    "distinct_count": "12",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "107.72.207.175",
+                            "count": 1
+                        },
+                        {
+                            "value": "192.104.5.227",
+                            "count": 1
+                        },
+                        {
+                            "value": "199.87.247.157",
+                            "count": 1
+                        },
+                        {
+                            "value": "200.253.36.161",
+                            "count": 1
+                        },
+                        {
+                            "value": "21.134.101.153",
+                            "count": 1
+                        },
+                        {
+                            "value": "212.96.145.212",
+                            "count": 1
+                        },
+                        {
+                            "value": "70.197.249.199",
+                            "count": 1
+                        },
+                        {
+                            "value": "75.204.161.209",
+                            "count": 1
+                        },
+                        {
+                            "value": "84.11.177.124",
+                            "count": 1
+                        },
+                        {
+                            "value": "87.164.149.15",
+                            "count": 1
+                        },
+                        {
+                            "value": "89.156.70.203",
+                            "count": 1
+                        },
+                        {
+                            "value": "90.5.237.9",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "src_host",
+                    "count": "12",
+                    "distinct_count": "12",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "107.72.207.175",
+                            "count": 1
+                        },
+                        {
+                            "value": "192.104.5.227",
+                            "count": 1
+                        },
+                        {
+                            "value": "199.87.247.157",
+                            "count": 1
+                        },
+                        {
+                            "value": "200.253.36.161",
+                            "count": 1
+                        },
+                        {
+                            "value": "21.134.101.153",
+                            "count": 1
+                        },
+                        {
+                            "value": "212.96.145.212",
+                            "count": 1
+                        },
+                        {
+                            "value": "70.197.249.199",
+                            "count": 1
+                        },
+                        {
+                            "value": "75.204.161.209",
+                            "count": 1
+                        },
+                        {
+                            "value": "84.11.177.124",
+                            "count": 1
+                        },
+                        {
+                            "value": "87.164.149.15",
+                            "count": 1
+                        },
+                        {
+                            "value": "89.156.70.203",
+                            "count": 1
+                        },
+                        {
+                            "value": "90.5.237.9",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "src_nt_host",
+                    "count": "12",
+                    "distinct_count": "12",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "107.72.207.175",
+                            "count": 1
+                        },
+                        {
+                            "value": "192.104.5.227",
+                            "count": 1
+                        },
+                        {
+                            "value": "199.87.247.157",
+                            "count": 1
+                        },
+                        {
+                            "value": "200.253.36.161",
+                            "count": 1
+                        },
+                        {
+                            "value": "21.134.101.153",
+                            "count": 1
+                        },
+                        {
+                            "value": "212.96.145.212",
+                            "count": 1
+                        },
+                        {
+                            "value": "70.197.249.199",
+                            "count": 1
+                        },
+                        {
+                            "value": "75.204.161.209",
+                            "count": 1
+                        },
+                        {
+                            "value": "84.11.177.124",
+                            "count": 1
+                        },
+                        {
+                            "value": "87.164.149.15",
+                            "count": 1
+                        },
+                        {
+                            "value": "89.156.70.203",
+                            "count": 1
+                        },
+                        {
+                            "value": "90.5.237.9",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "src_port",
+                    "count": "12",
+                    "distinct_count": "12",
+                    "is_exact": "1",
+                    "max": "61369",
+                    "mean": "31299.166666666668",
+                    "min": "227",
+                    "numeric_count": "12",
+                    "stdev": "18020.083073329515",
+                    "values": [
+                        {
+                            "value": "12140",
+                            "count": 1
+                        },
+                        {
+                            "value": "227",
+                            "count": 1
+                        },
+                        {
+                            "value": "24340",
+                            "count": 1
+                        },
+                        {
+                            "value": "28648",
+                            "count": 1
+                        },
+                        {
+                            "value": "29574",
+                            "count": 1
+                        },
+                        {
+                            "value": "35743",
+                            "count": 1
+                        },
+                        {
+                            "value": "36308",
+                            "count": 1
+                        },
+                        {
+                            "value": "38393",
+                            "count": 1
+                        },
+                        {
+                            "value": "45326",
+                            "count": 1
+                        },
+                        {
+                            "value": "53947",
+                            "count": 1
+                        },
+                        {
+                            "value": "61369",
+                            "count": 1
+                        },
+                        {
+                            "value": "9575",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "status",
+                    "count": "6",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "200",
+                    "mean": "200",
+                    "min": "200",
+                    "numeric_count": "6",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "200",
+                            "count": 6
+                        }
+                    ]
+                },
+                {
+                    "field": "status_description",
+                    "count": "6",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "OK",
+                            "count": 6
+                        }
+                    ]
+                },
+                {
+                    "field": "tag",
+                    "count": "12",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "proxy",
+                            "count": 12
+                        },
+                        {
+                            "value": "web",
+                            "count": 12
+                        }
+                    ]
+                },
+                {
+                    "field": "tag::eventtype",
+                    "count": "12",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "proxy",
+                            "count": 12
+                        },
+                        {
+                            "value": "web",
+                            "count": 12
+                        }
+                    ]
+                },
+                {
+                    "field": "url",
+                    "count": "12",
+                    "distinct_count": "12",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "http://desktop-61.morales.info/search/wp-content",
+                            "count": 1
+                        },
+                        {
+                            "value": "http://desktop-83.parker-gonzalez.com/main.php",
+                            "count": 1
+                        },
+                        {
+                            "value": "http://srv-26.cameron.com/register.html",
+                            "count": 1
+                        },
+                        {
+                            "value": "http://web-17.miller-duncan.com/explore/tag/posts",
+                            "count": 1
+                        },
+                        {
+                            "value": "http://web-27.jefferson-rios.com/register.htm",
+                            "count": 1
+                        },
+                        {
+                            "value": "https://db-00.jackson-haynes.com/categories/posts/category",
+                            "count": 1
+                        },
+                        {
+                            "value": "https://db-06.parker.org/homepage.html",
+                            "count": 1
+                        },
+                        {
+                            "value": "https://db-74.cochran.org/home.html",
+                            "count": 1
+                        },
+                        {
+                            "value": "https://desktop-52.moran.info/register.htm",
+                            "count": 1
+                        },
+                        {
+                            "value": "https://laptop-33.king.org/author.jsp",
+                            "count": 1
+                        },
+                        {
+                            "value": "https://web-23.gonzalez-hunt.com/index.php",
+                            "count": 1
+                        },
+                        {
+                            "value": "https://web-87.williams.com/posts/app/wp-content",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "url_length",
+                    "count": "12",
+                    "distinct_count": "10",
+                    "is_exact": "1",
+                    "max": "58",
+                    "mean": "43.916666666666664",
+                    "min": "35",
+                    "numeric_count": "12",
+                    "stdev": "6.44498865692399",
+                    "values": [
+                        {
+                            "value": "42",
+                            "count": 2
+                        },
+                        {
+                            "value": "48",
+                            "count": 2
+                        },
+                        {
+                            "value": "35",
+                            "count": 1
+                        },
+                        {
+                            "value": "37",
+                            "count": 1
+                        },
+                        {
+                            "value": "38",
+                            "count": 1
+                        },
+                        {
+                            "value": "39",
+                            "count": 1
+                        },
+                        {
+                            "value": "45",
+                            "count": 1
+                        },
+                        {
+                            "value": "46",
+                            "count": 1
+                        },
+                        {
+                            "value": "49",
+                            "count": 1
+                        },
+                        {
+                            "value": "58",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "user",
+                    "count": "12",
+                    "distinct_count": "12",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "LDAP://user1",
+                            "count": 1
+                        },
+                        {
+                            "value": "LDAP://user10",
+                            "count": 1
+                        },
+                        {
+                            "value": "LDAP://user11",
+                            "count": 1
+                        },
+                        {
+                            "value": "LDAP://user12",
+                            "count": 1
+                        },
+                        {
+                            "value": "LDAP://user2",
+                            "count": 1
+                        },
+                        {
+                            "value": "LDAP://user3",
+                            "count": 1
+                        },
+                        {
+                            "value": "LDAP://user4",
+                            "count": 1
+                        },
+                        {
+                            "value": "LDAP://user5",
+                            "count": 1
+                        },
+                        {
+                            "value": "LDAP://user6",
+                            "count": 1
+                        },
+                        {
+                            "value": "LDAP://user7",
+                            "count": 1
+                        },
+                        {
+                            "value": "LDAP://user8",
+                            "count": 1
+                        },
+                        {
+                            "value": "LDAP://user9",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor",
+                    "count": "12",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Websense",
+                            "count": 12
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_action",
+                    "count": "12",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "blocked",
+                            "count": 8
+                        },
+                        {
+                            "value": "permitted",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_policy",
+                    "count": "12",
+                    "distinct_count": "7",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "role-8**-_Block_only_Malware_and_Porn",
+                            "count": 4
+                        },
+                        {
+                            "value": "role-8**-_Allow_Personal_storage",
+                            "count": 2
+                        },
+                        {
+                            "value": "role-8**-_Allow_Software_download",
+                            "count": 2
+                        },
+                        {
+                            "value": "Unfiltered_URLs_-_migrated_during_upgrade",
+                            "count": 1
+                        },
+                        {
+                            "value": "role-2**-_Allow_Personal_storage",
+                            "count": 1
+                        },
+                        {
+                            "value": "role-3**-_Senior_Management",
+                            "count": 1
+                        },
+                        {
+                            "value": "role-8**Default",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_product",
+                    "count": "12",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Websense Security",
+                            "count": 12
+                        }
+                    ]
+                }
+            ]
+        ]
+    }
+}

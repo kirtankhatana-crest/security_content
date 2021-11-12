@@ -1,0 +1,1488 @@
+{
+    "ta_name": {
+        "name": "Splunk_TA_rsa-dlp",
+        "version": "1.0.0"
+    },
+    "sourcetypes": [
+        "rsa:dlp"
+    ],
+    "cimsummary": {
+        "Alerts:Alerts": {
+            "rsa_dlp": [
+                {
+                    "fields": [
+                        "app",
+                        "body",
+                        "dest",
+                        "subject",
+                        "tag"
+                    ]
+                }
+            ]
+        }
+    },
+    "fieldsummary": {
+        "rsa_dlp": [
+            [
+                {
+                    "field": "NumbersuserEmail",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "Policy",
+                    "count": "16",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Credit Card Numbers",
+                            "count": 15
+                        },
+                        {
+                            "value": "Credit Card",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ProductVersion",
+                    "count": "16",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "7.0.0",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "field": "User",
+                    "count": "16",
+                    "distinct_count": "16",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "user10",
+                            "count": 1
+                        },
+                        {
+                            "value": "user16",
+                            "count": 1
+                        },
+                        {
+                            "value": "user2",
+                            "count": 1
+                        },
+                        {
+                            "value": "user20",
+                            "count": 1
+                        },
+                        {
+                            "value": "user30",
+                            "count": 1
+                        },
+                        {
+                            "value": "user34",
+                            "count": 1
+                        },
+                        {
+                            "value": "user38",
+                            "count": 1
+                        },
+                        {
+                            "value": "user41",
+                            "count": 1
+                        },
+                        {
+                            "value": "user44",
+                            "count": 1
+                        },
+                        {
+                            "value": "user47",
+                            "count": 1
+                        },
+                        {
+                            "value": "user50",
+                            "count": 1
+                        },
+                        {
+                            "value": "user53",
+                            "count": 1
+                        },
+                        {
+                            "value": "user56",
+                            "count": 1
+                        },
+                        {
+                            "value": "user59",
+                            "count": 1
+                        },
+                        {
+                            "value": "user62",
+                            "count": 1
+                        },
+                        {
+                            "value": "user8",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Vendor",
+                    "count": "16",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "RSA",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "field": "action",
+                    "count": "16",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "audit",
+                            "count": 14
+                        },
+                        {
+                            "value": "block",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "app",
+                    "count": "16",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "RSA DLP",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "field": "body",
+                    "count": "16",
+                    "distinct_count": "16",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "User=user10 Policy=Credit Card Numbers userEmail=b@def-ghi.org department= organization= action=audit eventTimestamp=2009-02-09T19-09-40-00Z protocol=smtp sessionSubProtocol=smtp sourceIP=10.1.0.5 sourcePort= destinationIP=10.100.0.46 destinationPort= sessionEmailMailFrom=d@opq.rst.io sessionEmailMailto=c@jkl_mln.edu^d@opq.rst.io sessionFtpUser= sessionHttpMailFrom=a@abc.com sessionHttpMailto=a@abc.com^a@abc.com sessionImChatInsider= sessionImChatOutsider= sessionImFtpInsider= sessionImFtpOutsider= Vendor=RSA ProductVersion=7.0.0 dlp_event_link='http://10.100.0.47/event/viewnwevent.html?id=3621'",
+                            "count": 1
+                        },
+                        {
+                            "value": "User=user16 Policy=Credit Card Numbers userEmail= department= organization= action=block eventTimestamp=2009-02-09T19-24-53-00Z usage=print-local usageIp=42.100.47.224^166.160.6.39^144.220.26.225 usageApplication=Explorer.EXE usageSourceDeviceType=Fixed Drive usageSourceIp=162.133.217.162 usageSourceUnc= usageDestinationDeviceType=Printer usageDestinationIp=10.100.0.58 usageDestinationUnc=D:\\test\\test3.pdf Vendor=RSA ProductVersion=7.0.0 dlp_event_link='http://10.100.0.59/event/viewdtevent.html?id=3631'",
+                            "count": 1
+                        },
+                        {
+                            "value": "User=user2 Policy=Credit Card Numbers userEmail=d@opq.rst.io department= organization= action=block eventTimestamp=2009-02-09T19-09-40-00Z protocol=smtp sessionSubProtocol=smtp sourceIP=10.1.0.1 sourcePort= destinationIP=10.100.0.30 destinationPort= sessionEmailMailFrom=c@jkl_mln.edu sessionEmailMailto=c@jkl_mln.edu^c@jkl_mln.edu sessionFtpUser= sessionHttpMailFrom=b@def-ghi.org sessionHttpMailto=a@abc.com^b@def-ghi.org sessionImChatInsider= sessionImChatOutsider= sessionImFtpInsider= sessionImFtpOutsider= Vendor=RSA ProductVersion=7.0.0 dlp_event_link='http://10.100.0.31/event/viewnwevent.html?id=3621'",
+                            "count": 1
+                        },
+                        {
+                            "value": "User=user20 Policy=Credit Card Numbers userEmail= department= organization= action=audit eventTimestamp=2009-02-03T18-41-51-00Z fileMatches=Message.eml/3Partial 2 Category.doc fileMatchOwnerDisplayName=user21 Vendor=RSA ProductVersion=7.0.0 dlp_event_link='http://10.100.0.66/event/viewcsevent.html?id=2411'",
+                            "count": 1
+                        },
+                        {
+                            "value": "User=user30 Policy=Credit Card NumbersuserEmail= department= organization= action=audit eventTimestamp=2009-02-03T18-41-51-00Z usage=print-local usageIp=19.116.215.119^38.141.51.163^131.38.52.155 usageApplication=Explorer.EXE usageSourceDeviceType=Fixed Drive usageSourceIp=70.64.27.32 usageSourceUnc= usageDestinationDeviceType=Printer usageDestinationIp=10.100.0.80 usageDestinationUnc=/var/tmp/test6.pdf Vendor=RSA ProductVersion=7.0.0 dlp_event_link='http://10.100.0.81/event/viewdtevent.html?id=2413'",
+                            "count": 1
+                        },
+                        {
+                            "value": "User=user34 Policy=Credit Card Numbers userEmail= department= organization= action=audit eventTimestamp=2009-02-03T18-41-51-00Z usage=print-local usageIp=151.162.191.58^222.153.66.238^193.11.26.214 usageApplication=Explorer.EXE usageSourceDeviceType=Fixed Drive usageSourceIp=97.211.168.111 usageSourceUnc= usageDestinationDeviceType=Printer usageDestinationIp=10.100.0.88 usageDestinationUnc=D:\\test\\test8.pdf Vendor=RSA ProductVersion=7.0.0 dlp_event_link='http://10.100.0.89/event/viewdtevent.html?id=2413'",
+                            "count": 1
+                        },
+                        {
+                            "value": "User=user38 Policy=Credit Card Numbers userEmail= department= organization= action=audit eventTimestamp=2009-02-03T18-41-51-00Z fileMatches=Message.eml/3Partial 2 Category.doc fileMatchOwnerDisplayName=user39 Vendor=RSA ProductVersion=7.0.0 dlp_event_link='http://10.100.0.96/event/viewcsevent.html?id=2411'",
+                            "count": 1
+                        },
+                        {
+                            "value": "User=user41 Policy=Credit Card Numbers userEmail= department= organization= action=audit eventTimestamp=2009-02-03T18-41-51-00Z fileMatches=Message.eml/3Partial 2 Category.doc fileMatchOwnerDisplayName=user42 Vendor=RSA ProductVersion=7.0.0 dlp_event_link='http://10.100.0.99/event/viewcsevent.html?id=2411'",
+                            "count": 1
+                        },
+                        {
+                            "value": "User=user44 Policy=Credit Card Numbers userEmail= department= organization= action=audit eventTimestamp=2009-02-03T18-41-51-00Z fileMatches=Message.eml/3Partial 2 Category.doc fileMatchOwnerDisplayName=user45 Vendor=RSA ProductVersion=7.0.0 dlp_event_link='http://10.100.0.102/event/viewcsevent.html?id=2411'",
+                            "count": 1
+                        },
+                        {
+                            "value": "User=user47 Policy=Credit Card Numbers userEmail= department= organization= action=audit eventTimestamp=2009-02-03T18-41-51-00Z fileMatches=Message.eml/3Partial 2 Category.doc fileMatchOwnerDisplayName=user48 Vendor=RSA ProductVersion=7.0.0 dlp_event_link='http://10.100.0.105/event/viewcsevent.html?id=2411'",
+                            "count": 1
+                        },
+                        {
+                            "value": "User=user50 Policy=Credit Card Numbers userEmail= department= organization= action=audit eventTimestamp=2009-02-03T18-41-51-00Z fileMatches=Message.eml/3Partial 2 Category.doc fileMatchOwnerDisplayName=user51 Vendor=RSA ProductVersion=7.0.0 dlp_event_link='http://10.100.0.108/event/viewcsevent.html?id=2411'",
+                            "count": 1
+                        },
+                        {
+                            "value": "User=user53 Policy=Credit Card Numbers userEmail= department= organization= action=audit eventTimestamp=2009-02-03T18-41-51-00Z fileMatches=Message.eml/3Partial 2 Category.doc fileMatchOwnerDisplayName=user54 Vendor=RSA ProductVersion=7.0.0 dlp_event_link='http://10.100.0.111/event/viewcsevent.html?id=2411'",
+                            "count": 1
+                        },
+                        {
+                            "value": "User=user56 Policy=Credit Card Numbers userEmail= department= organization= action=audit eventTimestamp=2009-02-03T18-41-51-00Z fileMatches=Message.eml/3Partial 2 Category.doc fileMatchOwnerDisplayName=user57 Vendor=RSA ProductVersion=7.0.0 dlp_event_link='http://10.100.0.114/event/viewcsevent.html?id=2411'",
+                            "count": 1
+                        },
+                        {
+                            "value": "User=user59 Policy=Credit Card Numbers userEmail= department= organization= action=audit eventTimestamp=2009-02-03T18-41-51-00Z fileMatches=Message.eml/3Partial 2 Category.doc fileMatchOwnerDisplayName=user60 Vendor=RSA ProductVersion=7.0.0 dlp_event_link='http://10.100.0.117/event/viewcsevent.html?id=2411'",
+                            "count": 1
+                        },
+                        {
+                            "value": "User=user62 Policy=Credit Card Numbers userEmail= department= organization= action=audit eventTimestamp=2009-02-03T18-41-51-00Z fileMatches=Message.eml/3Partial 2 Category.doc fileMatchOwnerDisplayName=user63 Vendor=RSA ProductVersion=7.0.0 dlp_event_link='http://10.100.0.120/event/viewcsevent.html?id=2411'",
+                            "count": 1
+                        },
+                        {
+                            "value": "User=user8 Policy=Credit Card Numbers userEmail=a@abc.com department= organization= action=audit eventTimestamp=2009-02-09T19-09-40-00Z protocol=smtp sessionSubProtocol=smtp sourceIP=10.1.0.4 sourcePort= destinationIP=10.100.0.42 destinationPort= sessionEmailMailFrom=d@opq.rst.io sessionEmailMailto=b@def-ghi.org^b@def-ghi.org sessionFtpUser= sessionHttpMailFrom=a@abc.com sessionHttpMailto=b@def-ghi.org^d@opq.rst.io sessionImChatInsider= sessionImChatOutsider= sessionImFtpInsider= sessionImFtpOutsider= Vendor=RSA ProductVersion=7.0.0 dlp_event_link='http://10.100.0.43/event/viewnwevent.html?id=3621'",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_hour",
+                    "count": "16",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "17",
+                    "mean": "16.6875",
+                    "min": "16",
+                    "numeric_count": "16",
+                    "stdev": "0.47871355387816905",
+                    "values": [
+                        {
+                            "value": "17",
+                            "count": 11
+                        },
+                        {
+                            "value": "16",
+                            "count": 5
+                        }
+                    ]
+                },
+                {
+                    "field": "date_mday",
+                    "count": "16",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "26",
+                    "mean": "26",
+                    "min": "26",
+                    "numeric_count": "16",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "26",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "field": "date_minute",
+                    "count": "16",
+                    "distinct_count": "16",
+                    "is_exact": "1",
+                    "max": "59",
+                    "mean": "32.75",
+                    "min": "1",
+                    "numeric_count": "16",
+                    "stdev": "17.54802932905383",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 1
+                        },
+                        {
+                            "value": "13",
+                            "count": 1
+                        },
+                        {
+                            "value": "16",
+                            "count": 1
+                        },
+                        {
+                            "value": "18",
+                            "count": 1
+                        },
+                        {
+                            "value": "23",
+                            "count": 1
+                        },
+                        {
+                            "value": "24",
+                            "count": 1
+                        },
+                        {
+                            "value": "27",
+                            "count": 1
+                        },
+                        {
+                            "value": "28",
+                            "count": 1
+                        },
+                        {
+                            "value": "30",
+                            "count": 1
+                        },
+                        {
+                            "value": "32",
+                            "count": 1
+                        },
+                        {
+                            "value": "39",
+                            "count": 1
+                        },
+                        {
+                            "value": "50",
+                            "count": 1
+                        },
+                        {
+                            "value": "51",
+                            "count": 1
+                        },
+                        {
+                            "value": "56",
+                            "count": 1
+                        },
+                        {
+                            "value": "57",
+                            "count": 1
+                        },
+                        {
+                            "value": "59",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_month",
+                    "count": "16",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "october",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "field": "date_second",
+                    "count": "16",
+                    "distinct_count": "13",
+                    "is_exact": "1",
+                    "max": "53",
+                    "mean": "23.6875",
+                    "min": "0",
+                    "numeric_count": "16",
+                    "stdev": "20.882907683877104",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 2
+                        },
+                        {
+                            "value": "22",
+                            "count": 2
+                        },
+                        {
+                            "value": "39",
+                            "count": 2
+                        },
+                        {
+                            "value": "1",
+                            "count": 1
+                        },
+                        {
+                            "value": "2",
+                            "count": 1
+                        },
+                        {
+                            "value": "4",
+                            "count": 1
+                        },
+                        {
+                            "value": "42",
+                            "count": 1
+                        },
+                        {
+                            "value": "44",
+                            "count": 1
+                        },
+                        {
+                            "value": "48",
+                            "count": 1
+                        },
+                        {
+                            "value": "5",
+                            "count": 1
+                        },
+                        {
+                            "value": "51",
+                            "count": 1
+                        },
+                        {
+                            "value": "53",
+                            "count": 1
+                        },
+                        {
+                            "value": "7",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_wday",
+                    "count": "16",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "tuesday",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "field": "date_year",
+                    "count": "16",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "2021",
+                    "mean": "2021",
+                    "min": "2021",
+                    "numeric_count": "16",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "2021",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "field": "date_zone",
+                    "count": "16",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "local",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "field": "department",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "dest",
+                    "count": "16",
+                    "distinct_count": "16",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "10.100.0.1",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.100.0.10",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.100.0.14",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.100.0.16",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.100.0.18",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.100.0.19",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.100.0.20",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.100.0.21",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.100.0.22",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.100.0.23",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.100.0.24",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.100.0.25",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.100.0.26",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.100.0.4",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.100.0.5",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.100.0.8",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dest_ip",
+                    "count": "16",
+                    "distinct_count": "16",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "10.100.0.1",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.100.0.10",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.100.0.14",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.100.0.16",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.100.0.18",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.100.0.19",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.100.0.20",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.100.0.21",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.100.0.22",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.100.0.23",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.100.0.24",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.100.0.25",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.100.0.26",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.100.0.4",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.100.0.5",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.100.0.8",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "destinationIP",
+                    "count": "3",
+                    "distinct_count": "3",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "10.100.0.30",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.100.0.42",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.100.0.46",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "destinationPort",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "dlp_event_link",
+                    "count": "16",
+                    "distinct_count": "16",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "http://10.100.0.102/event/viewcsevent.html?id=2411",
+                            "count": 1
+                        },
+                        {
+                            "value": "http://10.100.0.105/event/viewcsevent.html?id=2411",
+                            "count": 1
+                        },
+                        {
+                            "value": "http://10.100.0.108/event/viewcsevent.html?id=2411",
+                            "count": 1
+                        },
+                        {
+                            "value": "http://10.100.0.111/event/viewcsevent.html?id=2411",
+                            "count": 1
+                        },
+                        {
+                            "value": "http://10.100.0.114/event/viewcsevent.html?id=2411",
+                            "count": 1
+                        },
+                        {
+                            "value": "http://10.100.0.117/event/viewcsevent.html?id=2411",
+                            "count": 1
+                        },
+                        {
+                            "value": "http://10.100.0.120/event/viewcsevent.html?id=2411",
+                            "count": 1
+                        },
+                        {
+                            "value": "http://10.100.0.31/event/viewnwevent.html?id=3621",
+                            "count": 1
+                        },
+                        {
+                            "value": "http://10.100.0.43/event/viewnwevent.html?id=3621",
+                            "count": 1
+                        },
+                        {
+                            "value": "http://10.100.0.47/event/viewnwevent.html?id=3621",
+                            "count": 1
+                        },
+                        {
+                            "value": "http://10.100.0.59/event/viewdtevent.html?id=3631",
+                            "count": 1
+                        },
+                        {
+                            "value": "http://10.100.0.66/event/viewcsevent.html?id=2411",
+                            "count": 1
+                        },
+                        {
+                            "value": "http://10.100.0.81/event/viewdtevent.html?id=2413",
+                            "count": 1
+                        },
+                        {
+                            "value": "http://10.100.0.89/event/viewdtevent.html?id=2413",
+                            "count": 1
+                        },
+                        {
+                            "value": "http://10.100.0.96/event/viewcsevent.html?id=2411",
+                            "count": 1
+                        },
+                        {
+                            "value": "http://10.100.0.99/event/viewcsevent.html?id=2411",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "eventTimestamp",
+                    "count": "16",
+                    "distinct_count": "3",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "2009-02-03T18-41-51-00Z",
+                            "count": 12
+                        },
+                        {
+                            "value": "2009-02-09T19-09-40-00Z",
+                            "count": 3
+                        },
+                        {
+                            "value": "2009-02-09T19-24-53-00Z",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "eventtype",
+                    "count": "16",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "rsa_dlp",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "field": "fileMatchOwnerDisplayName",
+                    "count": "10",
+                    "distinct_count": "10",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "user21",
+                            "count": 1
+                        },
+                        {
+                            "value": "user39",
+                            "count": 1
+                        },
+                        {
+                            "value": "user42",
+                            "count": 1
+                        },
+                        {
+                            "value": "user45",
+                            "count": 1
+                        },
+                        {
+                            "value": "user48",
+                            "count": 1
+                        },
+                        {
+                            "value": "user51",
+                            "count": 1
+                        },
+                        {
+                            "value": "user54",
+                            "count": 1
+                        },
+                        {
+                            "value": "user57",
+                            "count": 1
+                        },
+                        {
+                            "value": "user60",
+                            "count": 1
+                        },
+                        {
+                            "value": "user63",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "fileMatches",
+                    "count": "10",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Message.eml/3Partial 2 Category.doc",
+                            "count": 10
+                        }
+                    ]
+                },
+                {
+                    "field": "host",
+                    "count": "16",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "samplelog.rsadlp",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "field": "index",
+                    "count": "16",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "main",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "field": "linecount",
+                    "count": "16",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1",
+                    "mean": "1",
+                    "min": "1",
+                    "numeric_count": "16",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "field": "message_body",
+                    "count": "16",
+                    "distinct_count": "16",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "User=user10 Policy=Credit Card Numbers userEmail=b@def-ghi.org department= organization= action=audit eventTimestamp=2009-02-09T19-09-40-00Z protocol=smtp sessionSubProtocol=smtp sourceIP=10.1.0.5 sourcePort= destinationIP=10.100.0.46 destinationPort= sessionEmailMailFrom=d@opq.rst.io sessionEmailMailto=c@jkl_mln.edu^d@opq.rst.io sessionFtpUser= sessionHttpMailFrom=a@abc.com sessionHttpMailto=a@abc.com^a@abc.com sessionImChatInsider= sessionImChatOutsider= sessionImFtpInsider= sessionImFtpOutsider= Vendor=RSA ProductVersion=7.0.0 dlp_event_link='http://10.100.0.47/event/viewnwevent.html?id=3621'",
+                            "count": 1
+                        },
+                        {
+                            "value": "User=user16 Policy=Credit Card Numbers userEmail= department= organization= action=block eventTimestamp=2009-02-09T19-24-53-00Z usage=print-local usageIp=42.100.47.224^166.160.6.39^144.220.26.225 usageApplication=Explorer.EXE usageSourceDeviceType=Fixed Drive usageSourceIp=162.133.217.162 usageSourceUnc= usageDestinationDeviceType=Printer usageDestinationIp=10.100.0.58 usageDestinationUnc=D:\\test\\test3.pdf Vendor=RSA ProductVersion=7.0.0 dlp_event_link='http://10.100.0.59/event/viewdtevent.html?id=3631'",
+                            "count": 1
+                        },
+                        {
+                            "value": "User=user2 Policy=Credit Card Numbers userEmail=d@opq.rst.io department= organization= action=block eventTimestamp=2009-02-09T19-09-40-00Z protocol=smtp sessionSubProtocol=smtp sourceIP=10.1.0.1 sourcePort= destinationIP=10.100.0.30 destinationPort= sessionEmailMailFrom=c@jkl_mln.edu sessionEmailMailto=c@jkl_mln.edu^c@jkl_mln.edu sessionFtpUser= sessionHttpMailFrom=b@def-ghi.org sessionHttpMailto=a@abc.com^b@def-ghi.org sessionImChatInsider= sessionImChatOutsider= sessionImFtpInsider= sessionImFtpOutsider= Vendor=RSA ProductVersion=7.0.0 dlp_event_link='http://10.100.0.31/event/viewnwevent.html?id=3621'",
+                            "count": 1
+                        },
+                        {
+                            "value": "User=user20 Policy=Credit Card Numbers userEmail= department= organization= action=audit eventTimestamp=2009-02-03T18-41-51-00Z fileMatches=Message.eml/3Partial 2 Category.doc fileMatchOwnerDisplayName=user21 Vendor=RSA ProductVersion=7.0.0 dlp_event_link='http://10.100.0.66/event/viewcsevent.html?id=2411'",
+                            "count": 1
+                        },
+                        {
+                            "value": "User=user30 Policy=Credit Card NumbersuserEmail= department= organization= action=audit eventTimestamp=2009-02-03T18-41-51-00Z usage=print-local usageIp=19.116.215.119^38.141.51.163^131.38.52.155 usageApplication=Explorer.EXE usageSourceDeviceType=Fixed Drive usageSourceIp=70.64.27.32 usageSourceUnc= usageDestinationDeviceType=Printer usageDestinationIp=10.100.0.80 usageDestinationUnc=/var/tmp/test6.pdf Vendor=RSA ProductVersion=7.0.0 dlp_event_link='http://10.100.0.81/event/viewdtevent.html?id=2413'",
+                            "count": 1
+                        },
+                        {
+                            "value": "User=user34 Policy=Credit Card Numbers userEmail= department= organization= action=audit eventTimestamp=2009-02-03T18-41-51-00Z usage=print-local usageIp=151.162.191.58^222.153.66.238^193.11.26.214 usageApplication=Explorer.EXE usageSourceDeviceType=Fixed Drive usageSourceIp=97.211.168.111 usageSourceUnc= usageDestinationDeviceType=Printer usageDestinationIp=10.100.0.88 usageDestinationUnc=D:\\test\\test8.pdf Vendor=RSA ProductVersion=7.0.0 dlp_event_link='http://10.100.0.89/event/viewdtevent.html?id=2413'",
+                            "count": 1
+                        },
+                        {
+                            "value": "User=user38 Policy=Credit Card Numbers userEmail= department= organization= action=audit eventTimestamp=2009-02-03T18-41-51-00Z fileMatches=Message.eml/3Partial 2 Category.doc fileMatchOwnerDisplayName=user39 Vendor=RSA ProductVersion=7.0.0 dlp_event_link='http://10.100.0.96/event/viewcsevent.html?id=2411'",
+                            "count": 1
+                        },
+                        {
+                            "value": "User=user41 Policy=Credit Card Numbers userEmail= department= organization= action=audit eventTimestamp=2009-02-03T18-41-51-00Z fileMatches=Message.eml/3Partial 2 Category.doc fileMatchOwnerDisplayName=user42 Vendor=RSA ProductVersion=7.0.0 dlp_event_link='http://10.100.0.99/event/viewcsevent.html?id=2411'",
+                            "count": 1
+                        },
+                        {
+                            "value": "User=user44 Policy=Credit Card Numbers userEmail= department= organization= action=audit eventTimestamp=2009-02-03T18-41-51-00Z fileMatches=Message.eml/3Partial 2 Category.doc fileMatchOwnerDisplayName=user45 Vendor=RSA ProductVersion=7.0.0 dlp_event_link='http://10.100.0.102/event/viewcsevent.html?id=2411'",
+                            "count": 1
+                        },
+                        {
+                            "value": "User=user47 Policy=Credit Card Numbers userEmail= department= organization= action=audit eventTimestamp=2009-02-03T18-41-51-00Z fileMatches=Message.eml/3Partial 2 Category.doc fileMatchOwnerDisplayName=user48 Vendor=RSA ProductVersion=7.0.0 dlp_event_link='http://10.100.0.105/event/viewcsevent.html?id=2411'",
+                            "count": 1
+                        },
+                        {
+                            "value": "User=user50 Policy=Credit Card Numbers userEmail= department= organization= action=audit eventTimestamp=2009-02-03T18-41-51-00Z fileMatches=Message.eml/3Partial 2 Category.doc fileMatchOwnerDisplayName=user51 Vendor=RSA ProductVersion=7.0.0 dlp_event_link='http://10.100.0.108/event/viewcsevent.html?id=2411'",
+                            "count": 1
+                        },
+                        {
+                            "value": "User=user53 Policy=Credit Card Numbers userEmail= department= organization= action=audit eventTimestamp=2009-02-03T18-41-51-00Z fileMatches=Message.eml/3Partial 2 Category.doc fileMatchOwnerDisplayName=user54 Vendor=RSA ProductVersion=7.0.0 dlp_event_link='http://10.100.0.111/event/viewcsevent.html?id=2411'",
+                            "count": 1
+                        },
+                        {
+                            "value": "User=user56 Policy=Credit Card Numbers userEmail= department= organization= action=audit eventTimestamp=2009-02-03T18-41-51-00Z fileMatches=Message.eml/3Partial 2 Category.doc fileMatchOwnerDisplayName=user57 Vendor=RSA ProductVersion=7.0.0 dlp_event_link='http://10.100.0.114/event/viewcsevent.html?id=2411'",
+                            "count": 1
+                        },
+                        {
+                            "value": "User=user59 Policy=Credit Card Numbers userEmail= department= organization= action=audit eventTimestamp=2009-02-03T18-41-51-00Z fileMatches=Message.eml/3Partial 2 Category.doc fileMatchOwnerDisplayName=user60 Vendor=RSA ProductVersion=7.0.0 dlp_event_link='http://10.100.0.117/event/viewcsevent.html?id=2411'",
+                            "count": 1
+                        },
+                        {
+                            "value": "User=user62 Policy=Credit Card Numbers userEmail= department= organization= action=audit eventTimestamp=2009-02-03T18-41-51-00Z fileMatches=Message.eml/3Partial 2 Category.doc fileMatchOwnerDisplayName=user63 Vendor=RSA ProductVersion=7.0.0 dlp_event_link='http://10.100.0.120/event/viewcsevent.html?id=2411'",
+                            "count": 1
+                        },
+                        {
+                            "value": "User=user8 Policy=Credit Card Numbers userEmail=a@abc.com department= organization= action=audit eventTimestamp=2009-02-09T19-09-40-00Z protocol=smtp sessionSubProtocol=smtp sourceIP=10.1.0.4 sourcePort= destinationIP=10.100.0.42 destinationPort= sessionEmailMailFrom=d@opq.rst.io sessionEmailMailto=b@def-ghi.org^b@def-ghi.org sessionFtpUser= sessionHttpMailFrom=a@abc.com sessionHttpMailto=b@def-ghi.org^d@opq.rst.io sessionImChatInsider= sessionImChatOutsider= sessionImFtpInsider= sessionImFtpOutsider= Vendor=RSA ProductVersion=7.0.0 dlp_event_link='http://10.100.0.43/event/viewnwevent.html?id=3621'",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "module",
+                    "count": "16",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "DLP_EM",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "field": "organization",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "policy_detail",
+                    "count": "16",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "RSA DLP Policy Credit Card Numbers Violation",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "field": "protocol",
+                    "count": "3",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "smtp",
+                            "count": 3
+                        }
+                    ]
+                },
+                {
+                    "field": "punct",
+                    "count": "16",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "__::_[...]___::_..._:_...______::_\"______\"_::_\"=_=",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "field": "sessionEmailMailFrom",
+                    "count": "3",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "d@opq.rst.io",
+                            "count": 2
+                        },
+                        {
+                            "value": "c@jkl_mln.edu",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sessionEmailMailto",
+                    "count": "3",
+                    "distinct_count": "3",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "c@jkl_mln.edu",
+                            "count": 3
+                        },
+                        {
+                            "value": "b@def-ghi.org",
+                            "count": 2
+                        },
+                        {
+                            "value": "d@opq.rst.io",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sessionFtpUser",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "sessionHttpMailFrom",
+                    "count": "3",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "a@abc.com",
+                            "count": 2
+                        },
+                        {
+                            "value": "b@def-ghi.org",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sessionHttpMailto",
+                    "count": "3",
+                    "distinct_count": "3",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "a@abc.com",
+                            "count": 3
+                        },
+                        {
+                            "value": "b@def-ghi.org",
+                            "count": 2
+                        },
+                        {
+                            "value": "d@opq.rst.io",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sessionImChatInsider",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "sessionImChatOutsider",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "sessionImFtpInsider",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "sessionImFtpOutsider",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "sessionSubProtocol",
+                    "count": "3",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "smtp",
+                            "count": 3
+                        }
+                    ]
+                },
+                {
+                    "field": "source",
+                    "count": "16",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "pytest-splunk-addon-file_monitor",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "field": "sourceIP",
+                    "count": "3",
+                    "distinct_count": "3",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "10.1.0.1",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.1.0.4",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.1.0.5",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sourcePort",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "sourcetype",
+                    "count": "16",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "rsa:dlp",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server",
+                    "count": "16",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "spl-7ff6c74664-2cjqx",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server_group",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "subject",
+                    "count": "16",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "RSA DLP Policy Credit Card Numbers Violation",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "field": "tag",
+                    "count": "16",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "alert",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "field": "tag::eventtype",
+                    "count": "16",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "alert",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "field": "timeendpos",
+                    "count": "16",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "16",
+                    "mean": "16",
+                    "min": "16",
+                    "numeric_count": "16",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "16",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "field": "timestartpos",
+                    "count": "16",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "16",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "field": "usage",
+                    "count": "3",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "print-local",
+                            "count": 3
+                        }
+                    ]
+                },
+                {
+                    "field": "usageApplication",
+                    "count": "3",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Explorer.EXE",
+                            "count": 3
+                        }
+                    ]
+                },
+                {
+                    "field": "usageDestinationDeviceType",
+                    "count": "3",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Printer",
+                            "count": 3
+                        }
+                    ]
+                },
+                {
+                    "field": "usageDestinationIp",
+                    "count": "3",
+                    "distinct_count": "3",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "10.100.0.58",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.100.0.80",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.100.0.88",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "usageDestinationUnc",
+                    "count": "3",
+                    "distinct_count": "3",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "/var/tmp/test6.pdf",
+                            "count": 1
+                        },
+                        {
+                            "value": "D:\\test\\test3.pdf",
+                            "count": 1
+                        },
+                        {
+                            "value": "D:\\test\\test8.pdf",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "usageIp",
+                    "count": "3",
+                    "distinct_count": "9",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "131.38.52.155",
+                            "count": 1
+                        },
+                        {
+                            "value": "144.220.26.225",
+                            "count": 1
+                        },
+                        {
+                            "value": "151.162.191.58",
+                            "count": 1
+                        },
+                        {
+                            "value": "166.160.6.39",
+                            "count": 1
+                        },
+                        {
+                            "value": "19.116.215.119",
+                            "count": 1
+                        },
+                        {
+                            "value": "193.11.26.214",
+                            "count": 1
+                        },
+                        {
+                            "value": "222.153.66.238",
+                            "count": 1
+                        },
+                        {
+                            "value": "38.141.51.163",
+                            "count": 1
+                        },
+                        {
+                            "value": "42.100.47.224",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "usageSourceDeviceType",
+                    "count": "3",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Fixed Drive",
+                            "count": 3
+                        }
+                    ]
+                },
+                {
+                    "field": "usageSourceIp",
+                    "count": "3",
+                    "distinct_count": "3",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "162.133.217.162",
+                            "count": 1
+                        },
+                        {
+                            "value": "70.64.27.32",
+                            "count": 1
+                        },
+                        {
+                            "value": "97.211.168.111",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "usageSourceUnc",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "userEmail",
+                    "count": "3",
+                    "distinct_count": "3",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "a@abc.com",
+                            "count": 1
+                        },
+                        {
+                            "value": "b@def-ghi.org",
+                            "count": 1
+                        },
+                        {
+                            "value": "d@opq.rst.io",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        ]
+    }
+}

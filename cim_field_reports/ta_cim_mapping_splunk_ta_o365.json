@@ -1,0 +1,4094 @@
+{
+    "ta_name": {
+        "name": "splunk_ta_o365",
+        "version": "2.1.0"
+    },
+    "sourcetypes": [
+        "o365:management:activity"
+    ],
+    "cimsummary": {
+        "Endpoint:Filesystem": {
+            "o365_endpoint_changes": [
+                {
+                    "fields": [
+                        "action",
+                        "dest",
+                        "file_name",
+                        "file_path",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Endpoint:Registry": {
+            "o365_endpoint_changes": [
+                {
+                    "fields": [
+                        "action",
+                        "dest",
+                        "file_name",
+                        "file_path",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Ticket_Management:Change": {
+            "o365_account_management": [
+                {
+                    "fields": []
+                }
+            ]
+        },
+        "Change_Analysis:All_Changes": {
+            "o365_account_management": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_category",
+                        "object_id",
+                        "object_path",
+                        "src",
+                        "status",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change_Analysis:Auditing_Changes": {
+            "o365_account_management": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_category",
+                        "object_id",
+                        "object_path",
+                        "src",
+                        "status",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change_Analysis:Endpoint_Changes": {
+            "o365_account_management": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_category",
+                        "object_id",
+                        "object_path",
+                        "src",
+                        "status",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change_Analysis:Filesystem_Changes": {
+            "o365_account_management": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_category",
+                        "object_id",
+                        "object_path",
+                        "src",
+                        "status",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change_Analysis:Registry_Changes": {
+            "o365_account_management": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_category",
+                        "object_id",
+                        "object_path",
+                        "src",
+                        "status",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change_Analysis:Endpoint_Restarts": {
+            "o365_account_management": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_category",
+                        "object_id",
+                        "object_path",
+                        "src",
+                        "status",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change_Analysis:Other_Endpoint_Changes": {
+            "o365_account_management": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_category",
+                        "object_id",
+                        "object_path",
+                        "src",
+                        "status",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change_Analysis:Network_Changes": {
+            "o365_account_management": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_category",
+                        "object_id",
+                        "object_path",
+                        "src",
+                        "status",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change_Analysis:Device_Restarts": {
+            "o365_account_management": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_category",
+                        "object_id",
+                        "object_path",
+                        "src",
+                        "status",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change_Analysis:Account_Management": {
+            "o365_account_management": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_category",
+                        "object_id",
+                        "object_path",
+                        "src",
+                        "src_user",
+                        "status",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change_Analysis:Accounts_Created": {
+            "o365_account_management": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_category",
+                        "object_id",
+                        "object_path",
+                        "src",
+                        "src_user",
+                        "status",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change_Analysis:Accounts_Deleted": {
+            "o365_account_management": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_category",
+                        "object_id",
+                        "object_path",
+                        "src",
+                        "src_user",
+                        "status",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change_Analysis:Account_Lockouts": {
+            "o365_account_management": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_category",
+                        "object_id",
+                        "object_path",
+                        "src",
+                        "src_user",
+                        "status",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change_Analysis:Accounts_Updated": {
+            "o365_account_management": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_category",
+                        "object_id",
+                        "object_path",
+                        "src",
+                        "src_user",
+                        "status",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change:All_Changes": {
+            "o365_account_management": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_category",
+                        "object_id",
+                        "object_path",
+                        "src",
+                        "src_user",
+                        "status",
+                        "tag",
+                        "user",
+                        "user_type",
+                        "vendor_account",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change:Auditing_Changes": {
+            "o365_account_management": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_category",
+                        "object_id",
+                        "object_path",
+                        "src",
+                        "src_user",
+                        "status",
+                        "tag",
+                        "user",
+                        "user_type",
+                        "vendor_account",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change:Endpoint_Changes": {
+            "o365_account_management": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_category",
+                        "object_id",
+                        "object_path",
+                        "src",
+                        "src_user",
+                        "status",
+                        "tag",
+                        "user",
+                        "user_type",
+                        "vendor_account",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change:Endpoint_Restarts": {
+            "o365_account_management": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_category",
+                        "object_id",
+                        "object_path",
+                        "src",
+                        "src_user",
+                        "status",
+                        "tag",
+                        "user",
+                        "user_type",
+                        "vendor_account",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change:Other_Endpoint_Changes": {
+            "o365_account_management": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_category",
+                        "object_id",
+                        "object_path",
+                        "src",
+                        "src_user",
+                        "status",
+                        "tag",
+                        "user",
+                        "user_type",
+                        "vendor_account",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change:Network_Changes": {
+            "o365_account_management": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_category",
+                        "object_id",
+                        "object_path",
+                        "src",
+                        "src_user",
+                        "status",
+                        "tag",
+                        "user",
+                        "user_type",
+                        "vendor_account",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change:Device_Restarts": {
+            "o365_account_management": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_category",
+                        "object_id",
+                        "object_path",
+                        "src",
+                        "src_user",
+                        "status",
+                        "tag",
+                        "user",
+                        "user_type",
+                        "vendor_account",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change:Account_Management": {
+            "o365_account_management": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_category",
+                        "object_id",
+                        "object_path",
+                        "src",
+                        "src_user",
+                        "status",
+                        "tag",
+                        "user",
+                        "user_type",
+                        "vendor_account",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change:Accounts_Created": {
+            "o365_account_management": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_category",
+                        "object_id",
+                        "object_path",
+                        "src",
+                        "src_user",
+                        "status",
+                        "tag",
+                        "user",
+                        "user_type",
+                        "vendor_account",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change:Accounts_Deleted": {
+            "o365_account_management": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_category",
+                        "object_id",
+                        "object_path",
+                        "src",
+                        "src_user",
+                        "status",
+                        "tag",
+                        "user",
+                        "user_type",
+                        "vendor_account",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change:Account_Lockouts": {
+            "o365_account_management": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_category",
+                        "object_id",
+                        "object_path",
+                        "src",
+                        "src_user",
+                        "status",
+                        "tag",
+                        "user",
+                        "user_type",
+                        "vendor_account",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change:Accounts_Updated": {
+            "o365_account_management": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_category",
+                        "object_id",
+                        "object_path",
+                        "src",
+                        "src_user",
+                        "status",
+                        "tag",
+                        "user",
+                        "user_type",
+                        "vendor_account",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change:Instance_Changes": {
+            "o365_account_management": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_category",
+                        "object_id",
+                        "object_path",
+                        "src",
+                        "src_user",
+                        "status",
+                        "tag",
+                        "user",
+                        "user_type",
+                        "vendor_account",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Authentication:Authentication": {
+            "o365_authentication": [
+                {
+                    "fields": [
+                        "action",
+                        "app",
+                        "dest",
+                        "reason",
+                        "signature",
+                        "src",
+                        "tag",
+                        "user",
+                        "user_id",
+                        "user_type",
+                        "vendor_account"
+                    ]
+                }
+            ]
+        },
+        "Authentication:Failed_Authentication": {
+            "o365_authentication": [
+                {
+                    "fields": [
+                        "action",
+                        "app",
+                        "dest",
+                        "reason",
+                        "signature",
+                        "src",
+                        "tag",
+                        "user",
+                        "user_id",
+                        "user_type",
+                        "vendor_account"
+                    ]
+                }
+            ]
+        },
+        "Authentication:Successful_Authentication": {
+            "o365_authentication": [
+                {
+                    "fields": [
+                        "action",
+                        "app",
+                        "dest",
+                        "reason",
+                        "signature",
+                        "src",
+                        "tag",
+                        "user",
+                        "user_id",
+                        "user_type",
+                        "vendor_account"
+                    ]
+                }
+            ]
+        },
+        "Authentication:Default_Authentication": {
+            "o365_authentication": [
+                {
+                    "fields": [
+                        "action",
+                        "app",
+                        "dest",
+                        "reason",
+                        "signature",
+                        "src",
+                        "tag",
+                        "user",
+                        "user_id",
+                        "user_type",
+                        "vendor_account"
+                    ]
+                }
+            ]
+        },
+        "Authentication:Failed_Default_Authentication": {
+            "o365_authentication": [
+                {
+                    "fields": [
+                        "action",
+                        "app",
+                        "dest",
+                        "reason",
+                        "signature",
+                        "src",
+                        "tag",
+                        "user",
+                        "user_id",
+                        "user_type",
+                        "vendor_account"
+                    ]
+                }
+            ]
+        },
+        "Authentication:Successful_Default_Authentication": {
+            "o365_authentication": [
+                {
+                    "fields": [
+                        "action",
+                        "app",
+                        "dest",
+                        "reason",
+                        "signature",
+                        "src",
+                        "tag",
+                        "user",
+                        "user_id",
+                        "user_type",
+                        "vendor_account"
+                    ]
+                }
+            ]
+        },
+        "Authentication:Insecure_Authentication": {
+            "o365_authentication": [
+                {
+                    "fields": [
+                        "action",
+                        "app",
+                        "dest",
+                        "reason",
+                        "signature",
+                        "src",
+                        "tag",
+                        "user",
+                        "user_id",
+                        "user_type",
+                        "vendor_account"
+                    ]
+                }
+            ]
+        },
+        "Authentication:Privileged_Authentication": {
+            "o365_authentication": [
+                {
+                    "fields": [
+                        "action",
+                        "app",
+                        "dest",
+                        "reason",
+                        "signature",
+                        "src",
+                        "tag",
+                        "user",
+                        "user_id",
+                        "user_type",
+                        "vendor_account"
+                    ]
+                }
+            ]
+        },
+        "Authentication:Failed_Privileged_Authentication": {
+            "o365_authentication": [
+                {
+                    "fields": [
+                        "action",
+                        "app",
+                        "dest",
+                        "reason",
+                        "signature",
+                        "src",
+                        "tag",
+                        "user",
+                        "user_id",
+                        "user_type",
+                        "vendor_account"
+                    ]
+                }
+            ]
+        },
+        "Authentication:Successful_Privileged_Authentication": {
+            "o365_authentication": [
+                {
+                    "fields": [
+                        "action",
+                        "app",
+                        "dest",
+                        "reason",
+                        "signature",
+                        "src",
+                        "tag",
+                        "user",
+                        "user_id",
+                        "user_type",
+                        "vendor_account"
+                    ]
+                }
+            ]
+        }
+    },
+    "fieldsummary": {
+        "o365_endpoint_changes": [
+            [
+                {
+                    "field": "ClientIP",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "10.1.0.11",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.1.0.3",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "CorrelationId",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "a521230c-c9d8-4ba5-94aa-08848218469e",
+                            "count": 1
+                        },
+                        {
+                            "value": "e1db2c31-b614-4a1a-8a63-d23d747268ce",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "CreationTime",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "2021-11-03T20:24:08Z",
+                            "count": 1
+                        },
+                        {
+                            "value": "2021-11-03T20:32:12Z",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "EventSource",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "SharePoint",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Id",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "1ba5ec15-efa8-466d-ae71-228b6fcdc941",
+                            "count": 1
+                        },
+                        {
+                            "value": "d1c6278a-0e30-4f5e-91c6-f60a8ec25cc5",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ItemType",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Web",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "ListId",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "785468cc-58eb-432e-84b5-1eb935083303",
+                            "count": 1
+                        },
+                        {
+                            "value": "b4c8e99c-9354-4dba-a1e0-3a6d9036cf5c",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ListItemUniqueId",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "cae7e133-ad9d-406b-8a15-bbae617277d4",
+                            "count": 1
+                        },
+                        {
+                            "value": "fed2be7c-0e16-45f1-9f22-ced5a2ea8eec",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ObjectId",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "22222222-bbbb-3333-dddd-555555555555",
+                            "count": 1
+                        },
+                        {
+                            "value": "https://abcdefghijkmnopqrstuvwxyz-my.sharepoint.com/personal/user_abcdefghijkmnopqrstuvwxyz_onmicrosoft_com/_layouts/15/onedrive.aspx",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Operation",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "FileAccessed",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "OrganizationId",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "2ed28a74-1f6f-4829-8530-fe359c77d35c",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "RecordType",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "5",
+                    "mean": "3.5",
+                    "min": "2",
+                    "numeric_count": "2",
+                    "stdev": "2.1213203435596424",
+                    "values": [
+                        {
+                            "value": "2",
+                            "count": 1
+                        },
+                        {
+                            "value": "5",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Site",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "2e7f4c3b-1da6-4331-894f-719de79d91b4",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "SiteUrl",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "https://a830edad9898849nda1234-abc.sharepoint.com/personal/admin_a830edad9898849nda1234_onmicrosoft_com/",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "SourceFileExtension",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "jpg",
+                            "count": 1
+                        },
+                        {
+                            "value": "txt",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "SourceFileName",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "lshi.txt",
+                            "count": 1
+                        },
+                        {
+                            "value": "user_a830edad9050849nda3079_onmicrosoft_com_SThumb.jpg",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "SourceRelativeUrl",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Documents/dlp",
+                            "count": 1
+                        },
+                        {
+                            "value": "User Photos/Profile Pictures",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "UserAgent",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "UserId",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "admin@a830edad9898849nda1234.onmicrosoft.com",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "UserKey",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "i:0h.f|membership|12345ffe8ec1e07e@live.com",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "UserType",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1",
+                    "mean": "1",
+                    "min": "1",
+                    "numeric_count": "2",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Version",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1",
+                    "mean": "1",
+                    "min": "1",
+                    "numeric_count": "2",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "WebId",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "2352b002-a96a-4974-a113-3f71418dde09",
+                            "count": 1
+                        },
+                        {
+                            "value": "68e4340f-b2e6-41a3-a741-454eed8665b3",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Workload",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "SharePoint",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "action",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "read",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "app",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "SharePoint",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "change_type",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "filesystem",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "command",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "FileAccessed",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "dataset_name",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "endpoint_changes",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "dest",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "22222222-bbbb-3333-dddd-555555555555",
+                            "count": 1
+                        },
+                        {
+                            "value": "https://abcdefghijkmnopqrstuvwxyz-my.sharepoint.com/personal/user_abcdefghijkmnopqrstuvwxyz_onmicrosoft_com/_layouts/15/onedrive.aspx",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dvc",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "SharePoint",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "eventtype",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "o365_endpoint_changes",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "file_name",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "lshi.txt",
+                            "count": 1
+                        },
+                        {
+                            "value": "user_a830edad9050849nda3079_onmicrosoft_com_SThumb.jpg",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "file_path",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Documents/dlp",
+                            "count": 1
+                        },
+                        {
+                            "value": "User Photos/Profile Pictures",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "host",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "management-activity-audit-sharepoint-samples-131",
+                            "count": 1
+                        },
+                        {
+                            "value": "management-activity-audit-sharepoint-samples-139",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "index",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "main",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "linecount",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1",
+                    "mean": "1",
+                    "min": "1",
+                    "numeric_count": "2",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "modified_properties",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "object",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "lshi.txt",
+                            "count": 1
+                        },
+                        {
+                            "value": "user_a830edad9050849nda3079_onmicrosoft_com_SThumb.jpg",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "object_attrs",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "object_category",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "file",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "object_id",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "22222222-bbbb-3333-dddd-555555555555",
+                            "count": 1
+                        },
+                        {
+                            "value": "https://abcdefghijkmnopqrstuvwxyz-my.sharepoint.com/personal/user_abcdefghijkmnopqrstuvwxyz_onmicrosoft_com/_layouts/15/onedrive.aspx",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "object_path",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "22222222-bbbb-3333-dddd-555555555555",
+                            "count": 1
+                        },
+                        {
+                            "value": "https://abcdefghijkmnopqrstuvwxyz-my.sharepoint.com/personal/user_abcdefghijkmnopqrstuvwxyz_onmicrosoft_com/_layouts/15/onedrive.aspx",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "punct",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "{_\"\":_\"...\",_\"\":_\"----\",_\"\":_\"--::\",_\"\":_\"\",_\"\":_\"",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "reason",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "record_type",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "ExchangeItem",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "result",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "signature",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "FileAccessed",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "source",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "pytest-splunk-addon:modinput",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "sourcetype",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "o365:management:activity",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "spl-78b956bcdf-8f5hs",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server_group",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "src",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "10.1.0.11",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.1.0.3",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "src_ip",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "10.1.0.11",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.1.0.3",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "src_user",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "status",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "tag",
+                    "count": "2",
+                    "distinct_count": "3",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "change",
+                            "count": 2
+                        },
+                        {
+                            "value": "cloud",
+                            "count": 2
+                        },
+                        {
+                            "value": "endpoint",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "tag::eventtype",
+                    "count": "2",
+                    "distinct_count": "3",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "change",
+                            "count": 2
+                        },
+                        {
+                            "value": "cloud",
+                            "count": 2
+                        },
+                        {
+                            "value": "endpoint",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "user",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "admin@a830edad9898849nda1234.onmicrosoft.com",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "user_agent",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "user_id",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "admin@a830edad9898849nda1234.onmicrosoft.com",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "user_type",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Reserved",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_account",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "2ed28a74-1f6f-4829-8530-fe359c77d35c",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_product",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Microsoft Office 365 SharePoint",
+                            "count": 2
+                        }
+                    ]
+                }
+            ]
+        ],
+        "o365_account_management": [
+            [
+                {
+                    "field": "ActorContextId",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "5f364f7f-0a42-4497-901d-7f65f8be0854",
+                            "count": 1
+                        },
+                        {
+                            "value": "90549168-9438-428c-aa6c-f0cdc303c6dd",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ActorIpAddress",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "168.222.1.118",
+                            "count": 1
+                        },
+                        {
+                            "value": "173.91.33.38",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Actor{}.ID",
+                    "count": "2",
+                    "distinct_count": "6",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "12340000AEF912D1",
+                            "count": 2
+                        },
+                        {
+                            "value": "12345678-aaaa-zzzz-1111-abcdefghijkl",
+                            "count": 2
+                        },
+                        {
+                            "value": "Unknown",
+                            "count": 2
+                        },
+                        {
+                            "value": "Windows Azure Service Management API",
+                            "count": 2
+                        },
+                        {
+                            "value": "12347FGE8EC1E0S1",
+                            "count": 1
+                        },
+                        {
+                            "value": "ServicePrincipal",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Actor{}.Type",
+                    "count": "2",
+                    "distinct_count": "5",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 3
+                        },
+                        {
+                            "value": "4",
+                            "count": 3
+                        },
+                        {
+                            "value": "5",
+                            "count": 2
+                        },
+                        {
+                            "value": "2",
+                            "count": 1
+                        },
+                        {
+                            "value": "3",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "AzureActiveDirectoryEventType",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1",
+                    "mean": "1",
+                    "min": "1",
+                    "numeric_count": "2",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "ClientIP",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "25.28.27.12",
+                            "count": 1
+                        },
+                        {
+                            "value": "42.230.247.18",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "CreationTime",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "2021-11-03T20:24:44",
+                            "count": 1
+                        },
+                        {
+                            "value": "2021-11-03T20:27:14",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ExtendedProperties{}.Name",
+                    "count": "2",
+                    "distinct_count": "14",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "FlowTokenScenario",
+                            "count": 2
+                        },
+                        {
+                            "value": "UserAuthenticationMethod",
+                            "count": 2
+                        },
+                        {
+                            "value": "actorAppID",
+                            "count": 1
+                        },
+                        {
+                            "value": "actorUPN",
+                            "count": 1
+                        },
+                        {
+                            "value": "env_appId",
+                            "count": 1
+                        },
+                        {
+                            "value": "env_cloud_roleInstance",
+                            "count": 1
+                        },
+                        {
+                            "value": "env_cloud_roleVer",
+                            "count": 1
+                        },
+                        {
+                            "value": "env_cloud_ver",
+                            "count": 1
+                        },
+                        {
+                            "value": "env_epoch",
+                            "count": 1
+                        },
+                        {
+                            "value": "env_iKey",
+                            "count": 1
+                        },
+                        {
+                            "value": "env_seqNum",
+                            "count": 1
+                        },
+                        {
+                            "value": "env_time",
+                            "count": 1
+                        },
+                        {
+                            "value": "targetContextId",
+                            "count": 1
+                        },
+                        {
+                            "value": "targetIncludedUpdatedProperties",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ExtendedProperties{}.Value",
+                    "count": "2",
+                    "distinct_count": "13",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "2019-04-01T22:37:18.2411445Z",
+                            "count": 2
+                        },
+                        {
+                            "value": "33333333-dddd-5555-eeee-777777777777",
+                            "count": 2
+                        },
+                        {
+                            "value": "9",
+                            "count": 2
+                        },
+                        {
+                            "value": "1",
+                            "count": 1
+                        },
+                        {
+                            "value": "101240344",
+                            "count": 1
+                        },
+                        {
+                            "value": "101404538",
+                            "count": 1
+                        },
+                        {
+                            "value": "102798386",
+                            "count": 1
+                        },
+                        {
+                            "value": "103034936",
+                            "count": 1
+                        },
+                        {
+                            "value": "11111111-bbbb-3333-bbbb-555555555555",
+                            "count": 1
+                        },
+                        {
+                            "value": "2019-04-01T22:37:17.9411292Z",
+                            "count": 1
+                        },
+                        {
+                            "value": "2019-04-01T22:37:18.0861302Z",
+                            "count": 1
+                        },
+                        {
+                            "value": "2019-04-01T22:37:18.5361346Z",
+                            "count": 1
+                        },
+                        {
+                            "value": "6",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Id",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "4041ba39-47c9-4a64-82ae-d390ca965926",
+                            "count": 1
+                        },
+                        {
+                            "value": "433449dd-5829-4868-9634-1eafc9c35c4c",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "LogonError",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "PasswordResetRegistrationRequiredInterrupt",
+                            "count": 1
+                        },
+                        {
+                            "value": "UserStrongAuthClientAuthNRequiredInterrupt",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ModifiedProperties{}.Name",
+                    "count": "2",
+                    "distinct_count": "8",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Credential",
+                            "count": 2
+                        },
+                        {
+                            "value": "User.UPN",
+                            "count": 2
+                        },
+                        {
+                            "value": "AppId",
+                            "count": 1
+                        },
+                        {
+                            "value": "ConsentAction.Permissions",
+                            "count": 1
+                        },
+                        {
+                            "value": "ConsentContext.IsAdminConsent",
+                            "count": 1
+                        },
+                        {
+                            "value": "ConsentContext.IsAppOnly",
+                            "count": 1
+                        },
+                        {
+                            "value": "Included Updated Properties",
+                            "count": 1
+                        },
+                        {
+                            "value": "User.ObjectID",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ModifiedProperties{}.NewValue",
+                    "count": "2",
+                    "distinct_count": "10",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "0e4ac3f2-142d-42b4-b679-d2be4584a8a7",
+                            "count": 1
+                        },
+                        {
+                            "value": "1af4e1bd-58fe-4ec4-a760-cfc3c8002a54",
+                            "count": 1
+                        },
+                        {
+                            "value": "35fd8528-2d9d-40f3-8b1a-6816841d2969",
+                            "count": 1
+                        },
+                        {
+                            "value": "48517777-a248-48f2-ad21-de12bc9c3ad1",
+                            "count": 1
+                        },
+                        {
+                            "value": "8e267205-5c06-47f1-84b6-004945037a2c",
+                            "count": 1
+                        },
+                        {
+                            "value": "9d41dad4-bf92-4e05-9c3d-fae502920f56",
+                            "count": 1
+                        },
+                        {
+                            "value": "b3ec4069-4b2a-44d4-8256-433f5e4be251",
+                            "count": 1
+                        },
+                        {
+                            "value": "c93f1901-7ff6-4cb3-b37e-54a7f25833e6",
+                            "count": 1
+                        },
+                        {
+                            "value": "e1074527-9616-4e69-928c-e965a810d144",
+                            "count": 1
+                        },
+                        {
+                            "value": "fcb75935-ab22-4e3c-803b-9bee2bfe7da8",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ModifiedProperties{}.OldValue",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "",
+                            "count": 10
+                        }
+                    ]
+                },
+                {
+                    "field": "ObjectId",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "49be1397-97b5-44ab-8d7b-a2d5224741ac",
+                            "count": 1
+                        },
+                        {
+                            "value": "88448fcd-cef0-4f00-8391-763e71decf66",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Operation",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Update user.",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "OrganizationId",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "5f640427-49f7-4be1-b4c7-f946ed6b876d",
+                            "count": 1
+                        },
+                        {
+                            "value": "695e3dff-7c2d-4fc3-914b-0b9398712c14",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "RecordType",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "15",
+                    "mean": "11",
+                    "min": "7",
+                    "numeric_count": "2",
+                    "stdev": "5.656854249492381",
+                    "values": [
+                        {
+                            "value": "15",
+                            "count": 1
+                        },
+                        {
+                            "value": "7",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ResultStatus",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Failure",
+                            "count": 1
+                        },
+                        {
+                            "value": "Succeeded",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "SupportTicketId",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "TargetContextId",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "283784db-be1b-42de-ac63-f1e9474ce004",
+                            "count": 1
+                        },
+                        {
+                            "value": "4fad06aa-c32c-493e-8f7b-7f873c1c7d3d",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Target{}.ID",
+                    "count": "2",
+                    "distinct_count": "10",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "2cbbb0b8-5a24-40e5-aa21-ac41fd540a09",
+                            "count": 1
+                        },
+                        {
+                            "value": "3f16213e-79fd-4ca9-b3f8-203d1f0d8611",
+                            "count": 1
+                        },
+                        {
+                            "value": "91c1ebde-e0eb-460a-b606-d2d6202ba5c8",
+                            "count": 1
+                        },
+                        {
+                            "value": "a111f94d-ea82-49ad-8212-67425dacb85b",
+                            "count": 1
+                        },
+                        {
+                            "value": "a3c1514a-2b04-4922-a291-5a0e47316354",
+                            "count": 1
+                        },
+                        {
+                            "value": "ab037964-871f-4ca9-ad1e-2b4beae5d139",
+                            "count": 1
+                        },
+                        {
+                            "value": "b877decd-6a7b-4774-866b-9c4bb753248e",
+                            "count": 1
+                        },
+                        {
+                            "value": "bb59a0fc-a544-43fb-adb0-7fea1648b052",
+                            "count": 1
+                        },
+                        {
+                            "value": "c871d364-e3ba-4b63-b204-92aeb956c3a8",
+                            "count": 1
+                        },
+                        {
+                            "value": "d5de0780-1007-45c2-93f3-99ba380c6d9a",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Target{}.Type",
+                    "count": "2",
+                    "distinct_count": "5",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 5
+                        },
+                        {
+                            "value": "1",
+                            "count": 2
+                        },
+                        {
+                            "value": "2",
+                            "count": 1
+                        },
+                        {
+                            "value": "3",
+                            "count": 1
+                        },
+                        {
+                            "value": "4",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "UserId",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "584b39ed-5015-460d-9e0d-5fd00fdb2ce3",
+                            "count": 1
+                        },
+                        {
+                            "value": "abb097e0-f638-4eba-9a98-6ee7a834d524",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "UserKey",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "104e82e3-0aa2-4c6f-b080-f92c827ba2a4",
+                            "count": 1
+                        },
+                        {
+                            "value": "aa2201f4-8083-4fd6-99a0-41a2a2abe8e5",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "UserType",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "5",
+                    "mean": "3",
+                    "min": "1",
+                    "numeric_count": "2",
+                    "stdev": "2.8284271247461903",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 1
+                        },
+                        {
+                            "value": "5",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Version",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1",
+                    "mean": "1",
+                    "min": "1",
+                    "numeric_count": "2",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Workload",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "AzureActiveDirectory",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "action",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "modified",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "app",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "AzureActiveDirectory",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "change_type",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "AAA",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "command",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Update user.",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "dataset_name",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "account_management",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "dest",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "49be1397-97b5-44ab-8d7b-a2d5224741ac",
+                            "count": 1
+                        },
+                        {
+                            "value": "88448fcd-cef0-4f00-8391-763e71decf66",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dvc",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "AzureActiveDirectory",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "event_type",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "AzureApplicationAuditEvent",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "eventtype",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "o365_account_management",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "file_name",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "file_path",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "host",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "management-activity-audit-active-directory-samples-30",
+                            "count": 1
+                        },
+                        {
+                            "value": "management-activity-audit-active-directory-samples-41",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "index",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "main",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "linecount",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1",
+                    "mean": "1",
+                    "min": "1",
+                    "numeric_count": "2",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "modified_properties",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "35fd8528-2d9d-40f3-8b1a-6816841d2969",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "modified_properties_mv",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "35fd8528-2d9d-40f3-8b1a-6816841d2969",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "object",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "49be1397-97b5-44ab-8d7b-a2d5224741ac",
+                            "count": 1
+                        },
+                        {
+                            "value": "88448fcd-cef0-4f00-8391-763e71decf66",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "object_attrs",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "35fd8528-2d9d-40f3-8b1a-6816841d2969",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "object_category",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "user",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "object_id",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "49be1397-97b5-44ab-8d7b-a2d5224741ac",
+                            "count": 1
+                        },
+                        {
+                            "value": "88448fcd-cef0-4f00-8391-763e71decf66",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "object_path",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "49be1397-97b5-44ab-8d7b-a2d5224741ac",
+                            "count": 1
+                        },
+                        {
+                            "value": "88448fcd-cef0-4f00-8391-763e71decf66",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "punct",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "{_\"\":_[{_\"\":_\"\",_\"\":_\"\"_},{_\"\":_\"____\",_\"\":_\"\"_},{",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "reason",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "PasswordResetRegistrationRequiredInterrupt",
+                            "count": 1
+                        },
+                        {
+                            "value": "UserStrongAuthClientAuthNRequiredInterrupt",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "record_type",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "AzureActiveDirectoryStsLogon",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "result",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "signature",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Update user.",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "source",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "pytest-splunk-addon:modinput",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "sourcetype",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "o365:management:activity",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "spl-78b956bcdf-8f5hs",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server_group",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "src",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "25.28.27.12",
+                            "count": 1
+                        },
+                        {
+                            "value": "42.230.247.18",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "src_ip",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "25.28.27.12",
+                            "count": 1
+                        },
+                        {
+                            "value": "42.230.247.18",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "src_user",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "584b39ed-5015-460d-9e0d-5fd00fdb2ce3",
+                            "count": 1
+                        },
+                        {
+                            "value": "abb097e0-f638-4eba-9a98-6ee7a834d524",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "status",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "failure",
+                            "count": 1
+                        },
+                        {
+                            "value": "succeeded",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "tag",
+                    "count": "2",
+                    "distinct_count": "3",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "account",
+                            "count": 2
+                        },
+                        {
+                            "value": "change",
+                            "count": 2
+                        },
+                        {
+                            "value": "cloud",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "tag::eventtype",
+                    "count": "2",
+                    "distinct_count": "3",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "account",
+                            "count": 2
+                        },
+                        {
+                            "value": "change",
+                            "count": 2
+                        },
+                        {
+                            "value": "cloud",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "user",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "49be1397-97b5-44ab-8d7b-a2d5224741ac",
+                            "count": 1
+                        },
+                        {
+                            "value": "88448fcd-cef0-4f00-8391-763e71decf66",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "user_agent",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "user_id",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "584b39ed-5015-460d-9e0d-5fd00fdb2ce3",
+                            "count": 1
+                        },
+                        {
+                            "value": "abb097e0-f638-4eba-9a98-6ee7a834d524",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "user_type",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Application",
+                            "count": 1
+                        },
+                        {
+                            "value": "Reserved",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_account",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "5f640427-49f7-4be1-b4c7-f946ed6b876d",
+                            "count": 1
+                        },
+                        {
+                            "value": "695e3dff-7c2d-4fc3-914b-0b9398712c14",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_product",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Microsoft Office 365 AzureActiveDirectory",
+                            "count": 2
+                        }
+                    ]
+                }
+            ]
+        ],
+        "o365_authentication": [
+            [
+                {
+                    "field": "ActorContextId",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "6a5d684a-d069-4ca7-9892-a87c712fb6e2",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ActorIpAddress",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "46.229.82.187",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Actor{}.ID",
+                    "count": "1",
+                    "distinct_count": "4",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "12340000AEF912D1",
+                            "count": 2
+                        },
+                        {
+                            "value": "Unknown",
+                            "count": 1
+                        },
+                        {
+                            "value": "Windows Azure Service Management API",
+                            "count": 1
+                        },
+                        {
+                            "value": "admin@abcdefg123456abcd1234.onmicrosoft.com",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Actor{}.Type",
+                    "count": "1",
+                    "distinct_count": "5",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 1
+                        },
+                        {
+                            "value": "2",
+                            "count": 1
+                        },
+                        {
+                            "value": "3",
+                            "count": 1
+                        },
+                        {
+                            "value": "4",
+                            "count": 1
+                        },
+                        {
+                            "value": "5",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "AzureActiveDirectoryEventType",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1",
+                    "mean": "1",
+                    "min": "1",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ClientIP",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "214.127.60.85",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "CreationTime",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "2021-11-03T20:25:15",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ExtendedProperties{}.Name",
+                    "count": "1",
+                    "distinct_count": "8",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "RequestType",
+                            "count": 1
+                        },
+                        {
+                            "value": "UserAuthenticationMethod",
+                            "count": 1
+                        },
+                        {
+                            "value": "actorPUID",
+                            "count": 1
+                        },
+                        {
+                            "value": "correlationId",
+                            "count": 1
+                        },
+                        {
+                            "value": "env_appVer",
+                            "count": 1
+                        },
+                        {
+                            "value": "env_iKey",
+                            "count": 1
+                        },
+                        {
+                            "value": "env_time",
+                            "count": 1
+                        },
+                        {
+                            "value": "version",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ExtendedProperties{}.Value",
+                    "count": "1",
+                    "distinct_count": "8",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "101056028",
+                            "count": 1
+                        },
+                        {
+                            "value": "101240344",
+                            "count": 1
+                        },
+                        {
+                            "value": "102798386",
+                            "count": 1
+                        },
+                        {
+                            "value": "103035053",
+                            "count": 1
+                        },
+                        {
+                            "value": "17",
+                            "count": 1
+                        },
+                        {
+                            "value": "2019-04-01T22:37:18.2411445Z",
+                            "count": 1
+                        },
+                        {
+                            "value": "33",
+                            "count": 1
+                        },
+                        {
+                            "value": "9",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Id",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "b3e55fc9-e46b-4f15-a252-84f238f04338",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "LogonError",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "DelegationDoesNotExist",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ModifiedProperties{}.Name",
+                    "count": "1",
+                    "distinct_count": "4",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "ServicePrincipal.AppId",
+                            "count": 2
+                        },
+                        {
+                            "value": "AccountEnabled",
+                            "count": 1
+                        },
+                        {
+                            "value": "RequiredResourceAccess",
+                            "count": 1
+                        },
+                        {
+                            "value": "User.PUID",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ModifiedProperties{}.NewValue",
+                    "count": "1",
+                    "distinct_count": "5",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "4701cde7-31ca-4f4c-a5a3-395da4a62fdd",
+                            "count": 1
+                        },
+                        {
+                            "value": "804dc32b-896c-4cd2-b988-70298c2f5973",
+                            "count": 1
+                        },
+                        {
+                            "value": "c7d302ed-b638-471f-b196-f189ed9346a8",
+                            "count": 1
+                        },
+                        {
+                            "value": "d66ccdcd-fe1f-4b21-bbc8-927609efea8f",
+                            "count": 1
+                        },
+                        {
+                            "value": "f06dbc1f-6c2c-472e-a373-4acd49202f45",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ModifiedProperties{}.OldValue",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "",
+                            "count": 5
+                        }
+                    ]
+                },
+                {
+                    "field": "ObjectId",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "e93876a9-30d9-4e2f-8223-335f9596e597",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Operation",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "UserLoggedIn",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "OrganizationId",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "f30ee9c4-6c43-4152-ac0f-5a701bf8993d",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "RecordType",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "5",
+                    "mean": "5",
+                    "min": "5",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "5",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ResultStatus",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Succeeded",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "SupportTicketId",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "TargetContextId",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "074dae28-406a-44dc-973d-0e4c4e3e4f06",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Target{}.ID",
+                    "count": "1",
+                    "distinct_count": "5",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "9aaa3975-9f4c-4d8b-85ff-7851f5106f6f",
+                            "count": 1
+                        },
+                        {
+                            "value": "a171c500-d5b1-43e2-b888-0ffa11afcf6a",
+                            "count": 1
+                        },
+                        {
+                            "value": "b59fef0d-180f-45d8-ad01-3769acfb62fe",
+                            "count": 1
+                        },
+                        {
+                            "value": "d78d3e4d-70ae-4d17-bc3b-f1f1cb6bd7c4",
+                            "count": 1
+                        },
+                        {
+                            "value": "e8b1d1b8-a48a-4851-84c1-7962794d8220",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Target{}.Type",
+                    "count": "1",
+                    "distinct_count": "3",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "2",
+                            "count": 2
+                        },
+                        {
+                            "value": "4",
+                            "count": 2
+                        },
+                        {
+                            "value": "1",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "UserId",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "96bdbcf7-23bc-4814-9c81-a73f922f4486",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "UserKey",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "4cb9703e-3706-4947-ae8b-d876ae84145d",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "UserType",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1",
+                    "mean": "1",
+                    "min": "1",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Version",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1",
+                    "mean": "1",
+                    "min": "1",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Workload",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "AzureActiveDirectory",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "action",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "success",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "app",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "AzureActiveDirectory",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "change_type",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "command",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "UserLoggedIn",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dataset_name",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "authentication",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dest",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "e93876a9-30d9-4e2f-8223-335f9596e597",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dvc",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "AzureActiveDirectory",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "event_type",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "AzureApplicationAuditEvent",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "eventtype",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "o365_authentication",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "file_name",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "file_path",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "host",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "management-activity-audit-active-directory-samples-31",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "index",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "main",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "linecount",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1",
+                    "mean": "1",
+                    "min": "1",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "modified_properties",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "object",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "e93876a9-30d9-4e2f-8223-335f9596e597",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "object_attrs",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "object_category",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "object_id",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "e93876a9-30d9-4e2f-8223-335f9596e597",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "object_path",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "e93876a9-30d9-4e2f-8223-335f9596e597",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "punct",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "{_\"\":_[{_\"\":_\"____\",_\"\":_\"\"_},{_\"\":_\"@..\",_\"\":_\"\"_",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "reason",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "DelegationDoesNotExist",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "record_type",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "result",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "signature",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "UserLoggedIn",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "source",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "pytest-splunk-addon:modinput",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sourcetype",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "o365:management:activity",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "spl-78b956bcdf-8f5hs",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server_group",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "src",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "214.127.60.85",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "src_ip",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "214.127.60.85",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "src_user",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "status",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "succeeded",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "tag",
+                    "count": "1",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "authentication",
+                            "count": 1
+                        },
+                        {
+                            "value": "cloud",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "tag::eventtype",
+                    "count": "1",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "authentication",
+                            "count": 1
+                        },
+                        {
+                            "value": "cloud",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "user",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "96bdbcf7-23bc-4814-9c81-a73f922f4486",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "user_agent",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "user_id",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "96bdbcf7-23bc-4814-9c81-a73f922f4486",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "user_type",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Reserved",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_account",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "f30ee9c4-6c43-4152-ac0f-5a701bf8993d",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_product",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Microsoft Office 365 AzureActiveDirectory",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        ]
+    }
+}

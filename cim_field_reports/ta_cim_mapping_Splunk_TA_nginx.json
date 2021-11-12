@@ -1,0 +1,5408 @@
+{
+    "ta_name": {
+        "name": "Splunk_TA_nginx",
+        "version": "3.1.0"
+    },
+    "sourcetypes": [
+        "nginx:plus:api",
+        "nginx:app:protect",
+        "nginx:plus:access",
+        "nginx:plus:kv",
+        "nginx:plus:error"
+    ],
+    "cimsummary": {
+        "Web:Web": {
+            "nginx_access": [
+                {
+                    "fields": [
+                        "action",
+                        "app",
+                        "bytes",
+                        "bytes_in",
+                        "bytes_out",
+                        "category",
+                        "cookie",
+                        "dest",
+                        "dest_port",
+                        "http_content_type",
+                        "http_method",
+                        "http_referrer",
+                        "http_referrer_domain",
+                        "http_user_agent",
+                        "http_user_agent_length",
+                        "response_time",
+                        "site",
+                        "src",
+                        "status",
+                        "tag",
+                        "uri_path",
+                        "uri_query",
+                        "url",
+                        "url_domain",
+                        "url_length",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Web:Proxy": {
+            "nginx_access": [
+                {
+                    "fields": [
+                        "action",
+                        "app",
+                        "bytes",
+                        "bytes_in",
+                        "bytes_out",
+                        "category",
+                        "cookie",
+                        "dest",
+                        "dest_port",
+                        "http_content_type",
+                        "http_method",
+                        "http_referrer",
+                        "http_referrer_domain",
+                        "http_user_agent",
+                        "http_user_agent_length",
+                        "response_time",
+                        "site",
+                        "src",
+                        "status",
+                        "tag",
+                        "uri_path",
+                        "uri_query",
+                        "url",
+                        "url_domain",
+                        "url_length",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Web:Storage": {
+            "nginx_access": [
+                {
+                    "fields": [
+                        "action",
+                        "app",
+                        "bytes",
+                        "bytes_in",
+                        "bytes_out",
+                        "category",
+                        "cookie",
+                        "dest",
+                        "dest_port",
+                        "http_content_type",
+                        "http_method",
+                        "http_referrer",
+                        "http_referrer_domain",
+                        "http_user_agent",
+                        "http_user_agent_length",
+                        "response_time",
+                        "site",
+                        "src",
+                        "status",
+                        "tag",
+                        "uri_path",
+                        "uri_query",
+                        "url",
+                        "url_domain",
+                        "url_length",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Compute_Inventory:CPU": {
+            "nginx_access": [
+                {
+                    "fields": [
+                        "action",
+                        "app",
+                        "bytes",
+                        "bytes_in",
+                        "bytes_out",
+                        "category",
+                        "cookie",
+                        "dest",
+                        "dest_port",
+                        "http_content_type",
+                        "http_method",
+                        "http_referrer",
+                        "http_referrer_domain",
+                        "http_user_agent",
+                        "http_user_agent_length",
+                        "response_time",
+                        "site",
+                        "src",
+                        "status",
+                        "tag",
+                        "uri_path",
+                        "uri_query",
+                        "url",
+                        "url_domain",
+                        "url_length",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Compute_Inventory:Memory": {
+            "nginx_access": [
+                {
+                    "fields": [
+                        "action",
+                        "app",
+                        "bytes",
+                        "bytes_in",
+                        "bytes_out",
+                        "category",
+                        "cookie",
+                        "dest",
+                        "dest_port",
+                        "http_content_type",
+                        "http_method",
+                        "http_referrer",
+                        "http_referrer_domain",
+                        "http_user_agent",
+                        "http_user_agent_length",
+                        "response_time",
+                        "site",
+                        "src",
+                        "status",
+                        "tag",
+                        "uri_path",
+                        "uri_query",
+                        "url",
+                        "url_domain",
+                        "url_length",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Compute_Inventory:Network": {
+            "nginx_access": [
+                {
+                    "fields": [
+                        "action",
+                        "app",
+                        "bytes",
+                        "bytes_in",
+                        "bytes_out",
+                        "category",
+                        "cookie",
+                        "dest",
+                        "dest_ip",
+                        "dest_port",
+                        "http_content_type",
+                        "http_method",
+                        "http_referrer",
+                        "http_referrer_domain",
+                        "http_user_agent",
+                        "http_user_agent_length",
+                        "response_time",
+                        "site",
+                        "src",
+                        "src_ip",
+                        "status",
+                        "tag",
+                        "uri_path",
+                        "uri_query",
+                        "url",
+                        "url_domain",
+                        "url_length",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Compute_Inventory:Storage": {
+            "nginx_access": [
+                {
+                    "fields": [
+                        "action",
+                        "app",
+                        "bytes",
+                        "bytes_in",
+                        "bytes_out",
+                        "category",
+                        "cookie",
+                        "dest",
+                        "dest_ip",
+                        "dest_port",
+                        "http_content_type",
+                        "http_method",
+                        "http_referrer",
+                        "http_referrer_domain",
+                        "http_user_agent",
+                        "http_user_agent_length",
+                        "response_time",
+                        "site",
+                        "src",
+                        "src_ip",
+                        "status",
+                        "tag",
+                        "uri_path",
+                        "uri_query",
+                        "url",
+                        "url_domain",
+                        "url_length",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Compute_Inventory:OS": {
+            "nginx_access": [
+                {
+                    "fields": [
+                        "action",
+                        "app",
+                        "bytes",
+                        "bytes_in",
+                        "bytes_out",
+                        "category",
+                        "cookie",
+                        "dest",
+                        "dest_ip",
+                        "dest_port",
+                        "http_content_type",
+                        "http_method",
+                        "http_referrer",
+                        "http_referrer_domain",
+                        "http_user_agent",
+                        "http_user_agent_length",
+                        "response_time",
+                        "site",
+                        "src",
+                        "src_ip",
+                        "status",
+                        "tag",
+                        "uri_path",
+                        "uri_query",
+                        "url",
+                        "url_domain",
+                        "url_length",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Compute_Inventory:User": {
+            "nginx_access": [
+                {
+                    "fields": [
+                        "action",
+                        "app",
+                        "bytes",
+                        "bytes_in",
+                        "bytes_out",
+                        "category",
+                        "cookie",
+                        "dest",
+                        "dest_ip",
+                        "dest_port",
+                        "http_content_type",
+                        "http_method",
+                        "http_referrer",
+                        "http_referrer_domain",
+                        "http_user_agent",
+                        "http_user_agent_length",
+                        "response_time",
+                        "site",
+                        "src",
+                        "src_ip",
+                        "status",
+                        "tag",
+                        "uri_path",
+                        "uri_query",
+                        "url",
+                        "url_domain",
+                        "url_length",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Compute_Inventory:Cleartext_Passwords": {
+            "nginx_access": [
+                {
+                    "fields": [
+                        "action",
+                        "app",
+                        "bytes",
+                        "bytes_in",
+                        "bytes_out",
+                        "category",
+                        "cookie",
+                        "dest",
+                        "dest_ip",
+                        "dest_port",
+                        "http_content_type",
+                        "http_method",
+                        "http_referrer",
+                        "http_referrer_domain",
+                        "http_user_agent",
+                        "http_user_agent_length",
+                        "response_time",
+                        "site",
+                        "src",
+                        "src_ip",
+                        "status",
+                        "tag",
+                        "uri_path",
+                        "uri_query",
+                        "url",
+                        "url_domain",
+                        "url_length",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Compute_Inventory:Default_Accounts": {
+            "nginx_access": [
+                {
+                    "fields": [
+                        "action",
+                        "app",
+                        "bytes",
+                        "bytes_in",
+                        "bytes_out",
+                        "category",
+                        "cookie",
+                        "dest",
+                        "dest_ip",
+                        "dest_port",
+                        "http_content_type",
+                        "http_method",
+                        "http_referrer",
+                        "http_referrer_domain",
+                        "http_user_agent",
+                        "http_user_agent_length",
+                        "response_time",
+                        "site",
+                        "src",
+                        "src_ip",
+                        "status",
+                        "tag",
+                        "uri_path",
+                        "uri_query",
+                        "url",
+                        "url_domain",
+                        "url_length",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Compute_Inventory:Virtual_OS": {
+            "nginx_access": [
+                {
+                    "fields": [
+                        "action",
+                        "app",
+                        "bytes",
+                        "bytes_in",
+                        "bytes_out",
+                        "category",
+                        "cookie",
+                        "dest",
+                        "dest_ip",
+                        "dest_port",
+                        "http_content_type",
+                        "http_method",
+                        "http_referrer",
+                        "http_referrer_domain",
+                        "http_user_agent",
+                        "http_user_agent_length",
+                        "response_time",
+                        "site",
+                        "src",
+                        "src_ip",
+                        "status",
+                        "tag",
+                        "uri_path",
+                        "uri_query",
+                        "url",
+                        "url_domain",
+                        "url_length",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Compute_Inventory:Snapshot": {
+            "nginx_access": [
+                {
+                    "fields": [
+                        "action",
+                        "app",
+                        "bytes",
+                        "bytes_in",
+                        "bytes_out",
+                        "category",
+                        "cookie",
+                        "dest",
+                        "dest_ip",
+                        "dest_port",
+                        "http_content_type",
+                        "http_method",
+                        "http_referrer",
+                        "http_referrer_domain",
+                        "http_user_agent",
+                        "http_user_agent_length",
+                        "response_time",
+                        "site",
+                        "src",
+                        "src_ip",
+                        "status",
+                        "tag",
+                        "uri_path",
+                        "uri_query",
+                        "url",
+                        "url_domain",
+                        "url_length",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Compute_Inventory:Tools": {
+            "nginx_access": [
+                {
+                    "fields": [
+                        "action",
+                        "app",
+                        "bytes",
+                        "bytes_in",
+                        "bytes_out",
+                        "category",
+                        "cookie",
+                        "dest",
+                        "dest_ip",
+                        "dest_port",
+                        "http_content_type",
+                        "http_method",
+                        "http_referrer",
+                        "http_referrer_domain",
+                        "http_user_agent",
+                        "http_user_agent_length",
+                        "response_time",
+                        "site",
+                        "src",
+                        "src_ip",
+                        "status",
+                        "tag",
+                        "uri_path",
+                        "uri_query",
+                        "url",
+                        "url_domain",
+                        "url_length",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Updates:Update_Errors": {
+            "nginx_error_log_event": [
+                {
+                    "fields": [
+                        "host",
+                        "source"
+                    ]
+                }
+            ]
+        },
+        "Malware:Malware_Attacks": {
+            "nginx_app_protect": [
+                {
+                    "fields": [
+                        "action",
+                        "category",
+                        "dest",
+                        "severity",
+                        "signature",
+                        "src",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Malware:Allowed_Malware": {
+            "nginx_app_protect": [
+                {
+                    "fields": [
+                        "action",
+                        "category",
+                        "dest",
+                        "severity",
+                        "signature",
+                        "src",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Malware:Blocked_Malware": {
+            "nginx_app_protect": [
+                {
+                    "fields": [
+                        "action",
+                        "category",
+                        "dest",
+                        "severity",
+                        "signature",
+                        "src",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Malware:Deferred_Malware": {
+            "nginx_app_protect": [
+                {
+                    "fields": [
+                        "action",
+                        "category",
+                        "dest",
+                        "severity",
+                        "signature",
+                        "src",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Intrusion_Detection:IDS_Attacks": {
+            "nginx_app_protect": [
+                {
+                    "fields": [
+                        "action",
+                        "category",
+                        "dest",
+                        "dest_port",
+                        "dvc",
+                        "ids_type",
+                        "severity",
+                        "signature",
+                        "src",
+                        "src_port",
+                        "tag",
+                        "transport",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Intrusion_Detection:Application_IDS_Attacks": {
+            "nginx_app_protect": [
+                {
+                    "fields": [
+                        "action",
+                        "category",
+                        "dest",
+                        "dest_port",
+                        "dvc",
+                        "ids_type",
+                        "severity",
+                        "signature",
+                        "src",
+                        "src_port",
+                        "tag",
+                        "transport",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Intrusion_Detection:Host_IDS_Attacks": {
+            "nginx_app_protect": [
+                {
+                    "fields": [
+                        "action",
+                        "category",
+                        "dest",
+                        "dest_port",
+                        "dvc",
+                        "ids_type",
+                        "severity",
+                        "signature",
+                        "src",
+                        "src_port",
+                        "tag",
+                        "transport",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Intrusion_Detection:Network_IDS_Attacks": {
+            "nginx_app_protect": [
+                {
+                    "fields": [
+                        "action",
+                        "category",
+                        "dest",
+                        "dest_port",
+                        "dvc",
+                        "ids_type",
+                        "severity",
+                        "signature",
+                        "src",
+                        "src_port",
+                        "tag",
+                        "transport",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        }
+    },
+    "fieldsummary": {
+        "nginx_api": [
+            [
+                {
+                    "field": "app",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Nginx Plus",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "connections.accepted",
+                    "count": "4",
+                    "distinct_count": "4",
+                    "is_exact": "1",
+                    "max": "8802",
+                    "mean": "4931.25",
+                    "min": "1388",
+                    "numeric_count": "4",
+                    "stdev": "3123.418786628951",
+                    "values": [
+                        {
+                            "value": "1388",
+                            "count": 1
+                        },
+                        {
+                            "value": "3852",
+                            "count": 1
+                        },
+                        {
+                            "value": "5683",
+                            "count": 1
+                        },
+                        {
+                            "value": "8802",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "connections.active",
+                    "count": "4",
+                    "distinct_count": "4",
+                    "is_exact": "1",
+                    "max": "9353",
+                    "mean": "7788.5",
+                    "min": "5096",
+                    "numeric_count": "4",
+                    "stdev": "1856.9517136066481",
+                    "values": [
+                        {
+                            "value": "5096",
+                            "count": 1
+                        },
+                        {
+                            "value": "8277",
+                            "count": 1
+                        },
+                        {
+                            "value": "8428",
+                            "count": 1
+                        },
+                        {
+                            "value": "9353",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "connections.dropped",
+                    "count": "4",
+                    "distinct_count": "4",
+                    "is_exact": "1",
+                    "max": "9606",
+                    "mean": "5946.75",
+                    "min": "39",
+                    "numeric_count": "4",
+                    "stdev": "4127.297531880476",
+                    "values": [
+                        {
+                            "value": "39",
+                            "count": 1
+                        },
+                        {
+                            "value": "6694",
+                            "count": 1
+                        },
+                        {
+                            "value": "7448",
+                            "count": 1
+                        },
+                        {
+                            "value": "9606",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "connections.idle",
+                    "count": "4",
+                    "distinct_count": "4",
+                    "is_exact": "1",
+                    "max": "6342",
+                    "mean": "3177.25",
+                    "min": "1098",
+                    "numeric_count": "4",
+                    "stdev": "2444.843468063617",
+                    "values": [
+                        {
+                            "value": "1098",
+                            "count": 1
+                        },
+                        {
+                            "value": "1409",
+                            "count": 1
+                        },
+                        {
+                            "value": "3860",
+                            "count": 1
+                        },
+                        {
+                            "value": "6342",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "eventtype",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "nginx_api",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "host",
+                    "count": "4",
+                    "distinct_count": "4",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "itgdi_nginx_api_1_17_3.sample_1",
+                            "count": 1
+                        },
+                        {
+                            "value": "itgdi_nginx_api_1_17_3.sample_2",
+                            "count": 1
+                        },
+                        {
+                            "value": "itgdi_nginx_api_1_19_0.sample_1",
+                            "count": 1
+                        },
+                        {
+                            "value": "itgdi_nginx_api_1_19_0.sample_2",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.caches.one.bypass.bytes",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "4",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.caches.one.bypass.bytes_written",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "4",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.caches.one.bypass.responses",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "4",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.caches.one.bypass.responses_written",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "4",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.caches.one.cold",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "false",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.caches.one.expired.bytes",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "4",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.caches.one.expired.bytes_written",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "4",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.caches.one.expired.responses",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "4",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.caches.one.expired.responses_written",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "4",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.caches.one.hit.bytes",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "4",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.caches.one.hit.responses",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "4",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.caches.one.miss.bytes",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "4",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.caches.one.miss.bytes_written",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "4",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.caches.one.miss.responses",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "4",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.caches.one.miss.responses_written",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "4",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.caches.one.revalidated.bytes",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "4",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.caches.one.revalidated.responses",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "4",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.caches.one.size",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "4",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.caches.one.stale.bytes",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "4",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.caches.one.stale.responses",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "4",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.caches.one.updating.bytes",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "4",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.caches.one.updating.responses",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "4",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.keyvals.keyval_zone.key1",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "value1",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.keyvals.keyval_zone.key2",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "value2",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.keyvals.keyval_zone.key3",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "value3",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.keyvals.one.arg1",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "value1",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.keyvals.one.arg2",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "value2",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.keyvals.one.arg3",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "value3",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.limit_conns.additionalProp1.passed",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "8790",
+                    "mean": "7583",
+                    "min": "6376",
+                    "numeric_count": "2",
+                    "stdev": "1706.9557697843256",
+                    "values": [
+                        {
+                            "value": "6376",
+                            "count": 1
+                        },
+                        {
+                            "value": "8790",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.limit_conns.additionalProp1.rejected",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "2747",
+                    "mean": "1791.5",
+                    "min": "836",
+                    "numeric_count": "2",
+                    "stdev": "1351.2810588474924",
+                    "values": [
+                        {
+                            "value": "2747",
+                            "count": 1
+                        },
+                        {
+                            "value": "836",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.limit_conns.additionalProp1.rejected_dry_run",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "4667",
+                    "mean": "3603.5",
+                    "min": "2540",
+                    "numeric_count": "2",
+                    "stdev": "1504.0161235837866",
+                    "values": [
+                        {
+                            "value": "2540",
+                            "count": 1
+                        },
+                        {
+                            "value": "4667",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.limit_conns.additionalProp2.passed",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "9737",
+                    "mean": "9500.5",
+                    "min": "9264",
+                    "numeric_count": "2",
+                    "stdev": "334.46150750123695",
+                    "values": [
+                        {
+                            "value": "9264",
+                            "count": 1
+                        },
+                        {
+                            "value": "9737",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.limit_conns.additionalProp2.rejected",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "2408",
+                    "mean": "1809.5",
+                    "min": "1211",
+                    "numeric_count": "2",
+                    "stdev": "846.4068170802974",
+                    "values": [
+                        {
+                            "value": "1211",
+                            "count": 1
+                        },
+                        {
+                            "value": "2408",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.limit_conns.additionalProp2.rejected_dry_run",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "5683",
+                    "mean": "4636.5",
+                    "min": "3590",
+                    "numeric_count": "2",
+                    "stdev": "1479.974493023444",
+                    "values": [
+                        {
+                            "value": "3590",
+                            "count": 1
+                        },
+                        {
+                            "value": "5683",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.limit_reqs.additionalProp1.delayed",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "9678",
+                    "mean": "9666",
+                    "min": "9654",
+                    "numeric_count": "2",
+                    "stdev": "16.97056274847714",
+                    "values": [
+                        {
+                            "value": "9654",
+                            "count": 1
+                        },
+                        {
+                            "value": "9678",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.limit_reqs.additionalProp1.delayed_dry_run",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "4062",
+                    "mean": "2489.5",
+                    "min": "917",
+                    "numeric_count": "2",
+                    "stdev": "2223.850826831692",
+                    "values": [
+                        {
+                            "value": "4062",
+                            "count": 1
+                        },
+                        {
+                            "value": "917",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.limit_reqs.additionalProp1.passed",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "5359",
+                    "mean": "4070.5",
+                    "min": "2782",
+                    "numeric_count": "2",
+                    "stdev": "1822.214175117733",
+                    "values": [
+                        {
+                            "value": "2782",
+                            "count": 1
+                        },
+                        {
+                            "value": "5359",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.limit_reqs.additionalProp1.rejected",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "5610",
+                    "mean": "4547",
+                    "min": "3484",
+                    "numeric_count": "2",
+                    "stdev": "1503.3090168026001",
+                    "values": [
+                        {
+                            "value": "3484",
+                            "count": 1
+                        },
+                        {
+                            "value": "5610",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.limit_reqs.additionalProp1.rejected_dry_run",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "4578",
+                    "mean": "3001",
+                    "min": "1424",
+                    "numeric_count": "2",
+                    "stdev": "2230.214787862371",
+                    "values": [
+                        {
+                            "value": "1424",
+                            "count": 1
+                        },
+                        {
+                            "value": "4578",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.limit_reqs.additionalProp2.delayed",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "7227",
+                    "mean": "4213",
+                    "min": "1199",
+                    "numeric_count": "2",
+                    "stdev": "4262.439676992509",
+                    "values": [
+                        {
+                            "value": "1199",
+                            "count": 1
+                        },
+                        {
+                            "value": "7227",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.limit_reqs.additionalProp2.delayed_dry_run",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "8300",
+                    "mean": "4681",
+                    "min": "1062",
+                    "numeric_count": "2",
+                    "stdev": "5118.038882228231",
+                    "values": [
+                        {
+                            "value": "1062",
+                            "count": 1
+                        },
+                        {
+                            "value": "8300",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.limit_reqs.additionalProp2.passed",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "6093",
+                    "mean": "4647.5",
+                    "min": "3202",
+                    "numeric_count": "2",
+                    "stdev": "2044.245704410309",
+                    "values": [
+                        {
+                            "value": "3202",
+                            "count": 1
+                        },
+                        {
+                            "value": "6093",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.limit_reqs.additionalProp2.rejected",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "5071",
+                    "mean": "2785.5",
+                    "min": "500",
+                    "numeric_count": "2",
+                    "stdev": "3232.185096803709",
+                    "values": [
+                        {
+                            "value": "500",
+                            "count": 1
+                        },
+                        {
+                            "value": "5071",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.limit_reqs.additionalProp2.rejected_dry_run",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "6805",
+                    "mean": "6488",
+                    "min": "6171",
+                    "numeric_count": "2",
+                    "stdev": "448.3056992722711",
+                    "values": [
+                        {
+                            "value": "6171",
+                            "count": 1
+                        },
+                        {
+                            "value": "6805",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.location_zones.location_zone.discarded",
+                    "count": "4",
+                    "distinct_count": "4",
+                    "is_exact": "1",
+                    "max": "6563",
+                    "mean": "5569.75",
+                    "min": "4338",
+                    "numeric_count": "4",
+                    "stdev": "1067.1839500917042",
+                    "values": [
+                        {
+                            "value": "4338",
+                            "count": 1
+                        },
+                        {
+                            "value": "5024",
+                            "count": 1
+                        },
+                        {
+                            "value": "6354",
+                            "count": 1
+                        },
+                        {
+                            "value": "6563",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.location_zones.location_zone.received",
+                    "count": "4",
+                    "distinct_count": "4",
+                    "is_exact": "1",
+                    "max": "8576",
+                    "mean": "4814.5",
+                    "min": "1869",
+                    "numeric_count": "4",
+                    "stdev": "2938.667101482122",
+                    "values": [
+                        {
+                            "value": "1869",
+                            "count": 1
+                        },
+                        {
+                            "value": "3234",
+                            "count": 1
+                        },
+                        {
+                            "value": "5579",
+                            "count": 1
+                        },
+                        {
+                            "value": "8576",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.location_zones.location_zone.requests",
+                    "count": "4",
+                    "distinct_count": "4",
+                    "is_exact": "1",
+                    "max": "9781",
+                    "mean": "3765",
+                    "min": "235",
+                    "numeric_count": "4",
+                    "stdev": "4416.703748272007",
+                    "values": [
+                        {
+                            "value": "235",
+                            "count": 1
+                        },
+                        {
+                            "value": "4363",
+                            "count": 1
+                        },
+                        {
+                            "value": "681",
+                            "count": 1
+                        },
+                        {
+                            "value": "9781",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.location_zones.location_zone.responses.1xx",
+                    "count": "4",
+                    "distinct_count": "4",
+                    "is_exact": "1",
+                    "max": "5877",
+                    "mean": "3336.5",
+                    "min": "1350",
+                    "numeric_count": "4",
+                    "stdev": "1949.3657943033677",
+                    "values": [
+                        {
+                            "value": "1350",
+                            "count": 1
+                        },
+                        {
+                            "value": "2409",
+                            "count": 1
+                        },
+                        {
+                            "value": "3710",
+                            "count": 1
+                        },
+                        {
+                            "value": "5877",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.location_zones.location_zone.responses.2xx",
+                    "count": "4",
+                    "distinct_count": "4",
+                    "is_exact": "1",
+                    "max": "8953",
+                    "mean": "4542.75",
+                    "min": "1324",
+                    "numeric_count": "4",
+                    "stdev": "3795.2257179250882",
+                    "values": [
+                        {
+                            "value": "1324",
+                            "count": 1
+                        },
+                        {
+                            "value": "1428",
+                            "count": 1
+                        },
+                        {
+                            "value": "6466",
+                            "count": 1
+                        },
+                        {
+                            "value": "8953",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.location_zones.location_zone.responses.3xx",
+                    "count": "4",
+                    "distinct_count": "4",
+                    "is_exact": "1",
+                    "max": "8422",
+                    "mean": "5553",
+                    "min": "2030",
+                    "numeric_count": "4",
+                    "stdev": "3330.9981487035784",
+                    "values": [
+                        {
+                            "value": "2030",
+                            "count": 1
+                        },
+                        {
+                            "value": "3387",
+                            "count": 1
+                        },
+                        {
+                            "value": "8373",
+                            "count": 1
+                        },
+                        {
+                            "value": "8422",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.location_zones.location_zone.responses.4xx",
+                    "count": "4",
+                    "distinct_count": "4",
+                    "is_exact": "1",
+                    "max": "9657",
+                    "mean": "6183.5",
+                    "min": "2894",
+                    "numeric_count": "4",
+                    "stdev": "2780.6206141795037",
+                    "values": [
+                        {
+                            "value": "2894",
+                            "count": 1
+                        },
+                        {
+                            "value": "5709",
+                            "count": 1
+                        },
+                        {
+                            "value": "6474",
+                            "count": 1
+                        },
+                        {
+                            "value": "9657",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.location_zones.location_zone.responses.5xx",
+                    "count": "4",
+                    "distinct_count": "4",
+                    "is_exact": "1",
+                    "max": "9683",
+                    "mean": "6021.25",
+                    "min": "1454",
+                    "numeric_count": "4",
+                    "stdev": "3410.894347528226",
+                    "values": [
+                        {
+                            "value": "1454",
+                            "count": 1
+                        },
+                        {
+                            "value": "6139",
+                            "count": 1
+                        },
+                        {
+                            "value": "6809",
+                            "count": 1
+                        },
+                        {
+                            "value": "9683",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.location_zones.location_zone.responses.total",
+                    "count": "4",
+                    "distinct_count": "4",
+                    "is_exact": "1",
+                    "max": "8916",
+                    "mean": "5134",
+                    "min": "3185",
+                    "numeric_count": "4",
+                    "stdev": "2623.734615644908",
+                    "values": [
+                        {
+                            "value": "3185",
+                            "count": 1
+                        },
+                        {
+                            "value": "3558",
+                            "count": 1
+                        },
+                        {
+                            "value": "4877",
+                            "count": 1
+                        },
+                        {
+                            "value": "8916",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.location_zones.location_zone.sent",
+                    "count": "4",
+                    "distinct_count": "4",
+                    "is_exact": "1",
+                    "max": "5379",
+                    "mean": "3154.75",
+                    "min": "2013",
+                    "numeric_count": "4",
+                    "stdev": "1520.69992108897",
+                    "values": [
+                        {
+                            "value": "2013",
+                            "count": 1
+                        },
+                        {
+                            "value": "2389",
+                            "count": 1
+                        },
+                        {
+                            "value": "2838",
+                            "count": 1
+                        },
+                        {
+                            "value": "5379",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.requests.current",
+                    "count": "4",
+                    "distinct_count": "4",
+                    "is_exact": "1",
+                    "max": "7875",
+                    "mean": "6825.5",
+                    "min": "5373",
+                    "numeric_count": "4",
+                    "stdev": "1172.1608251430348",
+                    "values": [
+                        {
+                            "value": "5373",
+                            "count": 1
+                        },
+                        {
+                            "value": "6383",
+                            "count": 1
+                        },
+                        {
+                            "value": "7671",
+                            "count": 1
+                        },
+                        {
+                            "value": "7875",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.requests.total",
+                    "count": "4",
+                    "distinct_count": "4",
+                    "is_exact": "1",
+                    "max": "8727",
+                    "mean": "3734.5",
+                    "min": "337",
+                    "numeric_count": "4",
+                    "stdev": "3567.2703383212584",
+                    "values": [
+                        {
+                            "value": "2470",
+                            "count": 1
+                        },
+                        {
+                            "value": "337",
+                            "count": 1
+                        },
+                        {
+                            "value": "3404",
+                            "count": 1
+                        },
+                        {
+                            "value": "8727",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.server_zones.appserver.discarded",
+                    "count": "4",
+                    "distinct_count": "4",
+                    "is_exact": "1",
+                    "max": "4009",
+                    "mean": "2266.25",
+                    "min": "93",
+                    "numeric_count": "4",
+                    "stdev": "1619.0185041149673",
+                    "values": [
+                        {
+                            "value": "2408",
+                            "count": 1
+                        },
+                        {
+                            "value": "2555",
+                            "count": 1
+                        },
+                        {
+                            "value": "4009",
+                            "count": 1
+                        },
+                        {
+                            "value": "93",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.server_zones.appserver.processing",
+                    "count": "4",
+                    "distinct_count": "4",
+                    "is_exact": "1",
+                    "max": "8815",
+                    "mean": "6202",
+                    "min": "4167",
+                    "numeric_count": "4",
+                    "stdev": "1951.8720928038974",
+                    "values": [
+                        {
+                            "value": "4167",
+                            "count": 1
+                        },
+                        {
+                            "value": "5530",
+                            "count": 1
+                        },
+                        {
+                            "value": "6296",
+                            "count": 1
+                        },
+                        {
+                            "value": "8815",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.server_zones.appserver.received",
+                    "count": "4",
+                    "distinct_count": "4",
+                    "is_exact": "1",
+                    "max": "9939",
+                    "mean": "4731.5",
+                    "min": "201",
+                    "numeric_count": "4",
+                    "stdev": "4212.111228350932",
+                    "values": [
+                        {
+                            "value": "201",
+                            "count": 1
+                        },
+                        {
+                            "value": "2757",
+                            "count": 1
+                        },
+                        {
+                            "value": "6029",
+                            "count": 1
+                        },
+                        {
+                            "value": "9939",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.server_zones.appserver.requests",
+                    "count": "4",
+                    "distinct_count": "4",
+                    "is_exact": "1",
+                    "max": "9839",
+                    "mean": "8881.75",
+                    "min": "7229",
+                    "numeric_count": "4",
+                    "stdev": "1179.8721329025448",
+                    "values": [
+                        {
+                            "value": "7229",
+                            "count": 1
+                        },
+                        {
+                            "value": "8851",
+                            "count": 1
+                        },
+                        {
+                            "value": "9608",
+                            "count": 1
+                        },
+                        {
+                            "value": "9839",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.server_zones.appserver.responses.1xx",
+                    "count": "4",
+                    "distinct_count": "4",
+                    "is_exact": "1",
+                    "max": "7541",
+                    "mean": "4965.75",
+                    "min": "1849",
+                    "numeric_count": "4",
+                    "stdev": "2970.894071375372",
+                    "values": [
+                        {
+                            "value": "1849",
+                            "count": 1
+                        },
+                        {
+                            "value": "3002",
+                            "count": 1
+                        },
+                        {
+                            "value": "7471",
+                            "count": 1
+                        },
+                        {
+                            "value": "7541",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.server_zones.appserver.responses.2xx",
+                    "count": "4",
+                    "distinct_count": "4",
+                    "is_exact": "1",
+                    "max": "7695",
+                    "mean": "3184",
+                    "min": "491",
+                    "numeric_count": "4",
+                    "stdev": "3132.1105770177824",
+                    "values": [
+                        {
+                            "value": "1978",
+                            "count": 1
+                        },
+                        {
+                            "value": "2572",
+                            "count": 1
+                        },
+                        {
+                            "value": "491",
+                            "count": 1
+                        },
+                        {
+                            "value": "7695",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.server_zones.appserver.responses.3xx",
+                    "count": "4",
+                    "distinct_count": "4",
+                    "is_exact": "1",
+                    "max": "8655",
+                    "mean": "4910.5",
+                    "min": "1571",
+                    "numeric_count": "4",
+                    "stdev": "2961.075536580135",
+                    "values": [
+                        {
+                            "value": "1571",
+                            "count": 1
+                        },
+                        {
+                            "value": "3984",
+                            "count": 1
+                        },
+                        {
+                            "value": "5432",
+                            "count": 1
+                        },
+                        {
+                            "value": "8655",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.server_zones.appserver.responses.4xx",
+                    "count": "4",
+                    "distinct_count": "4",
+                    "is_exact": "1",
+                    "max": "7551",
+                    "mean": "5549",
+                    "min": "3103",
+                    "numeric_count": "4",
+                    "stdev": "2073.097521423759",
+                    "values": [
+                        {
+                            "value": "3103",
+                            "count": 1
+                        },
+                        {
+                            "value": "4587",
+                            "count": 1
+                        },
+                        {
+                            "value": "6955",
+                            "count": 1
+                        },
+                        {
+                            "value": "7551",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.server_zones.appserver.responses.5xx",
+                    "count": "4",
+                    "distinct_count": "4",
+                    "is_exact": "1",
+                    "max": "7249",
+                    "mean": "4992.75",
+                    "min": "1970",
+                    "numeric_count": "4",
+                    "stdev": "2258.516677674383",
+                    "values": [
+                        {
+                            "value": "1970",
+                            "count": 1
+                        },
+                        {
+                            "value": "4751",
+                            "count": 1
+                        },
+                        {
+                            "value": "6001",
+                            "count": 1
+                        },
+                        {
+                            "value": "7249",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.server_zones.appserver.responses.total",
+                    "count": "4",
+                    "distinct_count": "4",
+                    "is_exact": "1",
+                    "max": "6613",
+                    "mean": "3511.25",
+                    "min": "628",
+                    "numeric_count": "4",
+                    "stdev": "2953.371336286719",
+                    "values": [
+                        {
+                            "value": "1376",
+                            "count": 1
+                        },
+                        {
+                            "value": "5428",
+                            "count": 1
+                        },
+                        {
+                            "value": "628",
+                            "count": 1
+                        },
+                        {
+                            "value": "6613",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.server_zones.appserver.sent",
+                    "count": "4",
+                    "distinct_count": "4",
+                    "is_exact": "1",
+                    "max": "6187",
+                    "mean": "4004.5",
+                    "min": "1173",
+                    "numeric_count": "4",
+                    "stdev": "2178.888172134281",
+                    "values": [
+                        {
+                            "value": "1173",
+                            "count": 1
+                        },
+                        {
+                            "value": "3538",
+                            "count": 1
+                        },
+                        {
+                            "value": "5120",
+                            "count": 1
+                        },
+                        {
+                            "value": "6187",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.upstreams.appservers.keepalive",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "4",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.upstreams.appservers.peers{}.active",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "4",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.upstreams.appservers.peers{}.backup",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "false",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.upstreams.appservers.peers{}.downstart",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "2020-08-07T08:23:18.454Z",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.upstreams.appservers.peers{}.downtime",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "5117839",
+                    "mean": "5117839",
+                    "min": "5117839",
+                    "numeric_count": "4",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "5117839",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.upstreams.appservers.peers{}.fails",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "4",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.upstreams.appservers.peers{}.health_checks.checks",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "639",
+                    "mean": "639",
+                    "min": "639",
+                    "numeric_count": "4",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "639",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.upstreams.appservers.peers{}.health_checks.fails",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "639",
+                    "mean": "639",
+                    "min": "639",
+                    "numeric_count": "4",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "639",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.upstreams.appservers.peers{}.health_checks.last_passed",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "false",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.upstreams.appservers.peers{}.health_checks.unhealthy",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1",
+                    "mean": "1",
+                    "min": "1",
+                    "numeric_count": "4",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.upstreams.appservers.peers{}.id",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "4",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.upstreams.appservers.peers{}.name",
+                    "count": "4",
+                    "distinct_count": "4",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "175.117.235.209:8080",
+                            "count": 1
+                        },
+                        {
+                            "value": "177.73.238.227:443",
+                            "count": 1
+                        },
+                        {
+                            "value": "207.112.39.68:80",
+                            "count": 1
+                        },
+                        {
+                            "value": "40.109.3.161:80",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.upstreams.appservers.peers{}.received",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "4",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.upstreams.appservers.peers{}.requests",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "4",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.upstreams.appservers.peers{}.responses.1xx",
+                    "count": "4",
+                    "distinct_count": "4",
+                    "is_exact": "1",
+                    "max": "9536",
+                    "mean": "6654.75",
+                    "min": "3416",
+                    "numeric_count": "4",
+                    "stdev": "3080.0622693921846",
+                    "values": [
+                        {
+                            "value": "3416",
+                            "count": 1
+                        },
+                        {
+                            "value": "4642",
+                            "count": 1
+                        },
+                        {
+                            "value": "9025",
+                            "count": 1
+                        },
+                        {
+                            "value": "9536",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.upstreams.appservers.peers{}.responses.2xx",
+                    "count": "4",
+                    "distinct_count": "4",
+                    "is_exact": "1",
+                    "max": "8038",
+                    "mean": "3912",
+                    "min": "667",
+                    "numeric_count": "4",
+                    "stdev": "3092.0611248809428",
+                    "values": [
+                        {
+                            "value": "2863",
+                            "count": 1
+                        },
+                        {
+                            "value": "4080",
+                            "count": 1
+                        },
+                        {
+                            "value": "667",
+                            "count": 1
+                        },
+                        {
+                            "value": "8038",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.upstreams.appservers.peers{}.responses.3xx",
+                    "count": "4",
+                    "distinct_count": "4",
+                    "is_exact": "1",
+                    "max": "5197",
+                    "mean": "3114.25",
+                    "min": "1834",
+                    "numeric_count": "4",
+                    "stdev": "1449.3422358665557",
+                    "values": [
+                        {
+                            "value": "1834",
+                            "count": 1
+                        },
+                        {
+                            "value": "2675",
+                            "count": 1
+                        },
+                        {
+                            "value": "2751",
+                            "count": 1
+                        },
+                        {
+                            "value": "5197",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.upstreams.appservers.peers{}.responses.4xx",
+                    "count": "4",
+                    "distinct_count": "4",
+                    "is_exact": "1",
+                    "max": "5932",
+                    "mean": "4366.75",
+                    "min": "2535",
+                    "numeric_count": "4",
+                    "stdev": "1458.7333260972227",
+                    "values": [
+                        {
+                            "value": "2535",
+                            "count": 1
+                        },
+                        {
+                            "value": "3979",
+                            "count": 1
+                        },
+                        {
+                            "value": "5021",
+                            "count": 1
+                        },
+                        {
+                            "value": "5932",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.upstreams.appservers.peers{}.responses.5xx",
+                    "count": "4",
+                    "distinct_count": "4",
+                    "is_exact": "1",
+                    "max": "9475",
+                    "mean": "6336.75",
+                    "min": "4362",
+                    "numeric_count": "4",
+                    "stdev": "2219.075990136435",
+                    "values": [
+                        {
+                            "value": "4362",
+                            "count": 1
+                        },
+                        {
+                            "value": "5338",
+                            "count": 1
+                        },
+                        {
+                            "value": "6172",
+                            "count": 1
+                        },
+                        {
+                            "value": "9475",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.upstreams.appservers.peers{}.responses.total",
+                    "count": "4",
+                    "distinct_count": "4",
+                    "is_exact": "1",
+                    "max": "8502",
+                    "mean": "4721",
+                    "min": "559",
+                    "numeric_count": "4",
+                    "stdev": "3756.3577216944254",
+                    "values": [
+                        {
+                            "value": "2605",
+                            "count": 1
+                        },
+                        {
+                            "value": "559",
+                            "count": 1
+                        },
+                        {
+                            "value": "7218",
+                            "count": 1
+                        },
+                        {
+                            "value": "8502",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.upstreams.appservers.peers{}.sent",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "4",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.upstreams.appservers.peers{}.server",
+                    "count": "4",
+                    "distinct_count": "4",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "124.200.176.93:443",
+                            "count": 1
+                        },
+                        {
+                            "value": "128.17.232.76:8443",
+                            "count": 1
+                        },
+                        {
+                            "value": "3.140.136.168:80",
+                            "count": 1
+                        },
+                        {
+                            "value": "77.189.29.207:8080",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http.upstreams.appservers.peers{}.state",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "unhealthy",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.upstreams.appservers.peers{}.unavail",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "4",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.upstreams.appservers.peers{}.weight",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1",
+                    "mean": "1",
+                    "min": "1",
+                    "numeric_count": "4",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "field": "http.upstreams.appservers.zombies",
+                    "count": "4",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "4",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 4
+                        }
+                    ]
+                }
+            ]
+        ],
+        "nginx_access": [
+            [
+                {
+                    "field": "access_request",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "/hello/static/@271043/fonts/splunkicons-regular-webfont.woff",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "action",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Precondition Failed",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "app",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Nginx",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "bytes",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "11741",
+                    "mean": "11741",
+                    "min": "11741",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "11741",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "bytes_in",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "6663",
+                    "mean": "6663",
+                    "min": "6663",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "6663",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "bytes_out",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "5078",
+                    "mean": "5078",
+                    "min": "5078",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "5078",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "category",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "application/xml",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "cookie",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "mintjs%3Auuid=8f04fe60-937b-4853-8592-cfd62a4dc608; csrftoken=qSHX1XjwGIdjpLYgeqCcx02KuBDp3rzzs1SdzK4wLMIQDMSIHUaK5SaDXIuDSqOt; splunkweb_csrf_token_8000=17402066834971265035; session_id_8000=f7391e3e6da1cb3368a3b713e82b215e62beb67c",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_hour",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "9",
+                    "mean": "9",
+                    "min": "9",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "9",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_mday",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "2",
+                    "mean": "2",
+                    "min": "2",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "2",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_minute",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "45",
+                    "mean": "45",
+                    "min": "45",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "45",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_month",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "november",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_second",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "15",
+                    "mean": "15",
+                    "min": "15",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "15",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_wday",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "tuesday",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_year",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "2021",
+                    "mean": "2021",
+                    "min": "2021",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "2021",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_zone",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "local",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dest",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "host_sample_host.sample_domain20.com",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dest_port",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "21",
+                    "mean": "21",
+                    "min": "21",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "21",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "eventtype",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "nginx_access",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "host",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "itgdi-nginx-access-default-v1-17-v1-19-sample-5",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http_content_type",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "application/xml",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http_method",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "GET",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http_referer",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "https://my-stuff.server/test/static/@271043/css/build/bootstrap.min.css",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http_referrer",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "https://my-stuff.server/test/static/@271043/css/build/bootstrap.min.css",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http_referrer_domain",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "my-stuff.server",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http_user_agent",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Mozilla/5.0 (Windows NT 6.2; WOW64; rv:23.0) Gecko/20100101 Firefox/23.0",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http_user_agent_length",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "72",
+                    "mean": "72",
+                    "min": "72",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "72",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "http_x_forwarded_for",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "89.31.91.234",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "https",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "on",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ident",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "host_sample_host.sample_domain19.com",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "index",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "main",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "linecount",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1",
+                    "mean": "1",
+                    "min": "1",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "other",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "other_value",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "product",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Web Server",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "protocol",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "HTTP/1.1",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "punct",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "..._..__[//:::]_\"_///@//--._/.\"___\"://-.///@///..\"",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "req_time",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "02/Nov/2021:09:45:15",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "request_method",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "GET",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "response_code",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "412",
+                    "mean": "412",
+                    "min": "412",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "412",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "site",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "host_sample_host.sample_domain19.com",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "source",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "itgdi_nginx_access_default_v1.17_v1.19.sample",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sourcetype",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "nginx:plus:access",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "spl-86ccfd8d5c-kc8jt",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server_group",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "src",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "89.31.91.234",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "src_ip",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "163.133.160.159",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "status",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "412",
+                    "mean": "412",
+                    "min": "412",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "412",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "status_description",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Precondition Failed",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "status_type",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Client Error",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "tag",
+                    "count": "1",
+                    "distinct_count": "3",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "activity",
+                            "count": 1
+                        },
+                        {
+                            "value": "inventory",
+                            "count": 1
+                        },
+                        {
+                            "value": "web",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "tag::eventtype",
+                    "count": "1",
+                    "distinct_count": "3",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "activity",
+                            "count": 1
+                        },
+                        {
+                            "value": "inventory",
+                            "count": 1
+                        },
+                        {
+                            "value": "web",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "timeendpos",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "81",
+                    "mean": "81",
+                    "min": "81",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "81",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "timestartpos",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "61",
+                    "mean": "61",
+                    "min": "61",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "61",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "uri_path",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "/hello/static/@271043/fonts/splunkicons-regular-webfont.woff",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "uri_query",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "url",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "https://host_sample_host.sample_domain20.com:21/hello/static/@271043/fonts/splunkicons-regular-webfont.woff",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "url_domain",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "host_sample_host.sample_domain20.com",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "url_length",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "107",
+                    "mean": "107",
+                    "min": "107",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "107",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "user",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "user10",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Nginx",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_product",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Nginx Web Server",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "web_server",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "host_sample_host.sample_domain20.com:host_sample_host.sample_domain19.com",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        ],
+        "nginx_error_log_event": [
+            [
+                {
+                    "field": "date_hour",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "10",
+                    "mean": "9.5",
+                    "min": "9",
+                    "numeric_count": "2",
+                    "stdev": "0.7071067811865476",
+                    "values": [
+                        {
+                            "value": "10",
+                            "count": 1
+                        },
+                        {
+                            "value": "9",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_mday",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "2",
+                    "mean": "2",
+                    "min": "2",
+                    "numeric_count": "2",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "2",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "date_minute",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "59",
+                    "mean": "35",
+                    "min": "11",
+                    "numeric_count": "2",
+                    "stdev": "33.94112549695428",
+                    "values": [
+                        {
+                            "value": "11",
+                            "count": 1
+                        },
+                        {
+                            "value": "59",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_month",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "november",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "date_second",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "59",
+                    "mean": "33.5",
+                    "min": "8",
+                    "numeric_count": "2",
+                    "stdev": "36.062445840513924",
+                    "values": [
+                        {
+                            "value": "59",
+                            "count": 1
+                        },
+                        {
+                            "value": "8",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_wday",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "tuesday",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "date_year",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "2021",
+                    "mean": "2021",
+                    "min": "2021",
+                    "numeric_count": "2",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "2021",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "date_zone",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "local",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "eventtype",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "nginx_error_log_event",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "host",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "itgdi_nginx_error_v1.17_v1.19.sample",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "index",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "main",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "linecount",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1",
+                    "mean": "1",
+                    "min": "1",
+                    "numeric_count": "2",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "product",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Web Server",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "punct",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "//_::_[]_#:____",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "source",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "itgdi_nginx_error_v1.17_v1.19.sample",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "sourcetype",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "nginx:plus:error",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "spl-86ccfd8d5c-kc8jt",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server_group",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "tag",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "error",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "tag::eventtype",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "error",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "timeendpos",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "20",
+                    "mean": "20",
+                    "min": "20",
+                    "numeric_count": "2",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "20",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "timestartpos",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "2",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Nginx",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_product",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Nginx Web Server",
+                            "count": 2
+                        }
+                    ]
+                }
+            ]
+        ],
+        "nginx_app_protect": [
+            [
+                {
+                    "field": "action",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "allowed",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "attack_type",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Cross Site Scripting (XSS)",
+                            "count": 1
+                        },
+                        {
+                            "value": "Non-browser Client",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "blocking_exception_reason",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "N/A",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "cached",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "true",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "captcha_result",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "not_received",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "category",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Cross Site Scripting (XSS)",
+                            "count": 1
+                        },
+                        {
+                            "value": "Non-browser Client",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_hour",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "9",
+                    "mean": "9",
+                    "min": "9",
+                    "numeric_count": "2",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "9",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "date_mday",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "2",
+                    "mean": "2",
+                    "min": "2",
+                    "numeric_count": "2",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "2",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "date_minute",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "52",
+                    "mean": "51",
+                    "min": "50",
+                    "numeric_count": "2",
+                    "stdev": "1.4142135623730951",
+                    "values": [
+                        {
+                            "value": "50",
+                            "count": 1
+                        },
+                        {
+                            "value": "52",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_month",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "november",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "date_second",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "52",
+                    "mean": "33",
+                    "min": "14",
+                    "numeric_count": "2",
+                    "stdev": "26.870057685088806",
+                    "values": [
+                        {
+                            "value": "14",
+                            "count": 1
+                        },
+                        {
+                            "value": "52",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_time",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "2021-11-02 09:50:14",
+                            "count": 1
+                        },
+                        {
+                            "value": "2021-11-02 09:52:52",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "date_wday",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "tuesday",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "date_year",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "2021",
+                    "mean": "2021",
+                    "min": "2021",
+                    "numeric_count": "2",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "2021",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "date_zone",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "local",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "dest",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "10.100.0.1",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.100.0.2",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dest_ip",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "10.100.0.1",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.100.0.2",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dest_port",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "443",
+                    "mean": "261.5",
+                    "min": "80",
+                    "numeric_count": "2",
+                    "stdev": "256.6797615707168",
+                    "values": [
+                        {
+                            "value": "443",
+                            "count": 1
+                        },
+                        {
+                            "value": "80",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "device_id",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "27063",
+                    "mean": "23191",
+                    "min": "19319",
+                    "numeric_count": "2",
+                    "stdev": "5475.834913508624",
+                    "values": [
+                        {
+                            "value": "19319",
+                            "count": 1
+                        },
+                        {
+                            "value": "27063",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dvc",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "10.100.0.1",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.100.0.2",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "eventtype",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "nginx_app_protect",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "fragment",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "N/A",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "geo_location",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "N/A",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "host",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "itgdi_nginx_app_protect_v1.3.0_v2.0.sample",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "http_class_name",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "app_protect_default_policy",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "ids_type",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "network",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "index",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "main",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "ip_address_intelligence",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "N/A",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "ip_client",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "10.1.0.1",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.1.0.2",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "linecount",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1",
+                    "mean": "1",
+                    "min": "1",
+                    "numeric_count": "2",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "management_ip_address",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "133.210.132.46",
+                            "count": 1
+                        },
+                        {
+                            "value": "60.170.183.28",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "management_ip_address_2",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "72.70.72.172",
+                            "count": 1
+                        },
+                        {
+                            "value": "84.227.166.164",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "method",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "POST",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "microservice",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "N/A",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "policy_apply_date",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "2021-11-02 09:41:56",
+                            "count": 1
+                        },
+                        {
+                            "value": "2021-11-02 10:03:54",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "policy_name",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "app_protect_strict_policy",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "product",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "App Protect",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "protocol",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "HTTP",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "punct",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "=\"...\",=\"...\",=\"...\",=\"\",=\"\",=\"\",=\"--_::\",=\"__\",=\"",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "query_string",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "cached=true",
+                            "count": 1
+                        },
+                        {
+                            "value": "testurlquery=1234",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "request",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "POST http://goodwin.com//about.php HTTP/1.1\\r\\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/536.30.1 (KHTML, like Gecko) Version/6.0.5 Safari/536.30.1",
+                            "count": 1
+                        },
+                        {
+                            "value": "POST http://www.hines.com//login.html HTTP/1.1\\r\\nUser-Agent: Mozilla/5.0 (Windows NT 6.0; rv:24.0) Gecko/20100101 Firefox/24.0",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "request_status",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "passed",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "response",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Response logging disabled",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "response_code",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "204",
+                    "mean": "204",
+                    "min": "204",
+                    "numeric_count": "2",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "204",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "route_domain",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "38599",
+                    "mean": "24587",
+                    "min": "10575",
+                    "numeric_count": "2",
+                    "stdev": "19815.960435971807",
+                    "values": [
+                        {
+                            "value": "10575",
+                            "count": 1
+                        },
+                        {
+                            "value": "38599",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "session_id",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "78106",
+                    "mean": "77761",
+                    "min": "77416",
+                    "numeric_count": "2",
+                    "stdev": "487.9036790187178",
+                    "values": [
+                        {
+                            "value": "77416",
+                            "count": 1
+                        },
+                        {
+                            "value": "78106",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "severity",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Critical",
+                            "count": 1
+                        },
+                        {
+                            "value": "high",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sig_cves",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "N/A",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "sig_ids",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "N/A",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "sig_names",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "N/A",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "signature",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "N/A",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "source",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "itgdi_nginx_app_protect_v1.3.0_v2.0.sample",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "sourcetype",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "nginx:app:protect",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "spl-86ccfd8d5c-kc8jt",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server_group",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "src",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "10.1.0.1",
+                            "count": 1
+                        },
+                        {
+                            "value": "10.1.0.2",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "src_port",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "4423",
+                    "mean": "4220.5",
+                    "min": "4018",
+                    "numeric_count": "2",
+                    "stdev": "286.37824638055173",
+                    "values": [
+                        {
+                            "value": "4018",
+                            "count": 1
+                        },
+                        {
+                            "value": "4423",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "staged_sig_cves",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "N/A",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "staged_sig_ids",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "N/A",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "staged_sig_names",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "N/A",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "staged_threat_campaign_names",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "N/A",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "sub_violations",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "IIS backslashes",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "support_id",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "74063",
+                    "mean": "48231",
+                    "min": "22399",
+                    "numeric_count": "2",
+                    "stdev": "36531.96474322179",
+                    "values": [
+                        {
+                            "value": "22399",
+                            "count": 1
+                        },
+                        {
+                            "value": "74063",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "tag",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "attack",
+                            "count": 2
+                        },
+                        {
+                            "value": "ids",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "tag::eventtype",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "attack",
+                            "count": 2
+                        },
+                        {
+                            "value": "ids",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "tap_event_id",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "42452",
+                    "mean": "21760",
+                    "min": "1068",
+                    "numeric_count": "2",
+                    "stdev": "29262.907032624084",
+                    "values": [
+                        {
+                            "value": "1068",
+                            "count": 1
+                        },
+                        {
+                            "value": "42452",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "tap_vid",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "23427",
+                    "mean": "15848.5",
+                    "min": "8270",
+                    "numeric_count": "2",
+                    "stdev": "10717.6174824445",
+                    "values": [
+                        {
+                            "value": "23427",
+                            "count": 1
+                        },
+                        {
+                            "value": "8270",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "testurlquery",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1234",
+                    "mean": "1234",
+                    "min": "1234",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1234",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "threat_campaign_names",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "N/A",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "timeendpos",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "596",
+                    "mean": "594.5",
+                    "min": "593",
+                    "numeric_count": "2",
+                    "stdev": "2.1213203435596424",
+                    "values": [
+                        {
+                            "value": "593",
+                            "count": 1
+                        },
+                        {
+                            "value": "596",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "timestartpos",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "577",
+                    "mean": "575.5",
+                    "min": "574",
+                    "numeric_count": "2",
+                    "stdev": "2.1213203435596424",
+                    "values": [
+                        {
+                            "value": "574",
+                            "count": 1
+                        },
+                        {
+                            "value": "577",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "transport",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "tcp",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "unit_hostname",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "30.43.6.47",
+                            "count": 1
+                        },
+                        {
+                            "value": "kiru3.sv.splunk.com",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "uri",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "http://www.gross.com//about.php",
+                            "count": 1
+                        },
+                        {
+                            "value": "https://www.cameron.com//about.php",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "user",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "user13",
+                            "count": 1
+                        },
+                        {
+                            "value": "user14",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "username",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "user13",
+                            "count": 1
+                        },
+                        {
+                            "value": "user14",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Nginx",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_product",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Nginx App Protect",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_severity",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Critical",
+                            "count": 1
+                        },
+                        {
+                            "value": "Error",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "violation_rating",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "0",
+                    "mean": "0",
+                    "min": "0",
+                    "numeric_count": "2",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "0",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "violations",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Evasion technique detected",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "virus_name",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "N/A",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "vs_name",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "1-localhost:1-/",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "web_application_name",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "app_protect_default_policy",
+                            "count": 1
+                        },
+                        {
+                            "value": "app_protect_strict_policy",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "websocket_direction",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "N/A",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "websocket_message_type",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "N/A",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "x_forwarded_for_header_value",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "115.75.103.239",
+                            "count": 1
+                        },
+                        {
+                            "value": "4.52.254.122",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        ]
+    }
+}

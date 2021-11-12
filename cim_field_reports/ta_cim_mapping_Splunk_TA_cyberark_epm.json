@@ -1,0 +1,2779 @@
+{
+    "ta_name": {
+        "name": "Splunk_TA_cyberark_epm",
+        "version": "1.1.0"
+    },
+    "sourcetypes": [
+        "cyberark:epm:policy:audit",
+        "cyberark:epm:application:events",
+        "cyberark:epm:threat:detection"
+    ],
+    "cimsummary": {
+        "Endpoint:Processes": {
+            "cyberark_epm_endoint_process": [
+                {
+                    "fields": [
+                        "action",
+                        "dest",
+                        "process",
+                        "process_exec",
+                        "process_hash",
+                        "process_name",
+                        "process_path",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Endpoint:Services": {
+            "cyberark_epm_endoint_process": [
+                {
+                    "fields": [
+                        "action",
+                        "dest",
+                        "process",
+                        "process_exec",
+                        "process_hash",
+                        "process_name",
+                        "process_path",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Vulnerabilities:Vulnerabilities": {
+            "cyberark_epm_endoint_process": [
+                {
+                    "fields": [
+                        "action",
+                        "dest",
+                        "process",
+                        "process_exec",
+                        "process_hash",
+                        "process_name",
+                        "process_path",
+                        "severity",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Vulnerabilities:High_Critical_Vulnerabilities": {
+            "cyberark_epm_endoint_process": [
+                {
+                    "fields": [
+                        "action",
+                        "dest",
+                        "process",
+                        "process_exec",
+                        "process_hash",
+                        "process_name",
+                        "process_path",
+                        "severity",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Vulnerabilities:Medium_Vulnerabilities": {
+            "cyberark_epm_endoint_process": [
+                {
+                    "fields": [
+                        "action",
+                        "dest",
+                        "process",
+                        "process_exec",
+                        "process_hash",
+                        "process_name",
+                        "process_path",
+                        "severity",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Vulnerabilities:Low_Informational_Vulnerabilities": {
+            "cyberark_epm_endoint_process": [
+                {
+                    "fields": [
+                        "action",
+                        "dest",
+                        "process",
+                        "process_exec",
+                        "process_hash",
+                        "process_name",
+                        "process_path",
+                        "severity",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Application_State:Processes": {
+            "cyberark_epm_endoint_process": [
+                {
+                    "fields": [
+                        "action",
+                        "dest",
+                        "process",
+                        "process_exec",
+                        "process_hash",
+                        "process_name",
+                        "process_path",
+                        "severity",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Application_State:Services": {
+            "cyberark_epm_endoint_process": [
+                {
+                    "fields": [
+                        "action",
+                        "dest",
+                        "process",
+                        "process_exec",
+                        "process_hash",
+                        "process_name",
+                        "process_path",
+                        "severity",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Network_Traffic:All_Traffic": {
+            "cyberark_epm_change": [
+                {
+                    "fields": [
+                        "action",
+                        "dest",
+                        "dvc",
+                        "tag",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Network_Traffic:Traffic_By_Action": {
+            "cyberark_epm_change": [
+                {
+                    "fields": [
+                        "action",
+                        "dest",
+                        "dvc",
+                        "tag",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Network_Traffic:Allowed_Traffic": {
+            "cyberark_epm_change": [
+                {
+                    "fields": [
+                        "action",
+                        "dest",
+                        "dvc",
+                        "tag",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Network_Traffic:Blocked_Traffic": {
+            "cyberark_epm_change": [
+                {
+                    "fields": [
+                        "action",
+                        "dest",
+                        "dvc",
+                        "tag",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Network_Resolution:DNS": {
+            "cyberark_epm_change": [
+                {
+                    "fields": [
+                        "action",
+                        "dest",
+                        "dvc",
+                        "tag",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Ticket_Management:Change": {
+            "cyberark_epm_change": [
+                {
+                    "fields": [
+                        "action",
+                        "dest",
+                        "dvc",
+                        "tag",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Performance:Network": {
+            "cyberark_epm_change": [
+                {
+                    "fields": [
+                        "action",
+                        "dest",
+                        "dvc",
+                        "tag",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Network_Sessions:All_Sessions": {
+            "cyberark_epm_change": [
+                {
+                    "fields": [
+                        "action",
+                        "dest",
+                        "dvc",
+                        "tag",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Network_Sessions:Session_Start": {
+            "cyberark_epm_change": [
+                {
+                    "fields": [
+                        "action",
+                        "dest",
+                        "dvc",
+                        "tag",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Network_Sessions:Session_End": {
+            "cyberark_epm_change": [
+                {
+                    "fields": [
+                        "action",
+                        "dest",
+                        "dvc",
+                        "tag",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Network_Sessions:DHCP": {
+            "cyberark_epm_change": [
+                {
+                    "fields": [
+                        "action",
+                        "dest",
+                        "dvc",
+                        "tag",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Network_Sessions:VPN": {
+            "cyberark_epm_change": [
+                {
+                    "fields": [
+                        "action",
+                        "dest",
+                        "dvc",
+                        "tag",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change_Analysis:All_Changes": {
+            "cyberark_epm_change": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_attrs",
+                        "object_category",
+                        "object_id",
+                        "status",
+                        "tag",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change_Analysis:Auditing_Changes": {
+            "cyberark_epm_change": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_attrs",
+                        "object_category",
+                        "object_id",
+                        "status",
+                        "tag",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change_Analysis:Endpoint_Changes": {
+            "cyberark_epm_change": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_attrs",
+                        "object_category",
+                        "object_id",
+                        "status",
+                        "tag",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change_Analysis:Filesystem_Changes": {
+            "cyberark_epm_change": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_attrs",
+                        "object_category",
+                        "object_id",
+                        "status",
+                        "tag",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change_Analysis:Registry_Changes": {
+            "cyberark_epm_change": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_attrs",
+                        "object_category",
+                        "object_id",
+                        "status",
+                        "tag",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change_Analysis:Endpoint_Restarts": {
+            "cyberark_epm_change": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_attrs",
+                        "object_category",
+                        "object_id",
+                        "status",
+                        "tag",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change_Analysis:Other_Endpoint_Changes": {
+            "cyberark_epm_change": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_attrs",
+                        "object_category",
+                        "object_id",
+                        "status",
+                        "tag",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change_Analysis:Network_Changes": {
+            "cyberark_epm_change": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_attrs",
+                        "object_category",
+                        "object_id",
+                        "status",
+                        "tag",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change_Analysis:Device_Restarts": {
+            "cyberark_epm_change": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_attrs",
+                        "object_category",
+                        "object_id",
+                        "status",
+                        "tag",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change_Analysis:Account_Management": {
+            "cyberark_epm_change": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_attrs",
+                        "object_category",
+                        "object_id",
+                        "status",
+                        "tag",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change_Analysis:Accounts_Created": {
+            "cyberark_epm_change": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_attrs",
+                        "object_category",
+                        "object_id",
+                        "status",
+                        "tag",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change_Analysis:Accounts_Deleted": {
+            "cyberark_epm_change": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_attrs",
+                        "object_category",
+                        "object_id",
+                        "status",
+                        "tag",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change_Analysis:Account_Lockouts": {
+            "cyberark_epm_change": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_attrs",
+                        "object_category",
+                        "object_id",
+                        "status",
+                        "tag",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change_Analysis:Accounts_Updated": {
+            "cyberark_epm_change": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_attrs",
+                        "object_category",
+                        "object_id",
+                        "status",
+                        "tag",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Compute_Inventory:Network": {
+            "cyberark_epm_change": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_attrs",
+                        "object_category",
+                        "object_id",
+                        "status",
+                        "tag",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change:All_Changes": {
+            "cyberark_epm_change": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_attrs",
+                        "object_category",
+                        "object_id",
+                        "status",
+                        "tag",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change:Auditing_Changes": {
+            "cyberark_epm_change": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_attrs",
+                        "object_category",
+                        "object_id",
+                        "status",
+                        "tag",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change:Endpoint_Changes": {
+            "cyberark_epm_change": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_attrs",
+                        "object_category",
+                        "object_id",
+                        "status",
+                        "tag",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change:Endpoint_Restarts": {
+            "cyberark_epm_change": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_attrs",
+                        "object_category",
+                        "object_id",
+                        "status",
+                        "tag",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change:Other_Endpoint_Changes": {
+            "cyberark_epm_change": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_attrs",
+                        "object_category",
+                        "object_id",
+                        "status",
+                        "tag",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change:Network_Changes": {
+            "cyberark_epm_change": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_attrs",
+                        "object_category",
+                        "object_id",
+                        "status",
+                        "tag",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change:Device_Restarts": {
+            "cyberark_epm_change": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_attrs",
+                        "object_category",
+                        "object_id",
+                        "status",
+                        "tag",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change:Account_Management": {
+            "cyberark_epm_change": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_attrs",
+                        "object_category",
+                        "object_id",
+                        "status",
+                        "tag",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change:Accounts_Created": {
+            "cyberark_epm_change": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_attrs",
+                        "object_category",
+                        "object_id",
+                        "status",
+                        "tag",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change:Accounts_Deleted": {
+            "cyberark_epm_change": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_attrs",
+                        "object_category",
+                        "object_id",
+                        "status",
+                        "tag",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change:Account_Lockouts": {
+            "cyberark_epm_change": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_attrs",
+                        "object_category",
+                        "object_id",
+                        "status",
+                        "tag",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change:Accounts_Updated": {
+            "cyberark_epm_change": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_attrs",
+                        "object_category",
+                        "object_id",
+                        "status",
+                        "tag",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Change:Instance_Changes": {
+            "cyberark_epm_change": [
+                {
+                    "fields": [
+                        "action",
+                        "change_type",
+                        "command",
+                        "dest",
+                        "dvc",
+                        "object",
+                        "object_attrs",
+                        "object_category",
+                        "object_id",
+                        "status",
+                        "tag",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Malware:Malware_Attacks": {
+            "cyberark_epm_attack": [
+                {
+                    "fields": [
+                        "action",
+                        "category",
+                        "dest",
+                        "file_hash",
+                        "file_name",
+                        "severity",
+                        "signature",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Malware:Allowed_Malware": {
+            "cyberark_epm_attack": [
+                {
+                    "fields": [
+                        "action",
+                        "category",
+                        "dest",
+                        "file_hash",
+                        "file_name",
+                        "severity",
+                        "signature",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Malware:Blocked_Malware": {
+            "cyberark_epm_attack": [
+                {
+                    "fields": [
+                        "action",
+                        "category",
+                        "dest",
+                        "file_hash",
+                        "file_name",
+                        "severity",
+                        "signature",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Malware:Deferred_Malware": {
+            "cyberark_epm_attack": [
+                {
+                    "fields": [
+                        "action",
+                        "category",
+                        "dest",
+                        "file_hash",
+                        "file_name",
+                        "severity",
+                        "signature",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Intrusion_Detection:IDS_Attacks": {
+            "cyberark_epm_attack": [
+                {
+                    "fields": [
+                        "action",
+                        "category",
+                        "dest",
+                        "dvc",
+                        "file_hash",
+                        "file_name",
+                        "ids_type",
+                        "severity",
+                        "signature",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Intrusion_Detection:Application_IDS_Attacks": {
+            "cyberark_epm_attack": [
+                {
+                    "fields": [
+                        "action",
+                        "category",
+                        "dest",
+                        "dvc",
+                        "file_hash",
+                        "file_name",
+                        "ids_type",
+                        "severity",
+                        "signature",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Intrusion_Detection:Host_IDS_Attacks": {
+            "cyberark_epm_attack": [
+                {
+                    "fields": [
+                        "action",
+                        "category",
+                        "dest",
+                        "dvc",
+                        "file_hash",
+                        "file_name",
+                        "ids_type",
+                        "severity",
+                        "signature",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        },
+        "Intrusion_Detection:Network_IDS_Attacks": {
+            "cyberark_epm_attack": [
+                {
+                    "fields": [
+                        "action",
+                        "category",
+                        "dest",
+                        "dvc",
+                        "file_hash",
+                        "file_name",
+                        "ids_type",
+                        "severity",
+                        "signature",
+                        "tag",
+                        "user",
+                        "vendor_product"
+                    ]
+                }
+            ]
+        }
+    },
+    "fieldsummary": {
+        "cyberark_epm_attack": [
+            [
+                {
+                    "field": "AffectedComputers",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "5",
+                    "mean": "5",
+                    "min": "5",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "5",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "EventName",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "LSASS Credentials Harvesting",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "EventType",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "SuspiciousActivity",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ExposedUsers",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "6",
+                    "mean": "6",
+                    "min": "6",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "6",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "FileQualifier",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "9999999999999999999",
+                    "mean": "10000000000000000000",
+                    "min": "9999999999999999999",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "9999999999999999999",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Hash",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "SHA1##377445D0DD93D43E8422C039597CFEC5FD8EAEE7",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "LastEventComputer",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "dest-sample_host5",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "LastEventDate",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "2021-11-03T20:24:33.00",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "LastEventFileName",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "sample event file name (process.exe)",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "LastEventID",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "999999999",
+                    "mean": "999999999",
+                    "min": "999999999",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "999999999",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "LastEventUserName",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "user8",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "PolicyName",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "LSASS Credentials Harvesting",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Publisher",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "sample_publisher",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ThreatDetectionAction",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Blocked",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "TotalEvents",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1",
+                    "mean": "1",
+                    "min": "1",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "action",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "blocked",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "category",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Credentials Harvesting",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "change_type",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "command",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "dest",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "dest-sample_host5",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dvc",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "spgdi_cyberark_epm_threat_detection.sample_1",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "eventtype",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "cyberark_epm_attack",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "file_hash",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "SHA1##377445D0DD93D43E8422C039597CFEC5FD8EAEE7",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "file_name",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "sample event file name (process.exe)",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "host",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "spgdi_cyberark_epm_threat_detection.sample_1",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ids_type",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "host",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "index",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "main",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "linecount",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1",
+                    "mean": "1",
+                    "min": "1",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "object",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "object_attrs",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "object_category",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "object_id",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "punct",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "{\"\":,\"\":\"____(.)\",\"\":\"##\",\"\":\"__\",\"\":\"__\",\"\":\"\",\"\"",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "severity",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "medium",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "signature",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "LSASS Credentials Harvesting",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "source",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "eventgen",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sourcetype",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "cyberark:epm:threat:detection",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "spl-789f86bf58-8t6pw",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server_group",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "status",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "tag",
+                    "count": "1",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "attack",
+                            "count": 1
+                        },
+                        {
+                            "value": "ids",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "tag::eventtype",
+                    "count": "1",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "attack",
+                            "count": 1
+                        },
+                        {
+                            "value": "ids",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "user",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "user8",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_product",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "CyberArk EPM",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        ],
+        "cyberark_epm_endoint_process": [
+            [
+                {
+                    "field": "ApplicationType",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Executable",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "EventName",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "dummy process name (dummy_process.exe)",
+                            "count": 1
+                        },
+                        {
+                            "value": "sample process name (sample_process.exe)",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "EventType",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "ElevationRequest",
+                            "count": 1
+                        },
+                        {
+                            "value": "Launch",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "FileQualifier",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "9999999999999999999",
+                    "mean": "10000000000000000000",
+                    "min": "9999999999999999999",
+                    "numeric_count": "2",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "9999999999999999999",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "Hash",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "SHA1##2E9402257A9B5F2F74D9259960CD36131E4470C5",
+                            "count": 1
+                        },
+                        {
+                            "value": "SHA1##7AD583AA228AB1CC01AF4D69B8A1256D3FFBEF23",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "IsMalware",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "false",
+                            "count": 1
+                        },
+                        {
+                            "value": "true",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "LastEventComputer",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "dest-sample_host2",
+                            "count": 1
+                        },
+                        {
+                            "value": "dest-sample_host3",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "LastEventDate",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "2021-11-03T19:46:29.00",
+                            "count": 1
+                        },
+                        {
+                            "value": "2021-11-03T19:52:06.00",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "LastEventID",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "max": "999999999",
+                    "mean": "549999999",
+                    "min": "99999999",
+                    "numeric_count": "2",
+                    "stdev": "636396103.0678928",
+                    "values": [
+                        {
+                            "value": "99999999",
+                            "count": 1
+                        },
+                        {
+                            "value": "999999999",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "LastEventPackageName",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "dummy_event_package_name",
+                            "count": 1
+                        },
+                        {
+                            "value": "sample_event_package_name",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "LastEventPreHistorySourceName",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "dummy_event_pre_history_source_name",
+                            "count": 1
+                        },
+                        {
+                            "value": "sample_event_pre_history_source_name",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "LastEventPreHistorySourceType",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "dummy_event_pre_history_source_type",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "LastEventSourceName",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "dummy_event_source_name",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "LastEventSourceType",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "dummy_event_source_type",
+                            "count": 1
+                        },
+                        {
+                            "value": "sample_event_source_type",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "LastEventUserName",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "user2",
+                            "count": 1
+                        },
+                        {
+                            "value": "user6",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "PolicyName",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "sample_policy_name",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Publisher",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "dummy_publisher",
+                            "count": 1
+                        },
+                        {
+                            "value": "sample_publisher",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "TotalEvents",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1",
+                    "mean": "1",
+                    "min": "1",
+                    "numeric_count": "2",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "action",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "allowed",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "dest",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "dest-sample_host2",
+                            "count": 1
+                        },
+                        {
+                            "value": "dest-sample_host3",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "eventtype",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "cyberark_epm_endoint_process",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "host",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "spgdi_cyberark_epm_application_events.sample_2",
+                            "count": 1
+                        },
+                        {
+                            "value": "spgdi_cyberark_epm_policy_audit.sample_1",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "index",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "main",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "linecount",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1",
+                    "mean": "1",
+                    "min": "1",
+                    "numeric_count": "2",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "process",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "dummy_event_source_name\\sample process name (sample_process.exe)",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "process_exec",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "dummy process name (dummy_process.exe)",
+                            "count": 1
+                        },
+                        {
+                            "value": "sample process name (sample_process.exe)",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "process_hash",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "SHA1##2E9402257A9B5F2F74D9259960CD36131E4470C5",
+                            "count": 1
+                        },
+                        {
+                            "value": "SHA1##7AD583AA228AB1CC01AF4D69B8A1256D3FFBEF23",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "process_name",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "dummy process name (dummy_process.exe)",
+                            "count": 1
+                        },
+                        {
+                            "value": "sample process name (sample_process.exe)",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "process_path",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "dummy_event_source_name",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "punct",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "{\"\":,\"\":,\"\":\"\",\"\":\"___(.)\",\"\":\"\",\"\":\"##\",\"\":\"\",\"\":",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "severity",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "low",
+                            "count": 1
+                        },
+                        {
+                            "value": "medium",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "source",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "eventgen",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "sourcetype",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "cyberark:epm:application:events",
+                            "count": 1
+                        },
+                        {
+                            "value": "cyberark:epm:policy:audit",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "spl-789f86bf58-8t6pw",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server_group",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "tag",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "process",
+                            "count": 2
+                        },
+                        {
+                            "value": "report",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "tag::eventtype",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "process",
+                            "count": 2
+                        },
+                        {
+                            "value": "report",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "field": "user",
+                    "count": "2",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "user2",
+                            "count": 1
+                        },
+                        {
+                            "value": "user6",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "vendor_product",
+                    "count": "2",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "CyberArk EPM",
+                            "count": 2
+                        }
+                    ]
+                }
+            ]
+        ],
+        "cyberark_epm_change": [
+            [
+                {
+                    "field": "AffectedComputers",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "5",
+                    "mean": "5",
+                    "min": "5",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "5",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "EventName",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "LSASS Credentials Harvesting",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "EventType",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Attack",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ExposedUsers",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "6",
+                    "mean": "6",
+                    "min": "6",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "6",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "FileQualifier",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "9999999999999999999",
+                    "mean": "10000000000000000000",
+                    "min": "9999999999999999999",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "9999999999999999999",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Hash",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "SHA1##2E9402257A9B5F2F74D9259960CD36131E4470C5",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "LastEventComputer",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "sample_event_computer",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "LastEventDate",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "2021-11-03T19:54:25.00",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "LastEventFileName",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "sample event file name (process.exe)",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "LastEventID",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "999999999",
+                    "mean": "999999999",
+                    "min": "999999999",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "999999999",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "LastEventUserName",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "sample_event_event_user_name",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "PolicyName",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "LSASS Credentials Harvesting",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "Publisher",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "sample_publisher",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ThreatDetectionAction",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Detected",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "TotalEvents",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1",
+                    "mean": "1",
+                    "min": "1",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "action",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "read",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "category",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "change_type",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "policy",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "command",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "API",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dest",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "spgdi_cyberark_epm_threat_detection.sample_2",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "dvc",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "spgdi_cyberark_epm_threat_detection.sample_2",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "eventtype",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "cyberark_epm_change",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "file_hash",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "file_name",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "host",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "spgdi_cyberark_epm_threat_detection.sample_2",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "ids_type",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "index",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "main",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "linecount",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "max": "1",
+                    "mean": "1",
+                    "min": "1",
+                    "numeric_count": "1",
+                    "stdev": "0",
+                    "values": [
+                        {
+                            "value": "1",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "object",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "LSASS Credentials Harvesting",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "object_attrs",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "Attack",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "object_category",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "policy",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "object_id",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "SHA1##2E9402257A9B5F2F74D9259960CD36131E4470C5",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "punct",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "{\"\":,\"\":\"____(.)\",\"\":\"##\",\"\":\"__\",\"\":\"__\",\"\":\"\",\"\"",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "severity",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "signature",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "source",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "eventgen",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "sourcetype",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "cyberark:epm:threat:detection",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "spl-789f86bf58-8t6pw",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "splunk_server_group",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "status",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "success",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "tag",
+                    "count": "1",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "change",
+                            "count": 1
+                        },
+                        {
+                            "value": "network",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "tag::eventtype",
+                    "count": "1",
+                    "distinct_count": "2",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "change",
+                            "count": 1
+                        },
+                        {
+                            "value": "network",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "field": "user",
+                    "count": "0",
+                    "distinct_count": "0",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": []
+                },
+                {
+                    "field": "vendor_product",
+                    "count": "1",
+                    "distinct_count": "1",
+                    "is_exact": "1",
+                    "numeric_count": "0",
+                    "values": [
+                        {
+                            "value": "CyberArk EPM",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        ]
+    }
+}
