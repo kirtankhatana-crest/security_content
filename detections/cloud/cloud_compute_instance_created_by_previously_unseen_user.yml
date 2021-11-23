@@ -69,3 +69,6 @@ tags:
   - All_Changes.vendor_region
   risk_score: 18
   security_domain: threat
+  required_tas:
+  - Splunk_TA_aws-kinesis-firehose
+  - Splunk_TA_google-cloudplatform

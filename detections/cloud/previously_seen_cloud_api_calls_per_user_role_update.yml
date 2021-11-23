@@ -40,3 +40,9 @@ tags:
   - All_Changes.user
   - All_Changes.command
   security_domain: network
+  required_tas:
+  - Splunk_TA_aws-kinesis-firehose
+  - splunk_ta_o365
+  - Splunk_TA_box
+  - Splunk_TA_infoblox
+  - Splunk_TA_salesforce
