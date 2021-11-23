@@ -37,3 +37,5 @@ tags:
   - Authentication.signature
   - Authentication.src_nt_domain
   security_domain: endpoint
+  required_tas:
+  - Splunk_TA_windows
