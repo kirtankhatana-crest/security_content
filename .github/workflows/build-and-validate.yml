@@ -468,6 +468,11 @@ jobs:
         run: |
           source venv/bin/activate 
           python3 bin/doc_gen.py --path . --output docs -v
+
+      - name: Enrich detection list to add TA-list in detection file
+	run: |
+	  source venv/bin/activate
+	  python3 security_content_automation/enrich_detections.py
       
       - name: Make YAMLs Pretty 
         run: |
