@@ -36,3 +36,13 @@ tags:
   - dest_port
   - dest_ip
   security_domain: network
+  required_tas:
+  - Splunk_TA_citrix-netscaler
+  - Splunk_TA_nix
+  - Splunk_TA_aws-kinesis-firehose
+  - Splunk_TA_ossec
+  - Splunk_TA_juniper
+  - Splunk_TA_f5-bigip
+  - Splunk_TA_symantec-ep
+  - Splunk_TA_cisco-wsa
+  - Splunk_TA_cisco-asa

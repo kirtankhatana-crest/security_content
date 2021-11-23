@@ -25,3 +25,15 @@ tags:
   - dest
   - user
   security_domain: endpoint
+  required_tas:
+  - Splunk_TA_aws-kinesis-firehose
+  - Splunk_TA_ossec
+  - Splunk_TA_bromium
+  - Splunk_TA_bit9-carbonblack
+  - Splunk_TA_juniper
+  - Splunk_TA_symantec-ep
+  - Splunk_TA_cyberark
+  - Splunk_TA_windows
+  - Splunk_TA_CrowdStrike_FDR
+  - Splunk_TA_cisco-asa
+  - Splunk_TA_salesforce

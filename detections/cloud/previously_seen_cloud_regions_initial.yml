@@ -36,3 +36,5 @@ tags:
   - All_Changes.action
   - All_Changes.vendor_region
   security_domain: network
+  required_tas:
+  - Splunk_TA_aws-kinesis-firehose

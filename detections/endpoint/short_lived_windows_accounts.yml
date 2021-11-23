@@ -63,3 +63,6 @@ tags:
   - All_Changes.dest
   risk_score: 63
   security_domain: access
+  required_tas:
+  - Splunk_TA_aws-kinesis-firehose
+  - Splunk_TA_cyberark

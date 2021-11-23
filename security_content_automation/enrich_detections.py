@@ -111,7 +111,7 @@ def main():
                         help="specify the url of the security content repository")
     parser.add_argument("-scb", "--security_content_branch", required=False, default="develop",
                         help="specify the security content branch")
-    parser.add_argument("-gt", "--github_token", required=False, default='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',
+    parser.add_argument("-gt", "--github_token", required=False, default='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',
                         help="specify the github token for the PR")
 
     args = parser.parse_args()
@@ -122,9 +122,10 @@ def main():
     detection_types = ["cloud", "endpoint", "network"]
 
     # clone security content repository
-    security_content_repo_obj = git.Repo.clone_from(
-        'https://' + github_token + ':x-oauth-basic@github.com/' + security_content_repo, "security_content",
-        branch=security_content_branch)
+    security_content_repo_obj = git.Repo("/Users/tlangalia/Documents/security_content")
+    # security_content_repo_obj = git.Repo.clone_from(
+    #     'https://' + github_token + ':x-oauth-basic@github.com/' + security_content_repo, "security_content",
+    #     branch=security_content_branch)
     #iterate through every detection types
 
     ta_cim_field_reports_obj  = git.Repo.clone_from('https://' + github_token + ':x-oauth-basic@github.com/' + "splunk/ta-cim-field-reports", "ta_cim_mapping_reports", branch="feat/cim-field-mapping")
@@ -148,7 +149,7 @@ def main():
 
                 if ta_list:
                     enrich_detection_file(filepath, ta_list)
-                    security_content_repo_obj.index.add([filepath])
+                    security_content_repo_obj.index.add([filepath.strip("security_content/")])
     print ("done")
 
 
