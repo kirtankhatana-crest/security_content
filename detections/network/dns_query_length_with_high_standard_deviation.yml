@@ -66,3 +66,9 @@ tags:
   - DNS.query
   risk_score: 56
   security_domain: network
+  required_tas:
+  - Splunk_TA_microsoft-sqlserver
+  - Splunk_TA_isc-bind
+  - Splunk_TA_CrowdStrike_FDR
+  - Splunk_TA_mysql
+  - Splunk_TA_infoblox
