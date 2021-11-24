@@ -8,6 +8,7 @@
 import os
 import git
 import sys
+import shutil
 import yaml
 import json
 import time
@@ -122,23 +123,23 @@ def main():
     detection_types = ["cloud", "endpoint", "network"]
 
     # clone security content repository
-    security_content_repo_obj = git.Repo("/Users/tlangalia/Documents/security_content")
-    # security_content_repo_obj = git.Repo.clone_from(
-    #     'https://' + github_token + ':x-oauth-basic@github.com/' + security_content_repo, "security_content",
-    #     branch=security_content_branch)
-    #iterate through every detection types
+    # security_content_repo_obj = git.Repo("security_content")
+    security_content_repo_obj = git.Repo.clone_from(
+        'https://' + github_token + ':x-oauth-basic@github.com/' + security_content_repo, "security_content",
+        branch=security_content_branch)
+    # iterate through every detection types
 
     ta_cim_field_reports_obj  = git.Repo.clone_from('https://' + github_token + ':x-oauth-basic@github.com/' + "splunk/ta-cim-field-reports", "ta_cim_mapping_reports", branch="feat/cim-field-mapping")
     # iterate through every detection files
     print(os.getcwd())
     for detection_type in detection_types:
 
-        for subdir, dirs, files in os.walk(f'./detections/{detection_type}'):
-            print("2")
+        for subdir, _, files in os.walk(f'security_content/detections/{detection_type}'):
+            print(subdir)
             for file in files:
                 filepath = subdir + os.sep + file
                 ta_list = []
-                print("3")
+                print(file)
                 detection_obj = load_file(filepath)
                 required_fields = detection_obj.get('tags', {}).get('required_fields')
 
@@ -168,6 +169,12 @@ def main():
     repo = g.get_repo("kirtankhatana-crest/security_content")
 
     pr = repo.create_pull(title="Enrich Detection PR " + branch_name, body='This is a dummy PR', head=branch_name, base="develop")
+
+    try:
+        shutil.rmtree('./security_content')
+        shutil.rmtree('./ta_cim_mapping_reports')
+    except OSError as e:
+        print("Error: %s - %s." % (e.filename, e.strerror))
 
 if __name__ == "__main__":
     main()
