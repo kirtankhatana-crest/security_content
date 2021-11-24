@@ -516,24 +516,11 @@ jobs:
           #No need to provide any credentials
           git push
 
-
-
-  enrich-detections:
-    runs-on: ubuntu-latest
-    needs: [validate-content, build-sources, build-package, run-appinspect, create-report, update-sources-github]
-    #Only run when tagged
-    if: startsWith(github.ref, 'refs/tags/')
-    steps:
-      - name: Add TA-list to detection files
-        run: |
-          source venv/bin/activate
-          python3 security_content_automation/enrich_detections.py
-
   publish-github-release:
     #Github-maintained release action is in archived state: https://github.com/actions/create-release
     #They recommend several and we use the following with the most stars: https://github.com/softprops/action-gh-release
     runs-on: ubuntu-latest
-    needs: [validate-content, build-sources, build-package, run-appinspect, create-report, enrich-detections, update-sources-github]
+    needs: [validate-content, build-sources, build-package, run-appinspect, create-report, update-sources-github]
     #Only run when tagged
     if: startsWith(github.ref, 'refs/tags/')
     steps:
@@ -581,7 +568,7 @@ jobs:
 
   attack-range-update:
     runs-on: ubuntu-latest
-    needs: [validate-content, build-sources, build-package, run-appinspect, create-report, enrich-detections, update-sources-github, publish-github-release]
+    needs: [validate-content, build-sources, build-package, run-appinspect, create-report, update-sources-github, publish-github-release]
     #Only run when tagged
     if: startsWith(github.ref, 'refs/tags/')
     steps:
@@ -608,7 +595,7 @@ jobs:
 
   master-api-update:
     runs-on: ubuntu-latest
-    needs: [validate-content, build-sources, build-package, run-appinspect, create-report, enrich-detections, update-sources-github, publish-github-release, attack-range-update]
+    needs: [validate-content, build-sources, build-package, run-appinspect, create-report, update-sources-github, publish-github-release, attack-range-update]
     #Only run when tagged
     if: startsWith(github.ref, 'refs/tags/')
     steps:
