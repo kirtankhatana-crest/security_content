@@ -47,3 +47,7 @@ tags:
   - Filesystem.user
   - Filesystem.file_path
   security_domain: endpoint
+  required_tas:
+  - Splunk_TA_nix
+  - Splunk_TA_bit9-carbonblack
+  - Splunk_TA_CrowdStrike_FDR
