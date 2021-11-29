@@ -78,3 +78,6 @@ tags:
   - Processes.parent_process_id
   risk_score: 35
   security_domain: endpoint
+  required_tas:
+  - Splunk_TA_bit9-carbonblack
+  - Splunk_TA_CrowdStrike_FDR
