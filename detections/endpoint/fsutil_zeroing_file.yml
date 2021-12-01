@@ -57,3 +57,5 @@ tags:
   - Processes.parent_process
   risk_score: 54
   security_domain: endpoint
+  required_tas:
+  - Splunk_TA_bit9-carbonblack

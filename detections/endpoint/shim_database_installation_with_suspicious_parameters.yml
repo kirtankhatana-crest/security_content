@@ -68,3 +68,6 @@ tags:
   - Processes.user
   risk_score: 63
   security_domain: endpoint
+  required_tas:
+  - Splunk_TA_bit9-carbonblack
+  - Splunk_TA_CrowdStrike_FDR

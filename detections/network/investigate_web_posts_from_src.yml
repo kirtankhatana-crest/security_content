@@ -28,3 +28,18 @@ tags:
   - Web.http_user_agent
   - Web.http_method
   security_domain: network
+  required_tas:
+  - Splunk_TA_citrix-netscaler
+  - Splunk_TA_nginx
+  - Splunk_TA_microsoft-iis
+  - Splunk_TA_bluecoat-proxysg
+  - Splunk_TA_websense-cg
+  - Splunk_TA_squid
+  - Splunk_TA_apache
+  - Splunk_TA_f5-bigip
+  - Splunk_TA_google-cloudplatform
+  - Splunk_TA_haproxy
+  - Splunk_TA_tomcat
+  - Splunk_TA_mcafee-wg
+  - Splunk_TA_cisco-wsa
+  - Splunk_TA_salesforce

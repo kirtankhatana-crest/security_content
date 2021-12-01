@@ -43,3 +43,7 @@ tags:
   - DNS.query
   - DNS.record_type
   security_domain: network
+  required_tas:
+  - Splunk_TA_isc-bind
+  - Splunk_TA_CrowdStrike_FDR
+  - Splunk_TA_infoblox
