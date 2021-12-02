@@ -70,3 +70,5 @@ tags:
   - Registry.action
   risk_score: 42
   security_domain: endpoint
+  required_tas:
+  - Splunk_TA_bit9-carbonblack

@@ -36,3 +36,5 @@ tags:
   - All_Email.recipient
   - All_Email.src
   security_domain: network
+  required_tas:
+  - Splunk_TA_cisco-esa
