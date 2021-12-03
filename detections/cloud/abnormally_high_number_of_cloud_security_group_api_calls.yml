@@ -72,3 +72,7 @@ tags:
   - All_Changes.user
   risk_score: 15
   security_domain: network
+  required_tas:
+  - Splunk_TA_aws-kinesis-firehose
+  - Splunk_TA_infoblox
+  - Splunk_TA_salesforce
