@@ -90,3 +90,6 @@ tags:
   - All_Changes.command
   risk_score: 42
   security_domain: threat
+  required_tas:
+  - Splunk_TA_box
+  - Splunk_TA_salesforce
