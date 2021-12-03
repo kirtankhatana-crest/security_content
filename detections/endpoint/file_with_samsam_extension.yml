@@ -69,3 +69,5 @@ tags:
   - Filesystem.file_name
   risk_score: 90
   security_domain: endpoint
+  required_tas:
+  - splunk_ta_o365
