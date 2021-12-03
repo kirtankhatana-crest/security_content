@@ -65,3 +65,5 @@ tags:
   - Processes.dest
   risk_score: 36
   security_domain: endpoint
+  required_tas:
+  - Splunk_TA_cyberark_epm
