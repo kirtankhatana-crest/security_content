@@ -104,3 +104,7 @@ tags:
     role:
     - Child Process
   automated_detection_testing: passed
+  required_tas:
+  - Splunk_TA_nix
+  - Splunk_TA_windows
+  - Splunk_TA_CrowdStrike_FDR
