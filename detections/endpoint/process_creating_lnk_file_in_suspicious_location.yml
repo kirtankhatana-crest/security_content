@@ -80,3 +80,6 @@ tags:
   - Filesystem.user
   risk_score: 63
   security_domain: network
+  required_tas:
+  - Splunk_TA_bit9-carbonblack
+  - Splunk_TA_CrowdStrike_FDR
