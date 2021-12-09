@@ -1,0 +1,415 @@
+Abnormally High Number Of Cloud Infrastructure API Calls:
+- Splunk_TA_citrix-netscaler
+- Splunk_TA_nix
+- Splunk_TA_rsa-securid
+- Splunk_TA_aws-kinesis-firehose
+- Splunk_TA_rsa_securid_cas
+- Splunk_TA_ossec
+- Splunk_TA_juniper
+- splunk_ta_o365
+- Splunk_TA_cyberark
+- Splunk_TA_box
+- Splunk_TA_cisco-asa
+- Splunk_TA_infoblox
+- Splunk_TA_salesforce
+Abnormally High Number Of Cloud Security Group API Calls:
+- Splunk_TA_citrix-netscaler
+- Splunk_TA_nix
+- Splunk_TA_rsa-securid
+- Splunk_TA_aws-kinesis-firehose
+- Splunk_TA_rsa_securid_cas
+- Splunk_TA_ossec
+- Splunk_TA_juniper
+- splunk_ta_o365
+- Splunk_TA_cyberark
+- Splunk_TA_box
+- Splunk_TA_infoblox
+- Splunk_TA_salesforce
+Active Setup Registry Autostart:
+- Splunk_TA_bit9-carbonblack
+Add DefaultUser And Password In Registry:
+- Splunk_TA_bit9-carbonblack
+Allow Inbound Traffic By Firewall Rule Registry:
+- Splunk_TA_bit9-carbonblack
+Allow Operation with Consent Admin:
+- Splunk_TA_bit9-carbonblack
+Anomalous usage of 7zip:
+- Splunk_TA_bit9-carbonblack
+Attacker Tools On Endpoint:
+- Splunk_TA_bit9-carbonblack
+- Splunk_TA_windows
+Attempt To Add Certificate To Untrusted Store:
+- Splunk_TA_bit9-carbonblack
+Auto Admin Logon Registry Entry:
+- Splunk_TA_bit9-carbonblack
+BCDEdit Failure Recovery Modification:
+- Splunk_TA_bit9-carbonblack
+- Splunk_TA_CrowdStrike_FDR
+Batch File Write to System32:
+- Splunk_TA_nix
+- Splunk_TA_bit9-carbonblack
+- Splunk_TA_windows
+- Splunk_TA_CrowdStrike_FDR
+Bcdedit Command Back To Normal Mode Boot:
+- Splunk_TA_bit9-carbonblack
+Change Default File Association:
+- Splunk_TA_bit9-carbonblack
+Change To Safe Mode With Network Config:
+- Splunk_TA_bit9-carbonblack
+Check Elevated CMD using whoami:
+- Splunk_TA_bit9-carbonblack
+Cloud API Calls From Previously Unseen User Roles:
+- Splunk_TA_aws-kinesis-firehose
+- Splunk_TA_rsa_securid_cas
+- splunk_ta_o365
+- Splunk_TA_box
+- Splunk_TA_infoblox
+- Splunk_TA_salesforce
+Cloud Compute Instance Created By Previously Unseen User:
+- Splunk_TA_aws-kinesis-firehose
+Cloud Compute Instance Created In Previously Unused Region:
+- Splunk_TA_aws-kinesis-firehose
+Cloud Compute Instance Created With Previously Unseen Image:
+- Splunk_TA_aws-kinesis-firehose
+Cloud Compute Instance Created With Previously Unseen Instance Type:
+- Splunk_TA_aws-kinesis-firehose
+Cloud Instance Modified By Previously Unseen User:
+- Splunk_TA_citrix-netscaler
+- Splunk_TA_nix
+- Splunk_TA_rsa-securid
+- Splunk_TA_aws-kinesis-firehose
+- Splunk_TA_rsa_securid_cas
+- Splunk_TA_ossec
+- Splunk_TA_juniper
+- splunk_ta_o365
+- Splunk_TA_cyberark
+- Splunk_TA_box
+- Splunk_TA_salesforce
+Cloud Provisioning Activity From Previously Unseen City:
+- Splunk_TA_citrix-netscaler
+- Splunk_TA_rsa-securid
+- Splunk_TA_aws-kinesis-firehose
+- Splunk_TA_rsa_securid_cas
+- Splunk_TA_juniper
+- splunk_ta_o365
+- Splunk_TA_cyberark
+- Splunk_TA_box
+- Splunk_TA_cisco-asa
+- Splunk_TA_infoblox
+- Splunk_TA_salesforce
+Cloud Provisioning Activity From Previously Unseen Country:
+- Splunk_TA_citrix-netscaler
+- Splunk_TA_rsa-securid
+- Splunk_TA_aws-kinesis-firehose
+- Splunk_TA_rsa_securid_cas
+- Splunk_TA_juniper
+- splunk_ta_o365
+- Splunk_TA_cyberark
+- Splunk_TA_box
+- Splunk_TA_cisco-asa
+- Splunk_TA_infoblox
+- Splunk_TA_salesforce
+Cloud Provisioning Activity From Previously Unseen IP Address:
+- Splunk_TA_citrix-netscaler
+- Splunk_TA_rsa-securid
+- Splunk_TA_aws-kinesis-firehose
+- Splunk_TA_rsa_securid_cas
+- Splunk_TA_juniper
+- splunk_ta_o365
+- Splunk_TA_cyberark
+- Splunk_TA_box
+- Splunk_TA_salesforce
+Cloud Provisioning Activity From Previously Unseen Region:
+- Splunk_TA_citrix-netscaler
+- Splunk_TA_rsa-securid
+- Splunk_TA_aws-kinesis-firehose
+- Splunk_TA_rsa_securid_cas
+- Splunk_TA_juniper
+- splunk_ta_o365
+- Splunk_TA_cyberark
+- Splunk_TA_box
+- Splunk_TA_cisco-asa
+- Splunk_TA_infoblox
+- Splunk_TA_salesforce
+DNS Query Length With High Standard Deviation:
+- Splunk_TA_isc-bind
+- Splunk_TA_CrowdStrike_FDR
+- Splunk_TA_infoblox
+DSQuery Domain Discovery:
+- Splunk_TA_bit9-carbonblack
+- Splunk_TA_CrowdStrike_FDR
+Detect Exchange Web Shell:
+- Splunk_TA_bit9-carbonblack
+- Splunk_TA_CrowdStrike_FDR
+Detect RClone Command-Line Usage:
+- Splunk_TA_bit9-carbonblack
+Detect Regasm Spawning a Process:
+- Splunk_TA_bit9-carbonblack
+Detect Regsvcs Spawning a Process:
+- Splunk_TA_bit9-carbonblack
+Detect SharpHound Command-Line Arguments:
+- Splunk_TA_bit9-carbonblack
+Detect Use of cmd exe to Launch Script Interpreters:
+- Splunk_TA_bit9-carbonblack
+Disable AMSI Through Registry:
+- Splunk_TA_bit9-carbonblack
+Disable ETW Through Registry:
+- Splunk_TA_bit9-carbonblack
+Disable Logs Using WevtUtil:
+- Splunk_TA_bit9-carbonblack
+Disable Registry Tool:
+- Splunk_TA_bit9-carbonblack
+Disable Schedule Task:
+- Splunk_TA_bit9-carbonblack
+- Splunk_TA_CrowdStrike_FDR
+Disable Windows App Hotkeys:
+- Splunk_TA_bit9-carbonblack
+Disable Windows Behavior Monitoring:
+- Splunk_TA_bit9-carbonblack
+Disabling CMD Application:
+- Splunk_TA_bit9-carbonblack
+Disabling ControlPanel:
+- Splunk_TA_bit9-carbonblack
+Disabling FolderOptions Windows Feature:
+- Splunk_TA_bit9-carbonblack
+Disabling NoRun Windows App:
+- Splunk_TA_bit9-carbonblack
+Disabling SystemRestore In Registry:
+- Splunk_TA_bit9-carbonblack
+Disabling Task Manager:
+- Splunk_TA_bit9-carbonblack
+Domain Account Discovery With Net App:
+- Splunk_TA_bit9-carbonblack
+Domain Account Discovery with Wmic:
+- Splunk_TA_bit9-carbonblack
+Dump LSASS via procdump:
+- Splunk_TA_bit9-carbonblack
+- Splunk_TA_CrowdStrike_FDR
+Enable RDP In Other Port Number:
+- Splunk_TA_bit9-carbonblack
+Eventvwr UAC Bypass:
+- Splunk_TA_bit9-carbonblack
+Excessive Attempt To Disable Services:
+- Splunk_TA_bit9-carbonblack
+- Splunk_TA_CrowdStrike_FDR
+Excessive Usage Of Cacls App:
+- Splunk_TA_bit9-carbonblack
+- Splunk_TA_CrowdStrike_FDR
+Excessive Usage Of Taskkill:
+- Splunk_TA_bit9-carbonblack
+- Splunk_TA_CrowdStrike_FDR
+Excessive number of distinct processes created in Windows Temp folder:
+- Splunk_TA_nix
+- Splunk_TA_bit9-carbonblack
+- Splunk_TA_windows
+- Splunk_TA_CrowdStrike_FDR
+- Splunk_TA_cyberark_epm
+Excessive number of service control start as disabled:
+- Splunk_TA_bit9-carbonblack
+Excessive number of taskhost processes:
+- Splunk_TA_nix
+- Splunk_TA_bit9-carbonblack
+- Splunk_TA_windows
+- Splunk_TA_CrowdStrike_FDR
+Executables Or Script Creation In Suspicious Path:
+- Splunk_TA_bit9-carbonblack
+- Splunk_TA_CrowdStrike_FDR
+Execute Javascript With Jscript COM CLSID:
+- Splunk_TA_bit9-carbonblack
+Execution of File with Multiple Extensions:
+- Splunk_TA_bit9-carbonblack
+- Splunk_TA_windows
+File with Samsam Extension:
+- Splunk_TA_nix
+- Splunk_TA_bit9-carbonblack
+- splunk_ta_o365
+- Splunk_TA_sophos
+- Splunk_TA_cyberark
+- Splunk_TA_windows
+- Splunk_TA_CrowdStrike_FDR
+Firewall Allowed Program Enable:
+- Splunk_TA_bit9-carbonblack
+First Time Seen Child Process of Zoom:
+- Splunk_TA_bit9-carbonblack
+- Splunk_TA_CrowdStrike_FDR
+FodHelper UAC Bypass:
+- Splunk_TA_bit9-carbonblack
+Fsutil Zeroing File:
+- Splunk_TA_bit9-carbonblack
+Get ADUserResultantPasswordPolicy with Powershell:
+- Splunk_TA_bit9-carbonblack
+Get DomainPolicy with Powershell:
+- Splunk_TA_bit9-carbonblack
+Get DomainUser with PowerShell:
+- Splunk_TA_bit9-carbonblack
+GetWmiObject DS User with PowerShell:
+- Splunk_TA_bit9-carbonblack
+Hide User Account From Sign-In Screen:
+- Splunk_TA_bit9-carbonblack
+Hiding Files And Directories With Attrib exe:
+- Splunk_TA_bit9-carbonblack
+- Splunk_TA_windows
+ICACLS Grant Command:
+- Splunk_TA_bit9-carbonblack
+- Splunk_TA_CrowdStrike_FDR
+Icacls Deny Command:
+- Splunk_TA_bit9-carbonblack
+- Splunk_TA_CrowdStrike_FDR
+Jscript Execution Using Cscript App:
+- Splunk_TA_bit9-carbonblack
+Logon Script Event Trigger Execution:
+- Splunk_TA_bit9-carbonblack
+Modify ACL permission To Files Or Folder:
+- Splunk_TA_bit9-carbonblack
+- Splunk_TA_CrowdStrike_FDR
+Msmpeng Application DLL Side Loading:
+- Splunk_TA_bit9-carbonblack
+- Splunk_TA_CrowdStrike_FDR
+NET Profiler UAC bypass:
+- Splunk_TA_bit9-carbonblack
+NLTest Domain Trust Discovery:
+- Splunk_TA_bit9-carbonblack
+Ntdsutil Export NTDS:
+- Splunk_TA_bit9-carbonblack
+Overwriting Accessibility Binaries:
+- Splunk_TA_nix
+- Splunk_TA_ossec
+- Splunk_TA_bit9-carbonblack
+- splunk_ta_o365
+- Splunk_TA_sophos
+- Splunk_TA_cyberark
+- Splunk_TA_windows
+- Splunk_TA_CrowdStrike_FDR
+Permission Modification using Takeown App:
+- Splunk_TA_bit9-carbonblack
+Prevent Automatic Repair Mode using Bcdedit:
+- Splunk_TA_bit9-carbonblack
+Process Creating LNK file in Suspicious Location:
+- Splunk_TA_bit9-carbonblack
+- Splunk_TA_CrowdStrike_FDR
+Process Execution via WMI:
+- Splunk_TA_bit9-carbonblack
+- Splunk_TA_CrowdStrike_FDR
+Processes launching netsh:
+- Splunk_TA_bit9-carbonblack
+Reg exe Manipulating Windows Services Registry Keys:
+- Splunk_TA_bit9-carbonblack
+- Splunk_TA_CrowdStrike_FDR
+Registry Keys Used For Persistence:
+- Splunk_TA_bit9-carbonblack
+Remote WMI Command Attempt:
+- Splunk_TA_bit9-carbonblack
+Resize ShadowStorage volume:
+- Splunk_TA_bit9-carbonblack
+Revil Common Exec Parameter:
+- Splunk_TA_bit9-carbonblack
+Revil Registry Entry:
+- Splunk_TA_bit9-carbonblack
+Ryuk Wake on LAN Command:
+- Splunk_TA_bit9-carbonblack
+SLUI RunAs Elevated:
+- Splunk_TA_bit9-carbonblack
+SLUI Spawning a Process:
+- Splunk_TA_bit9-carbonblack
+Samsam Test File Write:
+- Splunk_TA_nix
+- Splunk_TA_bit9-carbonblack
+- splunk_ta_o365
+- Splunk_TA_sophos
+- Splunk_TA_cyberark
+- Splunk_TA_windows
+- Splunk_TA_CrowdStrike_FDR
+Sc exe Manipulating Windows Services:
+- Splunk_TA_bit9-carbonblack
+- Splunk_TA_CrowdStrike_FDR
+Scheduled Task Deleted Or Created via CMD:
+- Splunk_TA_bit9-carbonblack
+Schtasks Run Task On Demand:
+- Splunk_TA_bit9-carbonblack
+- Splunk_TA_CrowdStrike_FDR
+Schtasks scheduling job on remote system:
+- Splunk_TA_bit9-carbonblack
+- Splunk_TA_CrowdStrike_FDR
+Schtasks used for forcing a reboot:
+- Splunk_TA_bit9-carbonblack
+- Splunk_TA_CrowdStrike_FDR
+Screensaver Event Trigger Execution:
+- Splunk_TA_bit9-carbonblack
+Script Execution via WMI:
+- Splunk_TA_nix
+- Splunk_TA_bit9-carbonblack
+- Splunk_TA_windows
+- Splunk_TA_CrowdStrike_FDR
+- Splunk_TA_cyberark_epm
+Sdclt UAC Bypass:
+- Splunk_TA_bit9-carbonblack
+SecretDumps Offline NTDS Dumping Tool:
+- Splunk_TA_bit9-carbonblack
+Services Escalate Exe:
+- Splunk_TA_bit9-carbonblack
+Set Default PowerShell Execution Policy To Unrestricted or Bypass:
+- Splunk_TA_bit9-carbonblack
+Shim Database Installation With Suspicious Parameters:
+- Splunk_TA_bit9-carbonblack
+- Splunk_TA_CrowdStrike_FDR
+Short Lived Windows Accounts:
+- Splunk_TA_rsa-securid
+- Splunk_TA_aws-kinesis-firehose
+- Splunk_TA_cyberark
+SilentCleanup UAC Bypass:
+- Splunk_TA_bit9-carbonblack
+Single Letter Process On Endpoint:
+- Splunk_TA_nix
+- Splunk_TA_bit9-carbonblack
+- Splunk_TA_windows
+- Splunk_TA_CrowdStrike_FDR
+- Splunk_TA_cyberark_epm
+Spoolsv Writing a DLL:
+- Splunk_TA_nix
+- Splunk_TA_bit9-carbonblack
+- Splunk_TA_CrowdStrike_FDR
+Start Up During Safe Mode Boot:
+- Splunk_TA_bit9-carbonblack
+Suspicious Process File Path:
+- Splunk_TA_bit9-carbonblack
+Suspicious Reg exe Process:
+- Splunk_TA_bit9-carbonblack
+- Splunk_TA_CrowdStrike_FDR
+Suspicious Scheduled Task from Public Directory:
+- Splunk_TA_bit9-carbonblack
+Suspicious mshta child process:
+- Splunk_TA_bit9-carbonblack
+Suspicious wevtutil Usage:
+- Splunk_TA_bit9-carbonblack
+- Splunk_TA_CrowdStrike_FDR
+System Information Discovery Detection:
+- Splunk_TA_nix
+- Splunk_TA_bit9-carbonblack
+- Splunk_TA_windows
+- Splunk_TA_CrowdStrike_FDR
+- Splunk_TA_cyberark_epm
+System Processes Run From Unexpected Locations:
+- Splunk_TA_bit9-carbonblack
+- Splunk_TA_CrowdStrike_FDR
+Time Provider Persistence Registry:
+- Splunk_TA_bit9-carbonblack
+USN Journal Deletion:
+- Splunk_TA_bit9-carbonblack
+Unified Messaging Service Spawning a Process:
+- Splunk_TA_bit9-carbonblack
+Uninstall App Using MsiExec:
+- Splunk_TA_bit9-carbonblack
+Unload Sysmon Filter Driver:
+- Splunk_TA_bit9-carbonblack
+- Splunk_TA_CrowdStrike_FDR
+WBAdmin Delete System Backups:
+- Splunk_TA_bit9-carbonblack
+- Splunk_TA_CrowdStrike_FDR
+WSReset UAC Bypass:
+- Splunk_TA_bit9-carbonblack
+Windows AdFind Exe:
+- Splunk_TA_bit9-carbonblack
+Windows DisableAntiSpyware Registry:
+- Splunk_TA_bit9-carbonblack
+XSL Script Execution With WMIC:
+- Splunk_TA_bit9-carbonblack
