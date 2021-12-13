@@ -65,3 +65,5 @@ tags:
   - ImageLoaded
   risk_score: 9
   security_domain: endpoint
+  tas_with_data:
+  - Splunk_TA_microsoft_sysmon

@@ -64,3 +64,5 @@ tags:
   - Message
   risk_score: 80
   security_domain: endpoint
+  tas_with_data:
+  - Splunk_TA_windows

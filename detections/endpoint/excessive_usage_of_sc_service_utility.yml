@@ -45,3 +45,5 @@ tags:
   - process_name
   - process
   security_domain: endpoint
+  tas_with_data:
+  - Splunk_TA_microsoft_sysmon

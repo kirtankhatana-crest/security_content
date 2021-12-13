@@ -69,3 +69,5 @@ tags:
   - Source_Address
   risk_score: 70
   security_domain: endpoint
+  tas_with_data:
+  - Splunk_TA_windows
