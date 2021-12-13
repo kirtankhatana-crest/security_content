@@ -71,3 +71,6 @@ tags:
   - Processes.process_name
   risk_score: 49
   security_domain: endpoint
+  supported_tas:
+  - Splunk_TA_bit9-carbonblack
+  - Splunk_TA_CrowdStrike_FDR

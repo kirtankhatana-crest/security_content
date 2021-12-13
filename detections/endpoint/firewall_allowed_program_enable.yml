@@ -67,3 +67,5 @@ tags:
     role:
     - Victim
   automated_detection_testing: passed
+  supported_tas:
+  - Splunk_TA_bit9-carbonblack
