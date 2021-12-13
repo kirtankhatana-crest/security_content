@@ -62,3 +62,5 @@ tags:
   - IMPHASH
   risk_score: 35
   security_domain: endpoint
+  tas_with_data:
+  - Splunk_TA_microsoft_sysmon

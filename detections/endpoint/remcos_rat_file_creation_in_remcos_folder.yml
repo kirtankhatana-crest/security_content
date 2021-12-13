@@ -56,3 +56,5 @@ tags:
   - file_path
   risk_score: 100
   security_domain: endpoint
+  tas_with_data:
+  - Splunk_TA_microsoft_sysmon

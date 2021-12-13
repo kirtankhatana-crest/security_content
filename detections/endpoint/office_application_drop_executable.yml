@@ -72,3 +72,5 @@ tags:
   - user_id
   risk_score: 64
   security_domain: endpoint
+  tas_with_data:
+  - Splunk_TA_microsoft_sysmon

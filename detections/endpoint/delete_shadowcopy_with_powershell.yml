@@ -62,3 +62,5 @@ tags:
   - User
   risk_score: 81
   security_domain: endpoint
+  tas_with_data:
+  - Splunk_TA_windows

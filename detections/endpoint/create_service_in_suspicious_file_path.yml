@@ -60,3 +60,5 @@ tags:
   - Service_Start_Type
   risk_score: 56
   security_domain: endpoint
+  tas_with_data:
+  - Splunk_TA_windows

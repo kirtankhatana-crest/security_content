@@ -55,3 +55,5 @@ tags:
   - Processes.process_path
   - Processes.parent_process_id
   security_domain: endpoint
+  tas_with_data:
+  - Splunk_TA_microsoft_sysmon

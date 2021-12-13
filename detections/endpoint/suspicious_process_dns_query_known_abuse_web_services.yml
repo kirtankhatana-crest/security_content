@@ -66,3 +66,5 @@ tags:
     role:
     - Attacker
   automated_detection_testing: passed
+  tas_with_data:
+  - Splunk_TA_microsoft_sysmon

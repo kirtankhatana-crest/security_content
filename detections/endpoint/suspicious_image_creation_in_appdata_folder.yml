@@ -70,3 +70,5 @@ tags:
   - process
   risk_score: 49
   security_domain: endpoint
+  tas_with_data:
+  - Splunk_TA_microsoft_sysmon

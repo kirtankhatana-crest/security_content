@@ -76,3 +76,5 @@ tags:
   - Authentication.src
   risk_score: 15
   security_domain: network
+  tas_with_data:
+  - Splunk_TA_aws-kinesis-firehose
