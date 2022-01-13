@@ -25,7 +25,8 @@ how_to_implement: To successfully implement this search, you need to be ingestin
   logs with the file name, file path, and process_guid executions from your endpoints.
   If you are using Sysmon, you can use the Add-on for Linux Sysmon from Splunkbase.
 known_false_positives: Administrator or network operator can create file in systemd
-  folders for automation purposes. Please update the filter macros to remove false positives.
+  folders for automation purposes. Please update the filter macros to remove false
+  positives.
 references:
 - https://attack.mitre.org/techniques/T1053/006/
 - https://www.intezer.com/blog/research/kaiji-new-chinese-linux-malware-turning-to-golang/
@@ -74,3 +75,6 @@ tags:
   - CIS 5
   - CIS 16
   automated_detection_testing: passed
+  cim_version: 5.0.0
+  recommended_tas:
+  - Splunk_TA_bit9-carbonblack
